@@ -43,13 +43,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +174,7 @@
             this.tbContraseña.Name = "tbContraseña";
             this.tbContraseña.Size = new System.Drawing.Size(165, 32);
             this.tbContraseña.TabIndex = 10;
-            this.tbContraseña.Text = "admin";
+            this.tbContraseña.Text = "1234";
             this.tbContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -200,7 +200,7 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(165, 32);
             this.tbNombre.TabIndex = 11;
-            this.tbNombre.Text = "jose";
+            this.tbNombre.Text = "Serena";
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pbExit
@@ -215,9 +215,9 @@
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
-            // errorProvider
+            // error
             // 
-            this.errorProvider.ContainerControl = this;
+            this.error.ContainerControl = this;
             // 
             // panelContenedor
             // 
@@ -249,14 +249,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.ErrorProvider error;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button buttonLogin;

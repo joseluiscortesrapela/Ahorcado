@@ -2,16 +2,23 @@
 <jugadores>
 	<jugador>
 		<id>1</id>
-		<nombre>jose</nombre>
+		<nombre>Jose</nombre>
 		<contraseña>admin</contraseña>
 		<puntuacion>0</puntuacion>
 		<rol>Administrador</rol>
 	</jugador>
 	<jugador>
 		<id>2</id>
-		<nombre>serena</nombre>
+		<nombre>Serena</nombre>
 		<contraseña>1234</contraseña>
-		<puntuacion>0</puntuacion>
+		<puntuacion>75</puntuacion>
 		<rol>Jugador</rol>
 	</jugador>
+  <jugador>
+    <id>3</id>
+    <nombre>Noelia</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>56</puntuacion>
+    <rol>Jugador</rol>
+  </jugador>
 </jugadores>

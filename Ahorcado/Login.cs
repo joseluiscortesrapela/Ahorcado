@@ -14,86 +14,55 @@ namespace Ahorcado
 {
     public partial class Login : Form
     {
-     
-        private List<Jugador> jugadores;
+        
+        private List<Jugador> jugadores;  // Array de jugadores
+        private string nombre;            // Nombre del usuario
+        private string contraseña;        // Contraseña del usuario
 
         public Login()
         {
-            InitializeComponent();      
-           
+            InitializeComponent();
         }
 
+        // Autoload de la ventana
         private void Login_Load(object sender, EventArgs e)
         {
-
-            
+            // Obtengo todos los jugadores.
             jugadores = ProcesarFicherosXML.dameListaJugadores();
-
-            Console.WriteLine("Muestro los jugadores");
-           
-            foreach (Jugador jugador in jugadores)
-            {
-                // Muestro el contendio
-                Console.WriteLine("ID: " + jugador.Id);
-                Console.WriteLine("Nombre: " + jugador.Nombre);
-                Console.WriteLine("Contraseña: " + jugador.Contraseña);
-                Console.WriteLine("Puntuación: " + jugador.Puntuacion);
-                Console.WriteLine("Rol: " + jugador.Rol);
-                Console.WriteLine();
-            }
-
-
         }
 
         // Login usuario
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             // Obtengo nombre 
-            string nombre = tbNombre.Text.Trim();
+            nombre = tbNombre.Text;
             // Obtengo la contraseña
-            string contraseña = tbContraseña.Text.Trim();
+            contraseña = tbContraseña.Text;
 
-            Console.WriteLine("USUARIO: " + nombre + " CONTRASEÑA: " + contraseña);
-
-
-            if ( siExistejugador( nombre, contraseña))
+            // Si el formulario es valido    
+            if (siValidarFormulario())
             {
-                Console.WriteLine("USUARIO ENCONTRADO");
-            }
-            else
-            {
-                Console.WriteLine("USUARIO NO EXISTE");
-            }
-            
-
-            /*
-            if (formularioEsValido())
-            {
-               
                 // Si usuario existe.
-                if (existe)
+                if (siExistejugador())
                 {
-                    // Oculto la ventana de login
-                    this.Hide();
-                    // Obtengo el usuario logeado
-                    string tipoUsuario = SesionUsuario.getTipo();
-
                     // Si quien se logia es un jugador
-                    if (tipoUsuario.Equals("Jugador"))
+                    if (SesionUsuario.Rol.Equals("Jugador"))
                     {
-                        // Intancia
+                        // Muestro la ventana para el jugador
                         MenuJugador menuJugador = new MenuJugador();
-                        // Muestro la ventana del jugador
+                        // Hago visible la ventana
                         menuJugador.Show();
                     } // Si quien se logea es un administrador
-                    else if (tipoUsuario.Equals("Administrador"))
+                    else
                     {
-                        // Intancio
+                        // Muestro la ventana para el administardor
                         MenuAdmin menuAdmin = new MenuAdmin();
-                        // Muestro la ventana del alministrador
+                        // Hago visible la ventana.
                         menuAdmin.Show();
                     }
 
+                    // Oculto la ventana de login
+                    this.Hide();
                 }
                 else
                 {
@@ -101,61 +70,76 @@ namespace Ahorcado
                 }
             }
 
-            */
 
         }
 
+        // Creo la sesion para el usuario logeado
+        private void crearSesionUsuario(Jugador jugador)
+        {   // Inicializo la sesion
+            SesionUsuario.Id = jugador.Id;
+            SesionUsuario.Usuario = jugador.Nombre;
+            SesionUsuario.Contraseña = jugador.Contraseña;
+            SesionUsuario.Puntuacion = jugador.Puntuacion;
+            SesionUsuario.Rol = jugador.Rol;
+            Console.WriteLine("Puntuacion: " + SesionUsuario.Puntuacion);
+        }
 
-        private bool siExistejugador( string nombre, string contraseña )
+        // Comprueba si existe el usuario
+        private bool siExistejugador()
         {
             bool encontrado = false;
 
+            // Recorro la lista de jugadores
             foreach (Jugador jugador in jugadores)
             {
+                // Si encuentro un jugador con el nombre y contraseña que busco.
                 if (jugador.Nombre == nombre && jugador.Contraseña == contraseña)
                 {
-                    encontrado = true;                    
+                    // Usuario encontrado.
+                    encontrado = true;
+                    // Creo la sesion
+                    crearSesionUsuario(jugador);
                 }
             }
-    
+
             return encontrado;
         }
 
-        // Valida el formulario de registro y login
-        private bool formularioEsValido()
+
+        // Valida el campos formulario login
+        private bool siValidarFormulario()
         {
-            /*
-            bool valor = true;
+
+            bool valido = true;
 
             // Si el nombre de usuario no esta vacio
-            if (user.Length == 0)
+            if (nombre.Length == 0)
             {
-                valor = false;
-                errorProvider.SetError(textBoxUser, "El nombre del usuario no puede estar vacio.");
+                valido = false;
+                error.SetError(tbNombre, "El nombre del usuario no puede estar vacio.");
 
             }
             else
             {
-                errorProvider.SetError(textBoxUser, "");
+                error.SetError(tbNombre, "");
             }
 
             // Si el campo contraseña no esta vacio
-            if (password.Length == 0)
+            if (contraseña.Length == 0)
             {
-                valor = false;
-                errorProvider.SetError(textBoxPassword, "El password del usuario no puede estar vacio.");
+                valido = false;
+                error.SetError(tbContraseña, "La contraseña no puede estar vacia.");
             }
             else
             {
-                errorProvider.SetError(textBoxPassword, "");
+                error.SetError(tbContraseña, "");
             }
 
 
-            return valor;
-            */
-            return true;
-        }
+            return valido;
 
+
+        }
 
 
         // Se cierra el programa
@@ -165,7 +149,7 @@ namespace Ahorcado
 
         }
 
-      
+
     } // Final clase Login
 
 

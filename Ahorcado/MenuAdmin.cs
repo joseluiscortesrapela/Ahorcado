@@ -34,7 +34,7 @@ namespace Ahorcado
         // Muestra el nombre del usuario en el menu principal
         private void MenuAdmin_Load(object sender, EventArgs e)
         {   // Muestro el nombre del usuario
-            labelNombreUsuario.Text = SesionUsuario.getUsuario();
+            labelNombreUsuario.Text = SesionUsuario.Usuario;
             // Cargo las categorias
             cargarCategorias();
         }

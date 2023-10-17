@@ -158,7 +158,7 @@ namespace Ahorcado
             List<String> palabras = new List<String>();
 
             // Recorro el array
-            foreach (DataGridViewRow palabra in dgvTablaPalabras.Rows)
+            foreach (DataGridViewRow palabra in dgvPalabras.Rows)
             {
                 // Si la palabra pertenece a la categoria 
                 if (palabra.Cells[3].Value.Equals(categoria))
@@ -213,7 +213,7 @@ namespace Ahorcado
             List<String> lista = new List<string>();
 
             // Recorro por la columna categorias.
-            foreach (DataGridViewRow categoria in dgvTablaPalabras.Rows)
+            foreach (DataGridViewRow categoria in dgvPalabras.Rows)
             {
 
                 // Si la palabra NO EXISTE
@@ -234,12 +234,12 @@ namespace Ahorcado
             String pista = "";
 
             // Recorro todas las palabras
-            foreach (DataGridViewRow row in dgvTablaPalabras.Rows)
+            foreach (DataGridViewRow fila in dgvPalabras.Rows)
             {
                 // Si encuentras la palabra
-                if (row.Cells[1].Value.ToString().ToLower() == palabra)
+                if (fila.Cells["palabra"].Value.ToString().ToLower() == palabra)
                 {   // Guardo su pista
-                    pista = row.Cells[2].Value.ToString();
+                    pista = fila.Cells["pista"].Value.ToString();
                 }
 
             }
@@ -251,9 +251,9 @@ namespace Ahorcado
         private void cargarPalabras()
         {
             // Obtengo las palabras de la tabla palabras de la base de datos
-            dgvTablaPalabras.DataSource = jugadorModel.getPalabras();
+            dgvPalabras.DataSource = jugadorModel.getPalabras();
             // Si no esta vacio
-            if (dgvTablaPalabras != null)
+            if (dgvPalabras != null)
             {
                 cargarCategorias(); // Cargo las categorias
             }
@@ -465,11 +465,11 @@ namespace Ahorcado
             //Muestro panel game over
             panelGameOver.Show();
             // Guardo la ultima puntuacion
-            int totalPuntuacion = SesionUsuario.getPuntuacion() + puntuacion;
+            int totalPuntuacion = SesionUsuario.Puntuacion + puntuacion;
             // Actualizo la puntuacion para la sesion del jugador
-            SesionUsuario.setPuntuacion(totalPuntuacion);
+            SesionUsuario.Puntuacion = totalPuntuacion;
             // Actualizo la puntuacion del jugador
-            jugadorModel.updatePuntuacion( SesionUsuario.getId(), totalPuntuacion );
+            jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
 
         }
 
@@ -522,7 +522,5 @@ namespace Ahorcado
         {
             Application.Exit();
         }
-
-
     }
 }

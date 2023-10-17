@@ -14,64 +14,13 @@ namespace Ahorcado
         private static String usuario;
         private static String contraseña;
         private static int puntuacion;
-        private static String tipo;
+        private static String rol;
 
 
-
-        public SesionUsuario()
-        {
-        }
-
-        public static int getId()
-        {
-            return id;
-        }
-
-        public static void setId(int id)
-        {
-            SesionUsuario.id = id;
-        }
-
-        public static String getUsuario()
-        {
-            return usuario;
-        }
-
-        public static void setUsuario(String usuario)
-        {
-            SesionUsuario.usuario = usuario;
-        }
-
-        public static String getContraseña()
-        {
-            return contraseña;
-        }
-
-        public static void setContraseña(String contraseña)
-        {
-            SesionUsuario.contraseña = contraseña;
-        }
-
-        public static int getPuntuacion()
-        {
-            return puntuacion;
-        }
-
-        public static void setPuntuacion(int puntuacion)
-        {
-            SesionUsuario.puntuacion = puntuacion;
-        }
-
-
-        public static String getTipo()
-        {
-            return tipo;
-        }
-
-        public static void setTipo(String tipo)
-        {
-            SesionUsuario.tipo = tipo;
-        }
-
+        public static int Id { get => id; set => id = value; }
+        public static string Usuario { get => usuario; set => usuario = value; }
+        public static string Contraseña { get => contraseña; set => contraseña = value; }
+        public static int Puntuacion { get => puntuacion; set => puntuacion = value; }
+        public static string Rol { get => rol; set => rol = value; }
     }
 }

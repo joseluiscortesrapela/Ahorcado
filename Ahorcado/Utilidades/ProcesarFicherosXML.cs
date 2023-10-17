@@ -16,7 +16,6 @@ namespace Ahorcado.Utilidades
         public static List<Jugador> dameListaJugadores()
         {
 
-            Console.WriteLine("Leyendo jugadores.xml");
             string rutaFichero = "C:\\Users\\jose\\source\\repos\\Ahorcado\\Ahorcado\\Xml\\jugadores.xml";
 
             List<Jugador> jugadores = new List<Jugador>();

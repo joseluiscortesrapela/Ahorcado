@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Juego));
-            this.dgvTablaPalabras = new System.Windows.Forms.DataGridView();
+            this.dgvPalabras = new System.Windows.Forms.DataGridView();
             this.labelFinalPartida = new System.Windows.Forms.Label();
             this.comboBoxCategorias = new System.Windows.Forms.ComboBox();
             this.panelScore = new System.Windows.Forms.Panel();
@@ -91,7 +91,7 @@
             this.labelPista = new System.Windows.Forms.Label();
             this.pbBrain = new System.Windows.Forms.PictureBox();
             this.labelResolver = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaPalabras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panelScore.SuspendLayout();
             this.panelPalabra.SuspendLayout();
             this.panelResolver.SuspendLayout();
@@ -106,17 +106,17 @@
             // 
             // dgvTablaPalabras
             // 
-            this.dgvTablaPalabras.AllowUserToAddRows = false;
-            this.dgvTablaPalabras.AllowUserToDeleteRows = false;
-            this.dgvTablaPalabras.AllowUserToResizeColumns = false;
-            this.dgvTablaPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTablaPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTablaPalabras.Location = new System.Drawing.Point(16, 632);
-            this.dgvTablaPalabras.Name = "dgvTablaPalabras";
-            this.dgvTablaPalabras.ReadOnly = true;
-            this.dgvTablaPalabras.Size = new System.Drawing.Size(17, 49);
-            this.dgvTablaPalabras.TabIndex = 0;
-            this.dgvTablaPalabras.Visible = false;
+            this.dgvPalabras.AllowUserToAddRows = false;
+            this.dgvPalabras.AllowUserToDeleteRows = false;
+            this.dgvPalabras.AllowUserToResizeColumns = false;
+            this.dgvPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPalabras.Location = new System.Drawing.Point(16, 632);
+            this.dgvPalabras.Name = "dgvTablaPalabras";
+            this.dgvPalabras.ReadOnly = true;
+            this.dgvPalabras.Size = new System.Drawing.Size(17, 49);
+            this.dgvPalabras.TabIndex = 0;
+            this.dgvPalabras.Visible = false;
             // 
             // labelFinalPartida
             // 
@@ -1128,14 +1128,14 @@
             this.Controls.Add(this.panelScore);
             this.Controls.Add(this.comboBoxCategorias);
             this.Controls.Add(this.labelFinalPartida);
-            this.Controls.Add(this.dgvTablaPalabras);
+            this.Controls.Add(this.dgvPalabras);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Juego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaPalabras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.panelScore.ResumeLayout(false);
             this.panelScore.PerformLayout();
             this.panelPalabra.ResumeLayout(false);
@@ -1158,7 +1158,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTablaPalabras;
+        private System.Windows.Forms.DataGridView dgvPalabras;
         private System.Windows.Forms.Label labelFinalPartida;
         private System.Windows.Forms.ComboBox comboBoxCategorias;
         private System.Windows.Forms.Panel panelScore;

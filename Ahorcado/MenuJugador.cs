@@ -14,15 +14,13 @@ namespace Ahorcado
     public partial class MenuJugador : Form
     {
 
-        private MenuJugadorModel model_jugador;
-
         public MenuJugador()
         {
             InitializeComponent();
-            // Instancio el modelo de datos
-            model_jugador = new MenuJugadorModel();
             // Muestro el nombre del jugador.
-            labelNombreUsuario.Text = SesionUsuario.getUsuario();
+            lbNombreUsuario.Text = SesionUsuario.Usuario;
+            // Muestro su puntuacion
+            lbPuntuacion.Text = SesionUsuario.Puntuacion.ToString();
            
         }
 
@@ -42,10 +40,6 @@ namespace Ahorcado
             Application.Exit();
         }
 
-        private void labelMostrarPuntuaciones_Click(object sender, EventArgs e)
-        {
-       
-
-        }
+     
     }
 }
