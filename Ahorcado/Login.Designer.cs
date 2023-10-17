@@ -39,20 +39,18 @@
             this.buttonLogin = new System.Windows.Forms.Button();
             this.lebel0 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.tbContraseña = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogin
@@ -66,9 +64,9 @@
             this.panelLogin.Controls.Add(this.buttonLogin);
             this.panelLogin.Controls.Add(this.lebel0);
             this.panelLogin.Controls.Add(this.label3);
-            this.panelLogin.Controls.Add(this.textBoxPassword);
+            this.panelLogin.Controls.Add(this.tbContraseña);
             this.panelLogin.Controls.Add(this.label2);
-            this.panelLogin.Controls.Add(this.textBoxUser);
+            this.panelLogin.Controls.Add(this.tbNombre);
             this.panelLogin.Location = new System.Drawing.Point(99, 45);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(329, 443);
@@ -137,7 +135,7 @@
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(165, 43);
             this.buttonLogin.TabIndex = 15;
-            this.buttonLogin.Text = "Login";
+            this.buttonLogin.Text = "Aceptar";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
@@ -165,19 +163,19 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Contraseña";
             // 
-            // textBoxPassword
+            // tbContraseña
             // 
-            this.textBoxPassword.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxPassword.Location = new System.Drawing.Point(80, 278);
-            this.textBoxPassword.MaxLength = 12;
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(165, 32);
-            this.textBoxPassword.TabIndex = 10;
-            this.textBoxPassword.Text = "admin";
-            this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbContraseña.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContraseña.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbContraseña.Location = new System.Drawing.Point(80, 278);
+            this.tbContraseña.MaxLength = 12;
+            this.tbContraseña.Name = "tbContraseña";
+            this.tbContraseña.Size = new System.Drawing.Size(165, 32);
+            this.tbContraseña.TabIndex = 10;
+            this.tbContraseña.Text = "admin";
+            this.tbContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -191,19 +189,19 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "User";
             // 
-            // textBoxUser
+            // tbNombre
             // 
-            this.textBoxUser.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxUser.Location = new System.Drawing.Point(80, 171);
-            this.textBoxUser.MaxLength = 12;
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(165, 32);
-            this.textBoxUser.TabIndex = 11;
-            this.textBoxUser.Text = "jose";
-            this.textBoxUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNombre.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombre.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbNombre.Location = new System.Drawing.Point(80, 171);
+            this.tbNombre.MaxLength = 12;
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(165, 32);
+            this.tbNombre.TabIndex = 11;
+            this.tbNombre.Text = "jose";
+            this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pbExit
             // 
@@ -231,17 +229,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(444, 498);
             this.panelContenedor.TabIndex = 21;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(390, 392);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,13 +237,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1036, 500);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelContenedor);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -264,7 +251,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,15 +262,14 @@
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Label lebel0;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox tbContraseña;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxUser;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelMensajeLogin;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

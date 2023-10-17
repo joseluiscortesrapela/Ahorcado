@@ -1,4 +1,5 @@
 ﻿using Ahorcado.Models;
+using Ahorcado.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,25 +14,57 @@ namespace Ahorcado
 {
     public partial class Login : Form
     {
-      
-        private String user;
-        private String password;
+     
+        private List<Jugador> jugadores;
 
         public Login()
         {
             InitializeComponent();      
+           
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+            
+            jugadores = ProcesarFicherosXML.dameListaJugadores();
+
+            Console.WriteLine("Muestro los jugadores");
+           
+            foreach (Jugador jugador in jugadores)
+            {
+                // Muestro el contendio
+                Console.WriteLine("ID: " + jugador.Id);
+                Console.WriteLine("Nombre: " + jugador.Nombre);
+                Console.WriteLine("Contraseña: " + jugador.Contraseña);
+                Console.WriteLine("Puntuación: " + jugador.Puntuacion);
+                Console.WriteLine("Rol: " + jugador.Rol);
+                Console.WriteLine();
+            }
+
+
+        }
 
         // Login usuario
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             // Obtengo nombre 
-            user = textBoxUser.Text.Trim();
+            string nombre = tbNombre.Text.Trim();
             // Obtengo la contraseña
-            password = textBoxPassword.Text.Trim();
+            string contraseña = tbContraseña.Text.Trim();
 
-            Console.WriteLine("USUARIO: " + user + " CONTRASEÑA: " + password);
+            Console.WriteLine("USUARIO: " + nombre + " CONTRASEÑA: " + contraseña);
+
+
+            if ( siExistejugador( nombre, contraseña))
+            {
+                Console.WriteLine("USUARIO ENCONTRADO");
+            }
+            else
+            {
+                Console.WriteLine("USUARIO NO EXISTE");
+            }
+            
 
             /*
             if (formularioEsValido())
@@ -70,6 +103,22 @@ namespace Ahorcado
 
             */
 
+        }
+
+
+        private bool siExistejugador( string nombre, string contraseña )
+        {
+            bool encontrado = false;
+
+            foreach (Jugador jugador in jugadores)
+            {
+                if (jugador.Nombre == nombre && jugador.Contraseña == contraseña)
+                {
+                    encontrado = true;                    
+                }
+            }
+    
+            return encontrado;
         }
 
         // Valida el formulario de registro y login
@@ -116,7 +165,7 @@ namespace Ahorcado
 
         }
 
-
+      
     } // Final clase Login
 
 
