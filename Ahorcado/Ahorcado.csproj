@@ -111,8 +111,8 @@
       <DependentUpon>MenuJugador.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\MenuAdministradorModel.cs" />
-    <Compile Include="Models\MenuJugadorModel.cs" />
     <Compile Include="Models\juegoModel.cs" />
+    <Compile Include="Models\Word.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sesion\SesionUsuario.cs" />
@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Xml\jugadores.xml" />
+    <Content Include="Xml\palabras.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

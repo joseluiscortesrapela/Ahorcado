@@ -46,9 +46,6 @@
             this.buttonRespuestaRapida = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbRespuesta = new System.Windows.Forms.TextBox();
-            this.dgvTablaScores = new System.Windows.Forms.DataGridView();
-            this.columnaNombreJugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnaScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelCategoria = new System.Windows.Forms.Label();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBoxAhorcado = new System.Windows.Forms.PictureBox();
@@ -95,7 +92,6 @@
             this.panelScore.SuspendLayout();
             this.panelPalabra.SuspendLayout();
             this.panelResolver.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaScores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).BeginInit();
             this.panelBarraProgreso.SuspendLayout();
@@ -104,17 +100,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbBrain)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvTablaPalabras
+            // dgvPalabras
             // 
             this.dgvPalabras.AllowUserToAddRows = false;
             this.dgvPalabras.AllowUserToDeleteRows = false;
             this.dgvPalabras.AllowUserToResizeColumns = false;
             this.dgvPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(16, 632);
-            this.dgvPalabras.Name = "dgvTablaPalabras";
+            this.dgvPalabras.Location = new System.Drawing.Point(12, 651);
+            this.dgvPalabras.Name = "dgvPalabras";
             this.dgvPalabras.ReadOnly = true;
-            this.dgvPalabras.Size = new System.Drawing.Size(17, 49);
+            this.dgvPalabras.Size = new System.Drawing.Size(10, 32);
             this.dgvPalabras.TabIndex = 0;
             this.dgvPalabras.Visible = false;
             // 
@@ -304,33 +300,6 @@
             this.tbRespuesta.Size = new System.Drawing.Size(275, 29);
             this.tbRespuesta.TabIndex = 12;
             // 
-            // dgvTablaScores
-            // 
-            this.dgvTablaScores.AllowUserToAddRows = false;
-            this.dgvTablaScores.AllowUserToDeleteRows = false;
-            this.dgvTablaScores.AllowUserToResizeColumns = false;
-            this.dgvTablaScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTablaScores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnaNombreJugador,
-            this.columnaScore});
-            this.dgvTablaScores.Location = new System.Drawing.Point(49, 632);
-            this.dgvTablaScores.Name = "dgvTablaScores";
-            this.dgvTablaScores.Size = new System.Drawing.Size(15, 48);
-            this.dgvTablaScores.TabIndex = 24;
-            this.dgvTablaScores.Visible = false;
-            // 
-            // columnaNombreJugador
-            // 
-            this.columnaNombreJugador.HeaderText = "Name";
-            this.columnaNombreJugador.Name = "columnaNombreJugador";
-            this.columnaNombreJugador.ReadOnly = true;
-            // 
-            // columnaScore
-            // 
-            this.columnaScore.HeaderText = "Score";
-            this.columnaScore.Name = "columnaScore";
-            this.columnaScore.ReadOnly = true;
-            // 
             // labelCategoria
             // 
             this.labelCategoria.AutoSize = true;
@@ -439,6 +408,12 @@
             this.buttonC.AutoSize = true;
             this.buttonC.BackColor = System.Drawing.Color.Transparent;
             this.buttonC.CausesValidation = false;
+            this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonC.FlatAppearance.BorderSize = 0;
+            this.buttonC.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -472,6 +447,12 @@
             this.buttonV.AutoSize = true;
             this.buttonV.BackColor = System.Drawing.Color.Transparent;
             this.buttonV.CausesValidation = false;
+            this.buttonV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonV.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonV.FlatAppearance.BorderSize = 0;
+            this.buttonV.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -493,7 +474,12 @@
             this.buttonX.AutoSize = true;
             this.buttonX.BackColor = System.Drawing.Color.Transparent;
             this.buttonX.CausesValidation = false;
+            this.buttonX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonX.FlatAppearance.BorderSize = 0;
+            this.buttonX.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -515,6 +501,12 @@
             this.buttonT.AutoSize = true;
             this.buttonT.BackColor = System.Drawing.Color.Transparent;
             this.buttonT.CausesValidation = false;
+            this.buttonT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonT.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonT.FlatAppearance.BorderSize = 0;
+            this.buttonT.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -536,6 +528,12 @@
             this.buttonH.AutoSize = true;
             this.buttonH.BackColor = System.Drawing.Color.Transparent;
             this.buttonH.CausesValidation = false;
+            this.buttonH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonH.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonH.FlatAppearance.BorderSize = 0;
+            this.buttonH.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -557,6 +555,12 @@
             this.buttonG.AutoSize = true;
             this.buttonG.BackColor = System.Drawing.Color.Transparent;
             this.buttonG.CausesValidation = false;
+            this.buttonG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonG.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonG.FlatAppearance.BorderSize = 0;
+            this.buttonG.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonG.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -578,6 +582,12 @@
             this.buttonE.AutoSize = true;
             this.buttonE.BackColor = System.Drawing.Color.Transparent;
             this.buttonE.CausesValidation = false;
+            this.buttonE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonE.FlatAppearance.BorderSize = 0;
+            this.buttonE.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -599,6 +609,12 @@
             this.buttonJ.AutoSize = true;
             this.buttonJ.BackColor = System.Drawing.Color.Transparent;
             this.buttonJ.CausesValidation = false;
+            this.buttonJ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonJ.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonJ.FlatAppearance.BorderSize = 0;
+            this.buttonJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonJ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonJ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -620,6 +636,12 @@
             this.buttonF.AutoSize = true;
             this.buttonF.BackColor = System.Drawing.Color.Transparent;
             this.buttonF.CausesValidation = false;
+            this.buttonF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonF.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonF.FlatAppearance.BorderSize = 0;
+            this.buttonF.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -641,6 +663,12 @@
             this.buttonD.AutoSize = true;
             this.buttonD.BackColor = System.Drawing.Color.Transparent;
             this.buttonD.CausesValidation = false;
+            this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonD.FlatAppearance.BorderSize = 0;
+            this.buttonD.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -662,6 +690,12 @@
             this.buttonL.AutoSize = true;
             this.buttonL.BackColor = System.Drawing.Color.Transparent;
             this.buttonL.CausesValidation = false;
+            this.buttonL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonL.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonL.FlatAppearance.BorderSize = 0;
+            this.buttonL.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -683,6 +717,12 @@
             this.buttonI.AutoSize = true;
             this.buttonI.BackColor = System.Drawing.Color.Transparent;
             this.buttonI.CausesValidation = false;
+            this.buttonI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonI.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonI.FlatAppearance.BorderSize = 0;
+            this.buttonI.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -704,6 +744,12 @@
             this.buttonM.AutoSize = true;
             this.buttonM.BackColor = System.Drawing.Color.Transparent;
             this.buttonM.CausesValidation = false;
+            this.buttonM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonM.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonM.FlatAppearance.BorderSize = 0;
+            this.buttonM.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -725,6 +771,12 @@
             this.buttonA.AutoSize = true;
             this.buttonA.BackColor = System.Drawing.Color.Transparent;
             this.buttonA.CausesValidation = false;
+            this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonA.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonA.FlatAppearance.BorderSize = 0;
+            this.buttonA.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -746,6 +798,12 @@
             this.buttonN.AutoSize = true;
             this.buttonN.BackColor = System.Drawing.Color.Transparent;
             this.buttonN.CausesValidation = false;
+            this.buttonN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonN.FlatAppearance.BorderSize = 0;
+            this.buttonN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -767,6 +825,12 @@
             this.buttonÑ.AutoSize = true;
             this.buttonÑ.BackColor = System.Drawing.Color.Transparent;
             this.buttonÑ.CausesValidation = false;
+            this.buttonÑ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonÑ.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonÑ.FlatAppearance.BorderSize = 0;
+            this.buttonÑ.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonÑ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonÑ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonÑ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonÑ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -788,6 +852,12 @@
             this.buttonO.AutoSize = true;
             this.buttonO.BackColor = System.Drawing.Color.Transparent;
             this.buttonO.CausesValidation = false;
+            this.buttonO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonO.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonO.FlatAppearance.BorderSize = 0;
+            this.buttonO.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -809,6 +879,12 @@
             this.buttonP.AutoSize = true;
             this.buttonP.BackColor = System.Drawing.Color.Transparent;
             this.buttonP.CausesValidation = false;
+            this.buttonP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonP.FlatAppearance.BorderSize = 0;
+            this.buttonP.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -830,6 +906,12 @@
             this.buttonU.AutoSize = true;
             this.buttonU.BackColor = System.Drawing.Color.Transparent;
             this.buttonU.CausesValidation = false;
+            this.buttonU.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonU.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonU.FlatAppearance.BorderSize = 0;
+            this.buttonU.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -851,6 +933,12 @@
             this.buttonS.AutoSize = true;
             this.buttonS.BackColor = System.Drawing.Color.Transparent;
             this.buttonS.CausesValidation = false;
+            this.buttonS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonS.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonS.FlatAppearance.BorderSize = 0;
+            this.buttonS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -872,6 +960,12 @@
             this.buttonQ.AutoSize = true;
             this.buttonQ.BackColor = System.Drawing.Color.Transparent;
             this.buttonQ.CausesValidation = false;
+            this.buttonQ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonQ.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonQ.FlatAppearance.BorderSize = 0;
+            this.buttonQ.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonQ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonQ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -893,6 +987,12 @@
             this.buttonR.AutoSize = true;
             this.buttonR.BackColor = System.Drawing.Color.Transparent;
             this.buttonR.CausesValidation = false;
+            this.buttonR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonR.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonR.FlatAppearance.BorderSize = 0;
+            this.buttonR.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -914,6 +1014,12 @@
             this.buttonW.AutoSize = true;
             this.buttonW.BackColor = System.Drawing.Color.Transparent;
             this.buttonW.CausesValidation = false;
+            this.buttonW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonW.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonW.FlatAppearance.BorderSize = 0;
+            this.buttonW.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonW.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -935,7 +1041,12 @@
             this.buttonY.AutoSize = true;
             this.buttonY.BackColor = System.Drawing.Color.Transparent;
             this.buttonY.CausesValidation = false;
+            this.buttonY.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonY.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonY.FlatAppearance.BorderSize = 0;
+            this.buttonY.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -957,6 +1068,12 @@
             this.buttonZ.AutoSize = true;
             this.buttonZ.BackColor = System.Drawing.Color.Transparent;
             this.buttonZ.CausesValidation = false;
+            this.buttonZ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonZ.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonZ.FlatAppearance.BorderSize = 0;
+            this.buttonZ.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonZ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonZ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -978,6 +1095,12 @@
             this.buttonK.AutoSize = true;
             this.buttonK.BackColor = System.Drawing.Color.Transparent;
             this.buttonK.CausesValidation = false;
+            this.buttonK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonK.FlatAppearance.BorderSize = 0;
+            this.buttonK.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -999,6 +1122,12 @@
             this.buttonB.AutoSize = true;
             this.buttonB.BackColor = System.Drawing.Color.Transparent;
             this.buttonB.CausesValidation = false;
+            this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonB.FlatAppearance.BorderSize = 0;
+            this.buttonB.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -1116,7 +1245,6 @@
             this.Controls.Add(this.pbBrain);
             this.Controls.Add(this.labelPista);
             this.Controls.Add(this.panelGameOver);
-            this.Controls.Add(this.dgvTablaScores);
             this.Controls.Add(this.panelLetras);
             this.Controls.Add(this.panelBarraProgreso);
             this.Controls.Add(this.pictureBoxAhorcado);
@@ -1141,7 +1269,6 @@
             this.panelPalabra.ResumeLayout(false);
             this.panelResolver.ResumeLayout(false);
             this.panelResolver.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaScores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).EndInit();
             this.panelBarraProgreso.ResumeLayout(false);
@@ -1175,7 +1302,6 @@
         private System.Windows.Forms.Button buttonRespuestaRapida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbRespuesta;
-        private System.Windows.Forms.DataGridView dgvTablaScores;
         private System.Windows.Forms.Label labelCategoria;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pictureBoxAhorcado;
@@ -1214,8 +1340,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button buttonNoJugarOtra;
         private System.Windows.Forms.Button buttonJugarOtraPartida;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnaNombreJugador;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnaScore;
         private System.Windows.Forms.Label labelPista;
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.PictureBox pbBrain;

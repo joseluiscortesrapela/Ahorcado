@@ -1,4 +1,5 @@
 ﻿using Ahorcado.Models;
+using Ahorcado.Utilidades;
 using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
@@ -45,7 +46,7 @@ namespace Ahorcado
         {
             InitializeComponent();
             // Cargo el modelo
-            jugadorModel = new juegoModel();
+           // jugadorModel = new juegoModel();
             // Carga inicial del juego.
             inicializarJuego();
         }
@@ -95,10 +96,10 @@ namespace Ahorcado
             panelGameOver.Hide();
             // Muestro el panel con las letras/botones
             panelLetras.Show();
-            // Muestro el el pandel con las puntuaciones.
-            panelScore.Show();
             // Muestro el panel con la palabra adivinar
             panelPalabra.Show();
+            //Muestro panel puntuacion
+            panelScore.Show();
             // Muestro el panel de la vida.
             panelBarraProgreso.Show();
             // Muestro el boton para resolver
@@ -251,7 +252,10 @@ namespace Ahorcado
         private void cargarPalabras()
         {
             // Obtengo las palabras de la tabla palabras de la base de datos
-            dgvPalabras.DataSource = jugadorModel.getPalabras();
+           // dgvPalabras.DataSource = jugadorModel.getPalabras();
+
+            dgvPalabras.DataSource = ProcesarFicherosXML.dameListaPalabras();
+
             // Si no esta vacio
             if (dgvPalabras != null)
             {
@@ -261,6 +265,8 @@ namespace Ahorcado
             {
                 MessageBox.Show("No se han ecnontrado palabras en la base de datos, tabla vacia.");
             }
+
+            
         }
 
         // Permite al jugador resolver
@@ -469,7 +475,7 @@ namespace Ahorcado
             // Actualizo la puntuacion para la sesion del jugador
             SesionUsuario.Puntuacion = totalPuntuacion;
             // Actualizo la puntuacion del jugador
-            jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
+          //  jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
 
         }
 
