@@ -88,6 +88,7 @@
             this.labelPista = new System.Windows.Forms.Label();
             this.pbBrain = new System.Windows.Forms.PictureBox();
             this.labelResolver = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panelScore.SuspendLayout();
             this.panelPalabra.SuspendLayout();
@@ -98,6 +99,7 @@
             this.panelLetras.SuspendLayout();
             this.panelGameOver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBrain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPalabras
@@ -1232,6 +1234,15 @@
             this.labelResolver.Text = "Resolver";
             this.labelResolver.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(861, 359);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(298, 180);
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
             // Juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1241,6 +1252,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1188, 699);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelResolver);
             this.Controls.Add(this.pbBrain);
             this.Controls.Add(this.labelPista);
@@ -1278,6 +1290,7 @@
             this.panelGameOver.ResumeLayout(false);
             this.panelGameOver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBrain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1344,6 +1357,7 @@
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.PictureBox pbBrain;
         private System.Windows.Forms.Label labelResolver;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

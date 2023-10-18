@@ -2,8 +2,8 @@
 <jugadores>
 	<jugador>
 		<id>1</id>
-		<nombre>Jose</nombre>
-		<contraseña>admin</contraseña>
+		<nombre>admin</nombre>
+		<contraseña>1234</contraseña>
 		<puntuacion>0</puntuacion>
 		<rol>Administrador</rol>
 	</jugador>

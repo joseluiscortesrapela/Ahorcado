@@ -1,6 +1,5 @@
 ﻿using Ahorcado.Models;
 using Ahorcado.Utilidades;
-using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,8 +16,7 @@ namespace Ahorcado
 {
     public partial class Juego : Form
     {
-       
-        private juegoModel jugadorModel;
+
         // Lista de plabras de la categoria que aun no han sido jugadas.
         private List<String> palabras = new List<String>();
         // La palabra que esta en juego.
@@ -39,14 +37,14 @@ namespace Ahorcado
         private int numeroFallos;
         // Puntuación jugador.
         private int puntuacion;
-    
+
 
 
         public Juego()
         {
             InitializeComponent();
             // Cargo el modelo
-           // jugadorModel = new juegoModel();
+            // jugadorModel = new juegoModel();
             // Carga inicial del juego.
             inicializarJuego();
         }
@@ -252,7 +250,7 @@ namespace Ahorcado
         private void cargarPalabras()
         {
             // Obtengo las palabras de la tabla palabras de la base de datos
-           // dgvPalabras.DataSource = jugadorModel.getPalabras();
+            // dgvPalabras.DataSource = jugadorModel.getPalabras();
 
             dgvPalabras.DataSource = ProcesarFicherosXML.dameListaPalabras();
 
@@ -266,7 +264,7 @@ namespace Ahorcado
                 MessageBox.Show("No se han ecnontrado palabras en la base de datos, tabla vacia.");
             }
 
-            
+
         }
 
         // Permite al jugador resolver
@@ -333,7 +331,7 @@ namespace Ahorcado
         private void comprobarLetra(char letra)
         {
 
-            // Por defecto toma este valor.
+            // Estado inicial.
             bool acierto = false;
 
             // Recorro cada letra de la plabra que hay que adivinar.
@@ -343,24 +341,21 @@ namespace Ahorcado
                 {
                     // He acertado la letra/s
                     acierto = true;
-                    // Inserto la letra.
+                    // Guardo la letra que acabo de encontrar en el array.
                     charsGionesPalabra[i] = letra;
-                    // Muestro la palabra por adivinar con las letra acertadas.
+                    // Muestra la palabra que hay que adivinar con la letra que se acaba de encontrar.
                     mostrarPalabraPorAdivinar();
+                    // Incremento 2 puntos
+                    puntuacion += 2;
+                    // Incremento el numero de aciertos.
+                    numeroAciertos += 1;
+
                 }
             }
 
 
-            // Si ha acertado la letra
-            if (acierto)
-            {   // Incremento 2 puntos
-                puntuacion += 2;
-                // Incremento el numero de aciertos.
-                numeroAciertos += 1;
-                // Muestro las puntuaciones
-                mostrarPuntuacionesJugador();
-            }
-            else // Sino ha acertado la letra.
+            // Si la letra no se ha encontrado
+            if (acierto == false)
             {
                 // Por cada letra fallida un punto menos.
                 numeroFallos += 1;
@@ -380,8 +375,6 @@ namespace Ahorcado
                     puntuacion -= (puntuacion > 0) ? 1 : puntuacion;
                     // Nivel de vida baja
                     progressBarVida.Value -= 1;
-                    // Muestro las puntuaciones
-                    mostrarPuntuacionesJugador();
                 }
 
             }
@@ -395,9 +388,12 @@ namespace Ahorcado
                 finDelJuego("Has ganado!");
             }
 
+            // Actualizo la puntuacion
             mostrarPuntuacionesJugador();
 
         }
+
+
 
         // Obtengo la letra que acaba de pulsar el jugador.
         private void buttonLetter_Click(object sender, EventArgs e)
@@ -475,7 +471,7 @@ namespace Ahorcado
             // Actualizo la puntuacion para la sesion del jugador
             SesionUsuario.Puntuacion = totalPuntuacion;
             // Actualizo la puntuacion del jugador
-          //  jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
+            //  jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
 
         }
 
