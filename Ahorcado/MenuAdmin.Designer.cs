@@ -291,7 +291,7 @@
             this.panelPalabras.Controls.Add(this.label17);
             this.panelPalabras.Controls.Add(this.tbPista);
             this.panelPalabras.Controls.Add(this.tbPalabra);
-            this.panelPalabras.Location = new System.Drawing.Point(10, 91);
+            this.panelPalabras.Location = new System.Drawing.Point(27, 0);
             this.panelPalabras.Name = "panelPalabras";
             this.panelPalabras.Size = new System.Drawing.Size(919, 279);
             this.panelPalabras.TabIndex = 37;
@@ -448,7 +448,6 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.panelPrincipal.Controls.Add(this.dgvPalabras);
-            this.panelPrincipal.Controls.Add(this.panelPalabras);
             this.panelPrincipal.Controls.Add(this.dgvJugadores);
             this.panelPrincipal.Controls.Add(this.pbRefrescarTabla);
             this.panelPrincipal.Controls.Add(this.pbIconoMensaje);
@@ -515,6 +514,7 @@
             this.dgvPalabras.TabIndex = 38;
             this.dgvPalabras.Tag = "";
             this.dgvPalabras.Visible = false;
+            this.dgvPalabras.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPalabras_CellClick);
             // 
             // IdPalabra
             // 
@@ -712,6 +712,7 @@
             // 
             this.panelJugador.BackColor = System.Drawing.Color.Snow;
             this.panelJugador.Controls.Add(this.label8);
+            this.panelJugador.Controls.Add(this.panelPalabras);
             this.panelJugador.Controls.Add(this.tbIdJugador);
             this.panelJugador.Controls.Add(this.buttonJugadorAceptar);
             this.panelJugador.Controls.Add(this.iconoFormularioJugador);

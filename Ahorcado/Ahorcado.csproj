@@ -163,8 +163,12 @@
     <None Include="Resources\dibujo_ahorcado\6.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Xml\jugadores.xml" />
-    <Content Include="Xml\palabras.xml" />
+    <Content Include="Xml\jugadores.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\palabras.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

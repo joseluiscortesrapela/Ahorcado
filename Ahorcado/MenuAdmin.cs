@@ -653,22 +653,47 @@ namespace Ahorcado
 
         }
 
+        // Obtengo la fila que ha sido seleccionada en el dgv jugadores.
         private void dgvJugadores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Si ha seleccionado una fila 
-            if (dgvJugadores.SelectedRows.Count > 0)
+            if (e.RowIndex >= 0)
             {
                 // Obtengo la fila que ha sido seleccionada en el dataGridView
                 filaTabla = dgvJugadores.Rows[e.RowIndex];
-                // Muestro los botones de eliminar y modificar fila.
-                pbMostrarVentanEliminar.Visible = true;
-                pbMostrarPanelActualizar.Visible = true;
-                pbIconoMensaje.Visible = false;
-                labelMensaje.Text = "";
+                // Muestro los botones editar y eliminar
+                showBotonesAccion();
             }
 
             Console.WriteLine("Fila seleccionada en el dgv jugadores");
 
         }
+
+        // Obtengo la fila que ha sido seleccionada en el dgv palabras.
+        private void dgvPalabras_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Si ha seleccionado una fila 
+            if (e.RowIndex >= 0)
+            {
+                // Obtengo la fila que ha sido seleccionada en el dataGridView
+                filaTabla = dgvPalabras.Rows[e.RowIndex];
+                // Muestro los botones editar y eliminar
+                showBotonesAccion();
+            }
+
+            Console.WriteLine("Fila seleccionada en el dgv palabras");
+        }
+
+        // Muestra los botones editar y eliminar del datagridview
+        private void showBotonesAccion()
+        {
+            // Muestro los botones de eliminar y modificar fila.
+            pbMostrarVentanEliminar.Visible = true;
+            pbMostrarPanelActualizar.Visible = true;
+            pbIconoMensaje.Visible = false;
+            labelMensaje.Text = "";
+        }
+
+
     }
 }

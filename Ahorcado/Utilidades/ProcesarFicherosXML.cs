@@ -16,9 +16,9 @@ namespace Ahorcado.Utilidades
 
         public static List<Jugador> dameListaJugadores()
         {
-
-            string rutaFichero = "C:\\Users\\jose\\source\\repos\\Ahorcado\\Ahorcado\\Xml\\jugadores.xml";
-
+            // Donde tengo el fichero xml
+            string rutaFichero = "Xml\\jugadores.xml";
+            // Creo un array que guardara objetos del tipo Jugador
             List<Jugador> jugadores = new List<Jugador>();
 
             try
@@ -57,7 +57,7 @@ namespace Ahorcado.Utilidades
 
         public static List<Word> dameListaPalabras()
         {
-            string rutaFichero = "C:\\Users\\jose\\source\\repos\\Ahorcado\\Ahorcado\\Xml\\palabras.xml";
+            string rutaFichero = "Xml\\palabras.xml";
             List<Word> palabras = new List<Word>();
 
 
