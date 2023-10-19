@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelLogin = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelMensajeLogin = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,13 +43,12 @@
             this.tbContraseña = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.pbExit = new System.Windows.Forms.PictureBox();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,12 +78,24 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.PeachPuff;
-            this.label4.Location = new System.Drawing.Point(463, 466);
+            this.label4.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.label4.Location = new System.Drawing.Point(455, 452);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 11);
             this.label4.TabIndex = 22;
             this.label4.Text = "Practica 2º DAM  ";
+            // 
+            // pbExit
+            // 
+            this.pbExit.BackColor = System.Drawing.Color.Transparent;
+            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
+            this.pbExit.Location = new System.Drawing.Point(540, 10);
+            this.pbExit.Name = "pbExit";
+            this.pbExit.Size = new System.Drawing.Size(30, 27);
+            this.pbExit.TabIndex = 18;
+            this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
             // pictureBox1
             // 
@@ -211,20 +223,8 @@
             this.tbNombre.Size = new System.Drawing.Size(165, 32);
             this.tbNombre.TabIndex = 11;
             this.tbNombre.TabStop = false;
-            this.tbNombre.Text = "admin";
+            this.tbNombre.Text = "Serena";
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pbExit
-            // 
-            this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(540, 10);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(30, 27);
-            this.pbExit.TabIndex = 18;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
             // error
             // 
@@ -246,9 +246,10 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(376, 467);
+            this.pictureBox3.Size = new System.Drawing.Size(376, 490);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
             // 
@@ -258,7 +259,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(975, 490);
+            this.ClientSize = new System.Drawing.Size(964, 490);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panelContenedor);
             this.DoubleBuffered = true;
@@ -269,8 +270,8 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -8510,7 +8510,7 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>96</value>
+    <value>64</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9395,7 +9395,7 @@
         smMJ9wt3JCxb8gMzBU4oXlNspfPmzz3VC4NL9vSU0mW2McY4k0TRMMizQpocPbLaorjEZD9Sxt/q+6Pi
         MsS1gimOETJY6L4f9Qe/u3WTfb2FpGAEqp88760Tarbga9PzPg897+sIKh/hwi76Mwcw9C76ZlHr2IeG
         dTi7LGrGNpxvQMtDVnd0X6qUGUgm4fVEvmkWmq6hbr7Q288+x3cQl64mrmB3D7pSkr1Q5t21pb39ecbv
-        j8g3DLVy5EGvuKcAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAHdElNRQfnChMAASzkSjzoAAAAGXRFWHRD
+        j8g3DLVy5EGvuKcAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAHdElNRQfnChMAASzkSjzoAAAAGXRFWHRD
         b21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAA/fxJREFUeF7s3Qv8fV9aF/RGUAGFAebOXBiGuTLM
         HWaGYcaBHG4jA8plCESQ4SKWISAmEJShiRZ/tUilNEu8ZeUlIzXMkrTSHLOLmZlZdLO8G6Ypk/V5H9bn
         2/l+z23vc/t+f7/fXq/Xep1z9tl77bWf9Tyfz/M8a+29/4GlLGUpS1nKUpbygMuPPv3pT0v9cePnUs5Q

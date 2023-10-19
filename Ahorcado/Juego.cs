@@ -102,8 +102,6 @@ namespace Ahorcado
             panelBarraProgreso.Show();
             // Muestro el boton para resolver
             pbBrain.Show();
-            // Muestro titulo brain
-            labelResolver.Show();
             // Oculto select categorias
             comboBoxCategorias.Hide();
             // Muestro las letras
@@ -462,8 +460,6 @@ namespace Ahorcado
             labelPista.Hide();
             // Oculto boton resolver
             pbBrain.Hide();
-            // Oculto su titulo
-            labelResolver.Hide();
             //Muestro panel game over
             panelGameOver.Show();
             // Guardo la ultima puntuacion

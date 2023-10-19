@@ -87,14 +87,13 @@
             this.buttonJugarOtraPartida = new System.Windows.Forms.Button();
             this.labelPista = new System.Windows.Forms.Label();
             this.pbBrain = new System.Windows.Forms.PictureBox();
-            this.labelResolver = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panelScore.SuspendLayout();
             this.panelPalabra.SuspendLayout();
             this.panelResolver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).BeginInit();
-            this.panelBarraProgreso.SuspendLayout();
             this.panelLetras.SuspendLayout();
             this.panelGameOver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBrain)).BeginInit();
@@ -119,9 +118,9 @@
             this.labelFinalPartida.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
             this.labelFinalPartida.ForeColor = System.Drawing.Color.Goldenrod;
-            this.labelFinalPartida.Location = new System.Drawing.Point(289, 422);
+            this.labelFinalPartida.Location = new System.Drawing.Point(290, 425);
             this.labelFinalPartida.Name = "labelFinalPartida";
-            this.labelFinalPartida.Size = new System.Drawing.Size(705, 51);
+            this.labelFinalPartida.Size = new System.Drawing.Size(704, 48);
             this.labelFinalPartida.TabIndex = 1;
             this.labelFinalPartida.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -131,9 +130,9 @@
             this.comboBoxCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategorias.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.comboBoxCategorias.FormattingEnabled = true;
-            this.comboBoxCategorias.Location = new System.Drawing.Point(126, 13);
+            this.comboBoxCategorias.Location = new System.Drawing.Point(16, 47);
             this.comboBoxCategorias.Name = "comboBoxCategorias";
-            this.comboBoxCategorias.Size = new System.Drawing.Size(210, 33);
+            this.comboBoxCategorias.Size = new System.Drawing.Size(222, 33);
             this.comboBoxCategorias.TabIndex = 4;
             this.comboBoxCategorias.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategorias_SelectedIndexChanged);
             // 
@@ -147,7 +146,7 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(7, 253);
+            this.panelScore.Location = new System.Drawing.Point(12, 285);
             this.panelScore.Name = "panelScore";
             this.panelScore.Size = new System.Drawing.Size(237, 131);
             this.panelScore.TabIndex = 16;
@@ -232,8 +231,8 @@
             // labelPalabraGuiones
             // 
             this.labelPalabraGuiones.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
-            this.labelPalabraGuiones.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.labelPalabraGuiones.Location = new System.Drawing.Point(-166, -11);
+            this.labelPalabraGuiones.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.labelPalabraGuiones.Location = new System.Drawing.Point(-112, -11);
             this.labelPalabraGuiones.Name = "labelPalabraGuiones";
             this.labelPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelPalabraGuiones.Size = new System.Drawing.Size(869, 71);
@@ -249,9 +248,9 @@
             this.label3.ForeColor = System.Drawing.Color.IndianRed;
             this.label3.Location = new System.Drawing.Point(11, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 29);
+            this.label3.Size = new System.Drawing.Size(227, 29);
             this.label3.TabIndex = 21;
-            this.label3.Text = "Categorìa";
+            this.label3.Text = "Selecciona categoria";
             // 
             // panelResolver
             // 
@@ -259,7 +258,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(233, 542);
+            this.panelResolver.Location = new System.Drawing.Point(363, 542);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(749, 38);
             this.panelResolver.TabIndex = 22;
@@ -269,11 +268,11 @@
             // 
             this.buttonRespuestaRapida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRespuestaRapida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonRespuestaRapida.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonRespuestaRapida.Location = new System.Drawing.Point(600, -9);
+            this.buttonRespuestaRapida.Location = new System.Drawing.Point(600, 3);
             this.buttonRespuestaRapida.Name = "buttonRespuestaRapida";
-            this.buttonRespuestaRapida.Size = new System.Drawing.Size(146, 49);
+            this.buttonRespuestaRapida.Size = new System.Drawing.Size(146, 37);
             this.buttonRespuestaRapida.TabIndex = 14;
             this.buttonRespuestaRapida.Text = "Comprobar";
             this.buttonRespuestaRapida.UseVisualStyleBackColor = false;
@@ -284,7 +283,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label1.ForeColor = System.Drawing.Color.Chocolate;
-            this.label1.Location = new System.Drawing.Point(13, 6);
+            this.label1.Location = new System.Drawing.Point(92, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 26);
             this.label1.TabIndex = 13;
@@ -316,7 +315,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(1156, 12);
+            this.pbExit.Location = new System.Drawing.Point(1370, 2);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(32, 35);
             this.pbExit.TabIndex = 27;
@@ -326,7 +325,7 @@
             // pictureBoxAhorcado
             // 
             this.pictureBoxAhorcado.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAhorcado.Location = new System.Drawing.Point(500, 38);
+            this.pictureBoxAhorcado.Location = new System.Drawing.Point(608, 47);
             this.pictureBoxAhorcado.Name = "pictureBoxAhorcado";
             this.pictureBoxAhorcado.Size = new System.Drawing.Size(225, 386);
             this.pictureBoxAhorcado.TabIndex = 28;
@@ -335,21 +334,19 @@
             // panelBarraProgreso
             // 
             this.panelBarraProgreso.BackColor = System.Drawing.Color.Transparent;
-            this.panelBarraProgreso.Controls.Add(this.progressBarVida);
-            this.panelBarraProgreso.Controls.Add(this.p);
-            this.panelBarraProgreso.Location = new System.Drawing.Point(884, 0);
+            this.panelBarraProgreso.Location = new System.Drawing.Point(939, 9);
             this.panelBarraProgreso.Name = "panelBarraProgreso";
-            this.panelBarraProgreso.Size = new System.Drawing.Size(244, 69);
+            this.panelBarraProgreso.Size = new System.Drawing.Size(96, 101);
             this.panelBarraProgreso.TabIndex = 29;
             this.panelBarraProgreso.Visible = false;
             // 
             // progressBarVida
             // 
             this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
-            this.progressBarVida.Location = new System.Drawing.Point(56, 37);
+            this.progressBarVida.Location = new System.Drawing.Point(1162, 42);
             this.progressBarVida.Maximum = 6;
             this.progressBarVida.Name = "progressBarVida";
-            this.progressBarVida.Size = new System.Drawing.Size(173, 23);
+            this.progressBarVida.Size = new System.Drawing.Size(166, 28);
             this.progressBarVida.TabIndex = 21;
             this.progressBarVida.Value = 6;
             // 
@@ -359,11 +356,11 @@
             this.p.BackColor = System.Drawing.Color.Transparent;
             this.p.Font = new System.Drawing.Font("MV Boli", 12F);
             this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.p.Location = new System.Drawing.Point(52, 9);
+            this.p.Location = new System.Drawing.Point(1158, 73);
             this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(109, 21);
+            this.p.Size = new System.Drawing.Size(170, 21);
             this.p.TabIndex = 22;
-            this.p.Text = "Nivel de vida";
+            this.p.Text = "Nivel de vida jugador";
             // 
             // panelLetras
             // 
@@ -397,7 +394,7 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(39, 632);
+            this.panelLetras.Location = new System.Drawing.Point(140, 725);
             this.panelLetras.Name = "panelLetras";
             this.panelLetras.Size = new System.Drawing.Size(1120, 63);
             this.panelLetras.TabIndex = 33;
@@ -1150,9 +1147,9 @@
             this.panelGameOver.Controls.Add(this.label13);
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(233, 586);
+            this.panelGameOver.Location = new System.Drawing.Point(363, 586);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(749, 43);
+            this.panelGameOver.Size = new System.Drawing.Size(749, 76);
             this.panelGameOver.TabIndex = 33;
             this.panelGameOver.Visible = false;
             // 
@@ -1161,7 +1158,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label13.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label13.Location = new System.Drawing.Point(228, 6);
+            this.label13.Location = new System.Drawing.Point(243, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(281, 26);
             this.label13.TabIndex = 35;
@@ -1173,7 +1170,7 @@
             this.buttonNoJugarOtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNoJugarOtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonNoJugarOtra.ForeColor = System.Drawing.Color.Brown;
-            this.buttonNoJugarOtra.Location = new System.Drawing.Point(3, 0);
+            this.buttonNoJugarOtra.Location = new System.Drawing.Point(230, 40);
             this.buttonNoJugarOtra.Name = "buttonNoJugarOtra";
             this.buttonNoJugarOtra.Size = new System.Drawing.Size(146, 36);
             this.buttonNoJugarOtra.TabIndex = 34;
@@ -1187,7 +1184,7 @@
             this.buttonJugarOtraPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJugarOtraPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonJugarOtraPartida.ForeColor = System.Drawing.Color.Brown;
-            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(600, 0);
+            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(388, 40);
             this.buttonJugarOtraPartida.Name = "buttonJugarOtraPartida";
             this.buttonJugarOtraPartida.Size = new System.Drawing.Size(146, 36);
             this.buttonJugarOtraPartida.TabIndex = 33;
@@ -1199,19 +1196,21 @@
             // 
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
             this.labelPista.Font = new System.Drawing.Font("Caladea", 25F, System.Drawing.FontStyle.Bold);
-            this.labelPista.ForeColor = System.Drawing.Color.OldLace;
-            this.labelPista.Location = new System.Drawing.Point(126, 421);
+            this.labelPista.ForeColor = System.Drawing.Color.Orange;
+            this.labelPista.Location = new System.Drawing.Point(230, 665);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelPista.Size = new System.Drawing.Size(953, 51);
             this.labelPista.TabIndex = 35;
+            this.labelPista.Text = "Pistas";
             this.labelPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbBrain
             // 
             this.pbBrain.BackColor = System.Drawing.Color.Transparent;
+            this.pbBrain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbBrain.Image = ((System.Drawing.Image)(resources.GetObject("pbBrain.Image")));
-            this.pbBrain.Location = new System.Drawing.Point(39, 533);
+            this.pbBrain.Location = new System.Drawing.Point(1048, 12);
             this.pbBrain.Name = "pbBrain";
             this.pbBrain.Size = new System.Drawing.Size(64, 67);
             this.pbBrain.TabIndex = 36;
@@ -1219,18 +1218,17 @@
             this.pbBrain.Visible = false;
             this.pbBrain.Click += new System.EventHandler(this.btnShowPanelResolver_Click);
             // 
-            // labelResolver
+            // label2
             // 
-            this.labelResolver.AutoSize = true;
-            this.labelResolver.BackColor = System.Drawing.Color.Transparent;
-            this.labelResolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResolver.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelResolver.Location = new System.Drawing.Point(39, 603);
-            this.labelResolver.Name = "labelResolver";
-            this.labelResolver.Size = new System.Drawing.Size(64, 17);
-            this.labelResolver.TabIndex = 37;
-            this.labelResolver.Text = "Resolver";
-            this.labelResolver.Visible = false;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label2.Location = new System.Drawing.Point(1049, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Resolver";
             // 
             // Juego
             // 
@@ -1240,9 +1238,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(1188, 699);
-            this.Controls.Add(this.labelResolver);
+            this.ClientSize = new System.Drawing.Size(1400, 800);
             this.Controls.Add(this.pbBrain);
+            this.Controls.Add(this.progressBarVida);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.p);
             this.Controls.Add(this.labelPista);
             this.Controls.Add(this.panelGameOver);
             this.Controls.Add(this.panelLetras);
@@ -1260,6 +1260,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HelpButton = true;
             this.Name = "Juego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";
@@ -1271,8 +1272,6 @@
             this.panelResolver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).EndInit();
-            this.panelBarraProgreso.ResumeLayout(false);
-            this.panelBarraProgreso.PerformLayout();
             this.panelLetras.ResumeLayout(false);
             this.panelLetras.PerformLayout();
             this.panelGameOver.ResumeLayout(false);
@@ -1343,7 +1342,7 @@
         private System.Windows.Forms.Label labelPista;
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.PictureBox pbBrain;
-        private System.Windows.Forms.Label labelResolver;
+        private System.Windows.Forms.Label label2;
     }
 }
 
