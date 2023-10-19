@@ -69,9 +69,9 @@
             this.panelLogin.Controls.Add(this.tbContraseña);
             this.panelLogin.Controls.Add(this.label2);
             this.panelLogin.Controls.Add(this.tbNombre);
-            this.panelLogin.Location = new System.Drawing.Point(53, 3);
+            this.panelLogin.Location = new System.Drawing.Point(53, 0);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(590, 485);
+            this.panelLogin.Size = new System.Drawing.Size(578, 467);
             this.panelLogin.TabIndex = 10;
             // 
             // label4
@@ -219,7 +219,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(548, 7);
+            this.pbExit.Location = new System.Drawing.Point(540, 10);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(30, 27);
             this.pbExit.TabIndex = 18;
@@ -237,18 +237,18 @@
             this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelContenedor.Controls.Add(this.panelLogin);
-            this.panelContenedor.Location = new System.Drawing.Point(332, 2);
+            this.panelContenedor.Location = new System.Drawing.Point(332, 12);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(626, 498);
+            this.panelContenedor.Size = new System.Drawing.Size(626, 488);
             this.panelContenedor.TabIndex = 21;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 12);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(376, 498);
+            this.pictureBox3.Size = new System.Drawing.Size(376, 467);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
             // 
