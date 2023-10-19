@@ -365,7 +365,7 @@ namespace Ahorcado
                 } // Si quiere actulizar los datos de un jugador
                 else if (accionARealizar.Equals("actualizar"))
                 {
-                    // Actualizo los datos del jugador
+                    // Actualizo la fila del jugador
                     filaTabla.Cells["nombre"].Value = usuario;
                     filaTabla.Cells["contraseña"].Value = contraseña;
                     filaTabla.Cells["rol"].Value = rol;

@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelMensajeLogin = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,22 +45,21 @@
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.panelLogin.Controls.Add(this.label4);
+            this.panelLogin.Controls.Add(this.pbExit);
             this.panelLogin.Controls.Add(this.pictureBox1);
-            this.panelLogin.Controls.Add(this.pictureBox3);
-            this.panelLogin.Controls.Add(this.pictureBox2);
             this.panelLogin.Controls.Add(this.labelMensajeLogin);
             this.panelLogin.Controls.Add(this.label1);
             this.panelLogin.Controls.Add(this.label8);
@@ -70,38 +69,44 @@
             this.panelLogin.Controls.Add(this.tbContraseña);
             this.panelLogin.Controls.Add(this.label2);
             this.panelLogin.Controls.Add(this.tbNombre);
-            this.panelLogin.Location = new System.Drawing.Point(-28, 0);
+            this.panelLogin.Location = new System.Drawing.Point(53, 3);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(667, 495);
+            this.panelLogin.Size = new System.Drawing.Size(590, 485);
             this.panelLogin.TabIndex = 10;
             // 
-            // pictureBox3
+            // label4
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 239);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label4.Location = new System.Drawing.Point(463, 466);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 11);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Practica 2º DAM  ";
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 133);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(434, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 463);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // labelMensajeLogin
             // 
             this.labelMensajeLogin.AutoSize = true;
             this.labelMensajeLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelMensajeLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMensajeLogin.ForeColor = System.Drawing.Color.Tomato;
-            this.labelMensajeLogin.Location = new System.Drawing.Point(55, 335);
+            this.labelMensajeLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMensajeLogin.ForeColor = System.Drawing.Color.SlateGray;
+            this.labelMensajeLogin.Location = new System.Drawing.Point(20, 332);
             this.labelMensajeLogin.Name = "labelMensajeLogin";
-            this.labelMensajeLogin.Size = new System.Drawing.Size(0, 20);
+            this.labelMensajeLogin.Size = new System.Drawing.Size(0, 17);
             this.labelMensajeLogin.TabIndex = 22;
             this.labelMensajeLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -120,21 +125,21 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Location = new System.Drawing.Point(94, 133);
+            this.label8.Location = new System.Drawing.Point(56, 122);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 26);
+            this.label8.Size = new System.Drawing.Size(87, 22);
             this.label8.TabIndex = 17;
             this.label8.Text = "Usuario";
             // 
             // buttonLogin
             // 
-            this.buttonLogin.BackColor = System.Drawing.SystemColors.Desktop;
+            this.buttonLogin.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.DarkGray;
-            this.buttonLogin.Location = new System.Drawing.Point(50, 394);
+            this.buttonLogin.Location = new System.Drawing.Point(19, 420);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(165, 43);
             this.buttonLogin.TabIndex = 15;
@@ -146,11 +151,11 @@
             // 
             this.lebel0.AutoSize = true;
             this.lebel0.BackColor = System.Drawing.Color.Transparent;
-            this.lebel0.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lebel0.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lebel0.Location = new System.Drawing.Point(70, 28);
+            this.lebel0.Font = new System.Drawing.Font("Mongolian Baiti", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lebel0.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lebel0.Location = new System.Drawing.Point(32, 17);
             this.lebel0.Name = "lebel0";
-            this.lebel0.Size = new System.Drawing.Size(123, 46);
+            this.lebel0.Size = new System.Drawing.Size(141, 50);
             this.lebel0.TabIndex = 14;
             this.lebel0.Text = "Login";
             // 
@@ -158,11 +163,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(94, 245);
+            this.label3.Location = new System.Drawing.Point(42, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 26);
+            this.label3.Size = new System.Drawing.Size(120, 22);
             this.label3.TabIndex = 13;
             this.label3.Text = "Contraseña";
             // 
@@ -172,13 +177,15 @@
             this.tbContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbContraseña.ForeColor = System.Drawing.Color.Wheat;
-            this.tbContraseña.Location = new System.Drawing.Point(50, 283);
+            this.tbContraseña.Location = new System.Drawing.Point(19, 272);
             this.tbContraseña.MaxLength = 12;
             this.tbContraseña.Name = "tbContraseña";
             this.tbContraseña.Size = new System.Drawing.Size(165, 32);
             this.tbContraseña.TabIndex = 10;
+            this.tbContraseña.TabStop = false;
             this.tbContraseña.Text = "1234";
             this.tbContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbContraseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -198,11 +205,12 @@
             this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNombre.ForeColor = System.Drawing.Color.Wheat;
-            this.tbNombre.Location = new System.Drawing.Point(50, 176);
+            this.tbNombre.Location = new System.Drawing.Point(19, 165);
             this.tbNombre.MaxLength = 12;
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(165, 32);
             this.tbNombre.TabIndex = 11;
+            this.tbNombre.TabStop = false;
             this.tbNombre.Text = "admin";
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -211,7 +219,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(994, 12);
+            this.pbExit.Location = new System.Drawing.Point(548, 7);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(30, 27);
             this.pbExit.TabIndex = 18;
@@ -225,36 +233,33 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.Black;
+            this.panelContenedor.BackColor = System.Drawing.Color.Transparent;
             this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelContenedor.Controls.Add(this.panelLogin);
-            this.panelContenedor.Location = new System.Drawing.Point(385, 2);
+            this.panelContenedor.Location = new System.Drawing.Point(332, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(659, 498);
+            this.panelContenedor.Size = new System.Drawing.Size(626, 498);
             this.panelContenedor.TabIndex = 21;
             // 
-            // pictureBox1
+            // pictureBox3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(508, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 453);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(376, 498);
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
             // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1036, 500);
-            this.Controls.Add(this.pbExit);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(975, 490);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panelContenedor);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -264,12 +269,11 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,8 +292,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelMensajeLogin;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
