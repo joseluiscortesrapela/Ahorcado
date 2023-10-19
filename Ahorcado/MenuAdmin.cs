@@ -18,7 +18,7 @@ namespace Ahorcado
     public partial class MenuAdmin : Form
     {
 
-        private DataGridViewRow filaTabla;
+        private DataGridViewRow fila;
         private String nombreTabla;
         private String accionARealizar;
 
@@ -137,15 +137,15 @@ namespace Ahorcado
                     panelJugador.Visible = true;
                     // Relleno el formulario con los datos del jugador.
                     // Id del usuario
-                    tbIdJugador.Text = filaTabla.Cells["idJugador"].Value.ToString();
+                    tbIdJugador.Text = fila.Cells["idJugador"].Value.ToString();
                     // El nombre del usuario
-                    tbJugador.Text = filaTabla.Cells["nombre"].Value.ToString();
+                    tbJugador.Text = fila.Cells["nombre"].Value.ToString();
                     // La contraseña del uusaurio
-                    tbContraseña.Text = filaTabla.Cells["contraseña"].Value.ToString();
+                    tbContraseña.Text = fila.Cells["contraseña"].Value.ToString();
                     // La puntuacion 
-                    tbPuntuacion.Text = filaTabla.Cells["puntuacion"].Value.ToString();
+                    tbPuntuacion.Text = fila.Cells["puntuacion"].Value.ToString();
                     // Tipo de rol del usuario pueden ser jugador o administrador
-                    cbTipoRol.Text = filaTabla.Cells["rol"].Value.ToString();
+                    cbTipoRol.Text = fila.Cells["rol"].Value.ToString();
                     // Oculto panel
                     panelPalabras.Visible = false;
                     // Muestro el panel
@@ -161,13 +161,13 @@ namespace Ahorcado
                     panelJugador.Visible = true;
                     // Relleno el formulario con los datos.
                     // Id 
-                    tbIdPalabra.Text = filaTabla.Cells[0].Value.ToString();
+                    tbIdPalabra.Text = fila.Cells["idPalabra"].Value.ToString();
                     // La palabra
-                    tbPalabra.Text = filaTabla.Cells["palabra"].Value.ToString();
+                    tbPalabra.Text = fila.Cells["palabra"].Value.ToString();
                     // La pista
-                    tbPista.Text = filaTabla.Cells["pista"].Value.ToString();
+                    tbPista.Text = fila.Cells["pista"].Value.ToString();
                     // Categoria de la palabra
-                    cbCategorias.Text = filaTabla.Cells["categoria"].Value.ToString();
+                    cbCategorias.Text = fila.Cells["categoria"].Value.ToString();
                     // Oculto panel
                     panelJugador.Visible = false;
                     // Muestro el panel
@@ -247,9 +247,9 @@ namespace Ahorcado
         private void pbEliminar_Click(object sender, EventArgs e)
         {
             // Obtengo el identificador
-            int id = (int)filaTabla.Cells[0].Value;
+            int id = (int)fila.Cells[0].Value;
             // Obtengo el nombre
-            String nombre = filaTabla.Cells[1].Value.ToString();
+            String nombre = fila.Cells[1].Value.ToString();
             // Mensaje que le aparecera al administrador.
             String message = "estas seguro de que quieres eliminar  " + nombre + " ?";
             // Titulo de la ventana emergente.
@@ -264,12 +264,12 @@ namespace Ahorcado
 
                 if (nombreTabla.Equals("jugadores"))
                 {
-                    // Elimina la fila
-                    dgvJugadores.Rows.Remove(filaTabla);
+                    // Elimina al jugador
+                    dgvJugadores.Rows.Remove(fila);
                 }
-                else 
-                {
-                    dgvPalabras.Rows.Remove(filaTabla);
+                else
+                {   // Elimina la palabra
+                    dgvPalabras.Rows.Remove(fila);
                 }
 
                 // Muestro mensaje al administrador.       
@@ -355,7 +355,7 @@ namespace Ahorcado
                 // Si quiere crer un nuevo jugador
                 if (accionARealizar.Equals("crear"))
                 {
-                    // Agregar la fila al dgv
+                    // Añado un nuevo jugador al dgv
                     dgvJugadores.Rows.Add(id, usuario, contraseña, puntuacion, rol);
                     // Muestro mensaje 
                     labelMensajeJugador.Text = "Acabas de crear un nuevo usuario.";
@@ -366,9 +366,9 @@ namespace Ahorcado
                 else if (accionARealizar.Equals("actualizar"))
                 {
                     // Actualizo la fila del jugador
-                    filaTabla.Cells["nombre"].Value = usuario;
-                    filaTabla.Cells["contraseña"].Value = contraseña;
-                    filaTabla.Cells["rol"].Value = rol;
+                    fila.Cells["nombre"].Value = usuario;
+                    fila.Cells["contraseña"].Value = contraseña;
+                    fila.Cells["rol"].Value = rol;
                     // Muestro mensaje
                     labelMensajeJugador.Text = "Acabas de actualizar los datos del usuario.";
                 }
@@ -384,7 +384,7 @@ namespace Ahorcado
         {
             // Recogo los datos del formulario
             // Id 
-            int idPalabra = int.Parse(tbIdPalabra.Text);
+            int id = int.Parse(tbIdPalabra.Text);
             string palabra = tbPalabra.Text;
             string pista = tbPista.Text;
             string categoria = cbCategorias.Text;
@@ -392,25 +392,22 @@ namespace Ahorcado
             // Validar datos formulario
             if (validarFormularioPalabras(palabra, pista, categoria))
             {
-
+                // Si quiere crear nueva palabra
                 if (accionARealizar.Equals("crear"))
                 {
-
-                    // Si se ha insertado la palabra en la base de datos.
-
+                    // Añado una nueva palabra al dgv
+                    dgvPalabras.Rows.Add(id, palabra, pista, categoria);
                     // Muestro mensaje 
                     labelMensajePalabra.Text = "Acabas de crear una nueva palabra.";
-
-                    // Actualizo la dgv con el nuevo registro que acabo de insertar en la base de datos.
-                    //dgvTablaGenerica.DataSource = model_administrador.getPalabras();
-
                     // Muestro el nuevo identificador que se utilizara en el caso de seguir creando palabras.
                     tbIdPalabra.Text = dameSiguienteID().ToString();
-
-
                 }
                 else if (accionARealizar.Equals("actualizar"))
                 {
+                    // Actualizo las celdas de la fila con los nuevos valores.
+                    fila.Cells["palabra"].Value = palabra;
+                    fila.Cells["pista"].Value = pista;
+                    fila.Cells["categoria"].Value = categoria;
 
                     // Actualizo los datos del jugador
                     labelMensajePalabra.Text = "Acabas de actualizar la palabra.";
@@ -461,7 +458,7 @@ namespace Ahorcado
                 if (accionARealizar.Equals("actualizar"))
                 {
                     // Nombre que tenia el usuarios
-                    string nombreAtiguo = filaTabla.Cells[1].Value.ToString();
+                    string nombreAtiguo = fila.Cells[1].Value.ToString();
 
                     // El usuario quiere cambiar de nombre
                     if (nombreAtiguo.ToLower() != usuario.ToLower())
@@ -543,7 +540,7 @@ namespace Ahorcado
                 if (accionARealizar.Equals("actualizar"))
                 {
                     // Nombre que tenia 
-                    string nombreAtiguo = filaTabla.Cells[1].Value.ToString();
+                    string nombreAtiguo = fila.Cells[1].Value.ToString();
 
                     // Quiere cambiar la palabra
                     if (nombreAtiguo.ToLower() != palabra.ToLower())
@@ -660,7 +657,7 @@ namespace Ahorcado
             if (e.RowIndex >= 0)
             {
                 // Obtengo la fila que ha sido seleccionada en el dataGridView
-                filaTabla = dgvJugadores.Rows[e.RowIndex];
+                fila = dgvJugadores.Rows[e.RowIndex];
                 // Muestro los botones editar y eliminar
                 showBotonesAccion();
             }
@@ -676,7 +673,7 @@ namespace Ahorcado
             if (e.RowIndex >= 0)
             {
                 // Obtengo la fila que ha sido seleccionada en el dataGridView
-                filaTabla = dgvPalabras.Rows[e.RowIndex];
+                fila = dgvPalabras.Rows[e.RowIndex];
                 // Muestro los botones editar y eliminar
                 showBotonesAccion();
             }

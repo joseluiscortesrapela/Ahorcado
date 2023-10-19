@@ -148,7 +148,7 @@
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.panelScore.Location = new System.Drawing.Point(12, 285);
             this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(237, 131);
+            this.panelScore.Size = new System.Drawing.Size(226, 131);
             this.panelScore.TabIndex = 16;
             this.panelScore.Visible = false;
             // 
@@ -157,7 +157,7 @@
             this.labelNumeroAciertos.AutoSize = true;
             this.labelNumeroAciertos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroAciertos.ForeColor = System.Drawing.Color.Blue;
-            this.labelNumeroAciertos.Location = new System.Drawing.Point(176, 14);
+            this.labelNumeroAciertos.Location = new System.Drawing.Point(155, 14);
             this.labelNumeroAciertos.Name = "labelNumeroAciertos";
             this.labelNumeroAciertos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroAciertos.TabIndex = 24;
@@ -168,7 +168,7 @@
             this.labelNumeroFallos.AutoSize = true;
             this.labelNumeroFallos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroFallos.ForeColor = System.Drawing.Color.Red;
-            this.labelNumeroFallos.Location = new System.Drawing.Point(176, 55);
+            this.labelNumeroFallos.Location = new System.Drawing.Point(155, 55);
             this.labelNumeroFallos.Name = "labelNumeroFallos";
             this.labelNumeroFallos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroFallos.TabIndex = 23;
@@ -181,9 +181,9 @@
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label10.Location = new System.Drawing.Point(4, 55);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 33);
+            this.label10.Size = new System.Drawing.Size(90, 33);
             this.label10.TabIndex = 22;
-            this.label10.Text = "Nº fallos:";
+            this.label10.Text = "Fallos:";
             // 
             // label9
             // 
@@ -192,16 +192,16 @@
             this.label9.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label9.Location = new System.Drawing.Point(3, 14);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 33);
+            this.label9.Size = new System.Drawing.Size(123, 33);
             this.label9.TabIndex = 21;
-            this.label9.Text = "Nº aciertos:";
+            this.label9.Text = "Aciertos:";
             // 
             // labelPuntuacion
             // 
             this.labelPuntuacion.AutoSize = true;
             this.labelPuntuacion.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelPuntuacion.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelPuntuacion.Location = new System.Drawing.Point(176, 93);
+            this.labelPuntuacion.Location = new System.Drawing.Point(155, 93);
             this.labelPuntuacion.Name = "labelPuntuacion";
             this.labelPuntuacion.Size = new System.Drawing.Size(33, 33);
             this.labelPuntuacion.TabIndex = 17;
@@ -214,9 +214,9 @@
             this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label5.Location = new System.Drawing.Point(4, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 33);
+            this.label5.Size = new System.Drawing.Size(108, 33);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Puntuación:";
+            this.label5.Text = "Puntos:";
             // 
             // panelPalabra
             // 
@@ -315,7 +315,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(1370, 2);
+            this.pbExit.Location = new System.Drawing.Point(1356, 9);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(32, 35);
             this.pbExit.TabIndex = 27;

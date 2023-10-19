@@ -26,12 +26,10 @@ namespace Ahorcado
 
         private void labelBotonJugar_Click(object sender, EventArgs e)
         {
-            // Oculto el menu
-            this.Hide();
-            // Instancio el juego
-            Juego juego = new Juego();
-            // Muestro el juego.
-            juego.Show();
+            // Muestro el panel con las versiones del juego.
+            panelVersionesJuego.Visible = true;
+            // Configura el valor alfa para hacer que el Panel sea semi-transparente
+            panelVersionesJuego.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);
         }
 
         // Sales del programa
@@ -40,6 +38,19 @@ namespace Ahorcado
             Application.Exit();
         }
 
-     
+        private void pbJugarExorcista_Click(object sender, EventArgs e)
+        {
+            // Oculto el menu
+            this.Hide();
+            // Instancio el juego
+            Juego juego = new Juego();
+            // Muestro el juego.
+            juego.Show();
+        }
+
+        private void pbJugarHalloween_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jugar Halloween");
+        }
     }
 }
