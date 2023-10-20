@@ -68,16 +68,13 @@ namespace Ahorcado
             prepararPartida();
         }
 
+      
 
         // Incia el juego.
         private void prepararPartida()
         {
             // La palabra a jugar.
-            palabra = damePalabra();
-            // La pista de la palara a jugar
-            pista = damePista(palabra);
-            // Asigno valor al label que mostrar la pista
-            labelPista.Text = pista;
+            palabra = damePalabra();        
             // Convierto la palabra a un array de caractres.
             charsPalabra = palabra.ToCharArray();
             // Reseteo a cero el mensaje final partida 
@@ -94,14 +91,14 @@ namespace Ahorcado
             panelGameOver.Hide();
             // Muestro el panel con las letras/botones
             panelLetras.Show();
-            // Muestro el panel con la palabra adivinar
-            panelPalabra.Show();
+            // Muestro los guiones de la palabra que hay que adivinar
+            labelPalabraGuiones.Show();
             //Muestro panel puntuacion
             panelScore.Show();
-            // Muestro el panel de la vida.
-            panelBarraProgreso.Show();
+            // Muestro el panel de herramientas 
+            panelBarraHerramientas.Show();
             // Muestro el boton para resolver
-            pbBrain.Show();
+            pbResolver.Show();
             // Oculto select categorias
             comboBoxCategorias.Hide();
             // Muestro las letras
@@ -459,9 +456,11 @@ namespace Ahorcado
             // Oculto pista 
             labelPista.Hide();
             // Oculto boton resolver
-            pbBrain.Hide();
+            pbResolver.Hide();
             //Muestro panel game over
             panelGameOver.Show();
+            // Configura el valor alfa para hacer que el Panel sea semi-transparente
+            panelGameOver.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);
             // Guardo la ultima puntuacion
             int totalPuntuacion = SesionUsuario.Puntuacion + puntuacion;
             // Actualizo la puntuacion para la sesion del jugador
@@ -489,8 +488,8 @@ namespace Ahorcado
             panelScore.Hide();
             // Quito la imagen del ahorcado
             pictureBoxAhorcado.Image = null;
-            // Oculto panel vida
-            panelBarraProgreso.Hide();
+            // Oculto panel 
+            panelBarraHerramientas.Hide();
             // Oculto mensaje al fnalizar partda
             labelFinalPartida.Text = "";
             // Oculto el label categoria
@@ -519,6 +518,14 @@ namespace Ahorcado
         private void pbExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pbMostrarPista_Click(object sender, EventArgs e)
+        {
+            // Obtengo la pista asociada a la palabra
+            pista = damePista(palabra);
+            // Muestro la pista en un label.
+            labelPista.Text = pista;
         }
     }
 }

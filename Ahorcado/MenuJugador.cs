@@ -29,14 +29,10 @@ namespace Ahorcado
             // Muestro el panel con las versiones del juego.
             panelVersionesJuego.Visible = true;
             // Configura el valor alfa para hacer que el Panel sea semi-transparente
-            panelVersionesJuego.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);
+            panelVersionesJuego.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);  
         }
 
-        // Sales del programa
-        private void pbExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+     
 
         private void pbJugarExorcista_Click(object sender, EventArgs e)
         {
@@ -50,7 +46,17 @@ namespace Ahorcado
 
         private void pbJugarHalloween_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Jugar Halloween");
+            // Oculto el menu
+            this.Hide();
+            Halloween halloween = new Halloween();
+            // Muestro el juego
+            halloween.Show();
+        }
+
+        // Sales del programa
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
