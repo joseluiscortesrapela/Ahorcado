@@ -43,8 +43,6 @@ namespace Ahorcado
         public Juego()
         {
             InitializeComponent();
-            // Cargo el modelo
-            // jugadorModel = new juegoModel();
             // Carga inicial del juego.
             inicializarJuego();
         }
