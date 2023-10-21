@@ -172,6 +172,13 @@
     <None Include="Resources\dibujo_ahorcado\6.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\VI.bmp" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\VI.png" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\I.png" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\II.png" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\III.png" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\IV.png" />
+    <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\V.png" />
     <Content Include="Xml\jugadores.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

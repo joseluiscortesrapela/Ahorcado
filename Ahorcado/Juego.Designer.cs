@@ -87,8 +87,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelBarraHerramientas = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pbMostrarPista = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panelScore.SuspendLayout();
             this.panelResolver.SuspendLayout();
@@ -1233,18 +1233,6 @@
             this.panelBarraHerramientas.TabIndex = 38;
             this.panelBarraHerramientas.Visible = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(7, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Pista";
-            // 
             // pbMostrarPista
             // 
             this.pbMostrarPista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1257,6 +1245,18 @@
             this.pbMostrarPista.TabIndex = 38;
             this.pbMostrarPista.TabStop = false;
             this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label4.Location = new System.Drawing.Point(7, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Pista";
             // 
             // Juego
             // 
@@ -1287,6 +1287,7 @@
             this.Name = "Juego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.panelScore.ResumeLayout(false);
             this.panelScore.PerformLayout();

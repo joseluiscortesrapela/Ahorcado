@@ -75,8 +75,8 @@
             this.labelNumeroAciertos = new System.Windows.Forms.Label();
             this.labelNumeroFallos = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panelScore = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.labelPuntuacion = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxCategorias = new System.Windows.Forms.ComboBox();
@@ -122,9 +122,9 @@
             this.panelBarraHerramientas.Controls.Add(this.progressBarVida);
             this.panelBarraHerramientas.Controls.Add(this.pbResolver);
             this.panelBarraHerramientas.Controls.Add(this.label2);
-            this.panelBarraHerramientas.Location = new System.Drawing.Point(812, 5);
+            this.panelBarraHerramientas.Location = new System.Drawing.Point(809, 5);
             this.panelBarraHerramientas.Name = "panelBarraHerramientas";
-            this.panelBarraHerramientas.Size = new System.Drawing.Size(480, 83);
+            this.panelBarraHerramientas.Size = new System.Drawing.Size(483, 83);
             this.panelBarraHerramientas.TabIndex = 51;
             this.panelBarraHerramientas.Visible = false;
             // 
@@ -134,7 +134,7 @@
             this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
             this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
-            this.pbMostrarPista.Location = new System.Drawing.Point(3, 30);
+            this.pbMostrarPista.Location = new System.Drawing.Point(131, 30);
             this.pbMostrarPista.Name = "pbMostrarPista";
             this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
             this.pbMostrarPista.TabIndex = 38;
@@ -147,7 +147,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(7, 8);
+            this.label4.Location = new System.Drawing.Point(132, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 37;
@@ -157,10 +157,10 @@
             // 
             this.progressBarVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
-            this.progressBarVida.Location = new System.Drawing.Point(323, 30);
+            this.progressBarVida.Location = new System.Drawing.Point(326, 30);
             this.progressBarVida.Maximum = 6;
             this.progressBarVida.Name = "progressBarVida";
-            this.progressBarVida.Size = new System.Drawing.Size(141, 27);
+            this.progressBarVida.Size = new System.Drawing.Size(141, 21);
             this.progressBarVida.TabIndex = 21;
             this.progressBarVida.Value = 6;
             // 
@@ -170,7 +170,7 @@
             this.pbResolver.BackColor = System.Drawing.Color.Transparent;
             this.pbResolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbResolver.BackgroundImage")));
             this.pbResolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbResolver.Location = new System.Drawing.Point(99, 30);
+            this.pbResolver.Location = new System.Drawing.Point(227, 30);
             this.pbResolver.Name = "pbResolver";
             this.pbResolver.Size = new System.Drawing.Size(57, 50);
             this.pbResolver.TabIndex = 36;
@@ -183,7 +183,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label2.Location = new System.Drawing.Point(95, 8);
+            this.label2.Location = new System.Drawing.Point(220, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 21);
             this.label2.TabIndex = 23;
@@ -195,7 +195,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(8, 35);
+            this.label3.Location = new System.Drawing.Point(8, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 50;
@@ -323,14 +323,15 @@
             // 
             // panelGameOver
             // 
+            this.panelGameOver.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelGameOver.BackColor = System.Drawing.Color.Transparent;
             this.panelGameOver.Controls.Add(this.label13);
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(353, 119);
+            this.panelGameOver.Location = new System.Drawing.Point(425, 101);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(653, 320);
+            this.panelGameOver.Size = new System.Drawing.Size(564, 248);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
@@ -1063,7 +1064,7 @@
             this.labelNumeroAciertos.AutoSize = true;
             this.labelNumeroAciertos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroAciertos.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelNumeroAciertos.Location = new System.Drawing.Point(155, 14);
+            this.labelNumeroAciertos.Location = new System.Drawing.Point(113, 14);
             this.labelNumeroAciertos.Name = "labelNumeroAciertos";
             this.labelNumeroAciertos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroAciertos.TabIndex = 24;
@@ -1074,7 +1075,7 @@
             this.labelNumeroFallos.AutoSize = true;
             this.labelNumeroFallos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroFallos.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelNumeroFallos.Location = new System.Drawing.Point(155, 55);
+            this.labelNumeroFallos.Location = new System.Drawing.Point(293, 14);
             this.labelNumeroFallos.Name = "labelNumeroFallos";
             this.labelNumeroFallos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroFallos.TabIndex = 23;
@@ -1084,23 +1085,12 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.label10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label10.Location = new System.Drawing.Point(4, 55);
+            this.label10.ForeColor = System.Drawing.Color.DarkGray;
+            this.label10.Location = new System.Drawing.Point(191, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 33);
+            this.label10.Size = new System.Drawing.Size(81, 33);
             this.label10.TabIndex = 22;
-            this.label10.Text = "Fallos:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.label9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label9.Location = new System.Drawing.Point(3, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 33);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Aciertos:";
+            this.label10.Text = "Fallos";
             // 
             // panelScore
             // 
@@ -1112,18 +1102,29 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(12, 281);
+            this.panelScore.Location = new System.Drawing.Point(240, 5);
             this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(226, 131);
+            this.panelScore.Size = new System.Drawing.Size(537, 51);
             this.panelScore.TabIndex = 42;
             this.panelScore.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("MV Boli", 19F);
+            this.label9.ForeColor = System.Drawing.Color.DarkGray;
+            this.label9.Location = new System.Drawing.Point(3, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 33);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Aciertos";
             // 
             // labelPuntuacion
             // 
             this.labelPuntuacion.AutoSize = true;
             this.labelPuntuacion.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelPuntuacion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelPuntuacion.Location = new System.Drawing.Point(155, 93);
+            this.labelPuntuacion.Location = new System.Drawing.Point(492, 14);
             this.labelPuntuacion.Name = "labelPuntuacion";
             this.labelPuntuacion.Size = new System.Drawing.Size(33, 33);
             this.labelPuntuacion.TabIndex = 17;
@@ -1133,8 +1134,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(4, 93);
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.Location = new System.Drawing.Point(376, 14);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 33);
             this.label5.TabIndex = 16;
@@ -1147,7 +1148,7 @@
             this.comboBoxCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategorias.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.comboBoxCategorias.FormattingEnabled = true;
-            this.comboBoxCategorias.Location = new System.Drawing.Point(12, 69);
+            this.comboBoxCategorias.Location = new System.Drawing.Point(5, 29);
             this.comboBoxCategorias.Name = "comboBoxCategorias";
             this.comboBoxCategorias.Size = new System.Drawing.Size(222, 33);
             this.comboBoxCategorias.TabIndex = 40;
@@ -1214,11 +1215,13 @@
             // 
             // pictureBoxAhorcado
             // 
-            this.pictureBoxAhorcado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBoxAhorcado.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAhorcado.Location = new System.Drawing.Point(590, 53);
+            this.pictureBoxAhorcado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxAhorcado.Image = global::Ahorcado.Properties.Resources.VI;
+            this.pictureBoxAhorcado.Location = new System.Drawing.Point(86, 111);
             this.pictureBoxAhorcado.Name = "pictureBoxAhorcado";
-            this.pictureBoxAhorcado.Size = new System.Drawing.Size(225, 386);
+            this.pictureBoxAhorcado.Size = new System.Drawing.Size(293, 450);
+            this.pictureBoxAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAhorcado.TabIndex = 46;
             this.pictureBoxAhorcado.TabStop = false;
             // 
@@ -1228,7 +1231,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(12, 478);
+            this.panelResolver.Location = new System.Drawing.Point(1036, 256);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(215, 130);
             this.panelResolver.TabIndex = 43;
@@ -1245,6 +1248,7 @@
             this.pbExit.Size = new System.Drawing.Size(32, 35);
             this.pbExit.TabIndex = 45;
             this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
             // labelCategoria
             // 
@@ -1282,6 +1286,7 @@
             this.Name = "Halloween";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Halloween";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelBarraHerramientas.ResumeLayout(false);
             this.panelBarraHerramientas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
@@ -1350,7 +1355,6 @@
         private System.Windows.Forms.Label labelNumeroAciertos;
         private System.Windows.Forms.Label labelNumeroFallos;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panelScore;
         private System.Windows.Forms.Label labelPuntuacion;
         private System.Windows.Forms.Label label5;
@@ -1364,5 +1368,6 @@
         private System.Windows.Forms.Panel panelResolver;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Label labelCategoria;
+        private System.Windows.Forms.Label label9;
     }
 }

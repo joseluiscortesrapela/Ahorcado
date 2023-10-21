@@ -305,12 +305,12 @@ namespace Ahorcado
 
             switch (parte)
             {
-                case 1: pictureBoxAhorcado.Image = Properties.Resources._1; break;
-                case 2: pictureBoxAhorcado.Image = Properties.Resources._2; break;
-                case 3: pictureBoxAhorcado.Image = Properties.Resources._3; break;
-                case 4: pictureBoxAhorcado.Image = Properties.Resources._4; break;
-                case 5: pictureBoxAhorcado.Image = Properties.Resources._5; break;
-                case 6: pictureBoxAhorcado.Image = Properties.Resources._6; break;
+                case 1: pictureBoxAhorcado.Image = Properties.Resources.I; break;
+                case 2: pictureBoxAhorcado.Image = Properties.Resources.II; break;
+                case 3: pictureBoxAhorcado.Image = Properties.Resources.III; break;
+                case 4: pictureBoxAhorcado.Image = Properties.Resources.IV; break;
+                case 5: pictureBoxAhorcado.Image = Properties.Resources.V; break;
+                case 6: pictureBoxAhorcado.Image = Properties.Resources.VI; break;
 
             }
 
