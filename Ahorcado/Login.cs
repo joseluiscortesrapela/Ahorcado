@@ -81,7 +81,6 @@ namespace Ahorcado
             SesionUsuario.Contraseña = jugador.Contraseña;
             SesionUsuario.Puntuacion = jugador.Puntuacion;
             SesionUsuario.Rol = jugador.Rol;
-            Console.WriteLine("Puntuacion: " + SesionUsuario.Puntuacion);
         }
 
         // Comprueba si existe el usuario
