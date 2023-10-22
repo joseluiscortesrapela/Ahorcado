@@ -1,9 +1,11 @@
 ﻿using Ahorcado.Utilidades;
+using NAudio.Wave;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,10 +35,20 @@ namespace Ahorcado
         private int numeroFallos;
         // Puntuación jugador.
         private int puntuacion;
+        // Clases para reproducir musica
+        private IWavePlayer player;
+        private AudioFileReader audioFile;
+        private string rutaMp3;
+
+
 
         public Halloween()
         {
             InitializeComponent();  // Importo las palabras
+
+            player = new WaveOut();;
+            string rutaRelativa = @"..\..\Resources\Juegos\Halloween\Sonidos\halloween.mp3";
+            audioFile = new AudioFileReader(rutaRelativa);
             // Añado las palabras al dgv
             añadirPalabrasDGV();
 
@@ -44,12 +56,14 @@ namespace Ahorcado
             if (dgvPalabras != null)
             {   // Obtengo las categorias.
                 cargarCategorias(); // Cargo las categorias
+
             }
             else
             {
                 Console.WriteLine("No se han ecnontrado palabras en el dgv, tabla vacia.");
             }
         }
+
 
 
         // Obtengo la categoria 
@@ -448,8 +462,8 @@ namespace Ahorcado
             int totalPuntuacion = SesionUsuario.Puntuacion + puntuacion;
             // Actualizo la puntuacion para la sesion del jugador
             SesionUsuario.Puntuacion = totalPuntuacion;
-            // Actualizo la puntuacion del jugador
-            //  jugadorModel.updatePuntuacion( SesionUsuario.Id, totalPuntuacion );
+            // Detengo la musica
+            //apagarMusicaFondo();
 
         }
 
@@ -482,11 +496,14 @@ namespace Ahorcado
             labelPista.Text = "";
             // Muestro la pista
             labelPista.Show();
+            // Pongo la musica de fondo
+           // ponerMusicaFondo();
 
         }
 
         private void buttonNoJugarOtra_Click(object sender, EventArgs e)
         {
+            apagarMusicaFondo();
             // Oculto la ventana de login
             this.Hide();
             // Intancia
@@ -521,6 +538,8 @@ namespace Ahorcado
             timer.Interval = 14000;
             // Inicio el timer
             timer.Enabled = true;
+            // Pongo la musica de fondo del juego
+            ponerMusicaFondo();
         }
 
 
@@ -533,6 +552,18 @@ namespace Ahorcado
             timer.Enabled = false;
 
             Console.WriteLine("Temporizador ha finalizado");
+        }
+
+        private void ponerMusicaFondo()
+        {           
+            player.Init(audioFile);
+            player.Play();
+            
+        }
+
+        private void apagarMusicaFondo()
+        {
+            player.Stop();
         }
 
 

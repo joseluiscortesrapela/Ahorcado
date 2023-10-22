@@ -33,6 +33,7 @@
             this.panelBarraHerramientas = new System.Windows.Forms.Panel();
             this.pbMostrarPista = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.p = new System.Windows.Forms.Label();
             this.progressBarVida = new System.Windows.Forms.ProgressBar();
             this.pbResolver = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -91,7 +92,6 @@
             this.labelCategoria = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pbPresentacion = new System.Windows.Forms.PictureBox();
-            this.p = new System.Windows.Forms.Label();
             this.panelBarraHerramientas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
@@ -145,6 +145,18 @@
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 37;
             this.label4.Text = "Pista";
+            // 
+            // p
+            // 
+            this.p.AutoSize = true;
+            this.p.BackColor = System.Drawing.Color.Transparent;
+            this.p.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.p.Location = new System.Drawing.Point(319, 6);
+            this.p.Name = "p";
+            this.p.Size = new System.Drawing.Size(145, 21);
+            this.p.TabIndex = 22;
+            this.p.Text = "Nivel vida jugador";
             // 
             // progressBarVida
             // 
@@ -318,9 +330,9 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(475, 101);
+            this.panelGameOver.Location = new System.Drawing.Point(427, 101);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(514, 134);
+            this.panelGameOver.Size = new System.Drawing.Size(588, 234);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
@@ -329,7 +341,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label13.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label13.Location = new System.Drawing.Point(205, 150);
+            this.label13.Location = new System.Drawing.Point(101, 146);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(281, 26);
             this.label13.TabIndex = 35;
@@ -341,7 +353,7 @@
             this.buttonNoJugarOtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNoJugarOtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonNoJugarOtra.ForeColor = System.Drawing.Color.Brown;
-            this.buttonNoJugarOtra.Location = new System.Drawing.Point(192, 190);
+            this.buttonNoJugarOtra.Location = new System.Drawing.Point(88, 186);
             this.buttonNoJugarOtra.Name = "buttonNoJugarOtra";
             this.buttonNoJugarOtra.Size = new System.Drawing.Size(146, 36);
             this.buttonNoJugarOtra.TabIndex = 34;
@@ -355,7 +367,7 @@
             this.buttonJugarOtraPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJugarOtraPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonJugarOtraPartida.ForeColor = System.Drawing.Color.Brown;
-            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(364, 190);
+            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(260, 186);
             this.buttonJugarOtraPartida.Name = "buttonJugarOtraPartida";
             this.buttonJugarOtraPartida.Size = new System.Drawing.Size(146, 36);
             this.buttonJugarOtraPartida.TabIndex = 33;
@@ -370,7 +382,7 @@
             this.labelFinalPartida.ForeColor = System.Drawing.Color.Goldenrod;
             this.labelFinalPartida.Location = new System.Drawing.Point(22, 55);
             this.labelFinalPartida.Name = "labelFinalPartida";
-            this.labelFinalPartida.Size = new System.Drawing.Size(608, 48);
+            this.labelFinalPartida.Size = new System.Drawing.Size(462, 48);
             this.labelFinalPartida.TabIndex = 1;
             this.labelFinalPartida.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -1040,7 +1052,7 @@
             // 
             this.labelNumeroFallos.AutoSize = true;
             this.labelNumeroFallos.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.labelNumeroFallos.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelNumeroFallos.ForeColor = System.Drawing.Color.Crimson;
             this.labelNumeroFallos.Location = new System.Drawing.Point(396, 8);
             this.labelNumeroFallos.Name = "labelNumeroFallos";
             this.labelNumeroFallos.Size = new System.Drawing.Size(33, 33);
@@ -1068,9 +1080,9 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(240, 5);
+            this.panelScore.Location = new System.Drawing.Point(357, 5);
             this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(657, 51);
+            this.panelScore.Size = new System.Drawing.Size(649, 51);
             this.panelScore.TabIndex = 42;
             this.panelScore.Visible = false;
             // 
@@ -1079,7 +1091,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MV Boli", 19F);
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(106, 8);
+            this.label9.Location = new System.Drawing.Point(92, 8);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 33);
             this.label9.TabIndex = 21;
@@ -1089,7 +1101,7 @@
             // 
             this.labelPuntuacion.AutoSize = true;
             this.labelPuntuacion.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.labelPuntuacion.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelPuntuacion.ForeColor = System.Drawing.Color.LimeGreen;
             this.labelPuntuacion.Location = new System.Drawing.Point(595, 8);
             this.labelPuntuacion.Name = "labelPuntuacion";
             this.labelPuntuacion.Size = new System.Drawing.Size(33, 33);
@@ -1114,7 +1126,7 @@
             this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.cbCategorias.FormattingEnabled = true;
-            this.cbCategorias.Location = new System.Drawing.Point(5, 29);
+            this.cbCategorias.Location = new System.Drawing.Point(12, 31);
             this.cbCategorias.Name = "cbCategorias";
             this.cbCategorias.Size = new System.Drawing.Size(222, 33);
             this.cbCategorias.TabIndex = 40;
@@ -1189,6 +1201,7 @@
             this.pictureBoxAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAhorcado.TabIndex = 46;
             this.pictureBoxAhorcado.TabStop = false;
+            this.pictureBoxAhorcado.WaitOnLoad = true;
             // 
             // panelResolver
             // 
@@ -1241,22 +1254,11 @@
             this.pbPresentacion.TabStop = false;
             this.pbPresentacion.Visible = false;
             // 
-            // p
-            // 
-            this.p.AutoSize = true;
-            this.p.BackColor = System.Drawing.Color.Transparent;
-            this.p.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.p.Location = new System.Drawing.Point(319, 6);
-            this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(145, 21);
-            this.p.TabIndex = 22;
-            this.p.Text = "Nivel vida jugador";
-            // 
             // Halloween
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1351, 756);
