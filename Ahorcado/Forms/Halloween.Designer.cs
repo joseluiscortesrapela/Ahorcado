@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Halloween));
-            this.p = new System.Windows.Forms.Label();
             this.panelBarraHerramientas = new System.Windows.Forms.Panel();
             this.pbMostrarPista = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,6 +90,8 @@
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.labelCategoria = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.pbPresentacion = new System.Windows.Forms.PictureBox();
+            this.p = new System.Windows.Forms.Label();
             this.panelBarraHerramientas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
@@ -101,22 +102,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).BeginInit();
             this.panelResolver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).BeginInit();
             this.SuspendLayout();
-            // 
-            // p
-            // 
-            this.p.AutoSize = true;
-            this.p.BackColor = System.Drawing.Color.Transparent;
-            this.p.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.p.Location = new System.Drawing.Point(319, 6);
-            this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(145, 21);
-            this.p.TabIndex = 22;
-            this.p.Text = "Nivel vida jugador";
             // 
             // panelBarraHerramientas
             // 
+            this.panelBarraHerramientas.AutoSize = true;
             this.panelBarraHerramientas.BackColor = System.Drawing.Color.Transparent;
             this.panelBarraHerramientas.Controls.Add(this.pbMostrarPista);
             this.panelBarraHerramientas.Controls.Add(this.label4);
@@ -124,9 +115,9 @@
             this.panelBarraHerramientas.Controls.Add(this.progressBarVida);
             this.panelBarraHerramientas.Controls.Add(this.pbResolver);
             this.panelBarraHerramientas.Controls.Add(this.label2);
-            this.panelBarraHerramientas.Location = new System.Drawing.Point(809, 5);
+            this.panelBarraHerramientas.Location = new System.Drawing.Point(1012, 5);
             this.panelBarraHerramientas.Name = "panelBarraHerramientas";
-            this.panelBarraHerramientas.Size = new System.Drawing.Size(483, 83);
+            this.panelBarraHerramientas.Size = new System.Drawing.Size(15207, 86);
             this.panelBarraHerramientas.TabIndex = 51;
             this.panelBarraHerramientas.Visible = false;
             // 
@@ -136,7 +127,7 @@
             this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
             this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
-            this.pbMostrarPista.Location = new System.Drawing.Point(131, 30);
+            this.pbMostrarPista.Location = new System.Drawing.Point(115, 30);
             this.pbMostrarPista.Name = "pbMostrarPista";
             this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
             this.pbMostrarPista.TabIndex = 38;
@@ -159,7 +150,7 @@
             // 
             this.progressBarVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
-            this.progressBarVida.Location = new System.Drawing.Point(326, 30);
+            this.progressBarVida.Location = new System.Drawing.Point(310, 30);
             this.progressBarVida.Maximum = 6;
             this.progressBarVida.Name = "progressBarVida";
             this.progressBarVida.Size = new System.Drawing.Size(141, 21);
@@ -172,7 +163,7 @@
             this.pbResolver.BackColor = System.Drawing.Color.Transparent;
             this.pbResolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbResolver.BackgroundImage")));
             this.pbResolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbResolver.Location = new System.Drawing.Point(227, 30);
+            this.pbResolver.Location = new System.Drawing.Point(211, 30);
             this.pbResolver.Name = "pbResolver";
             this.pbResolver.Size = new System.Drawing.Size(57, 50);
             this.pbResolver.TabIndex = 36;
@@ -197,7 +188,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(8, 11);
+            this.label3.Location = new System.Drawing.Point(8, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 50;
@@ -205,7 +196,6 @@
             // 
             // buttonC
             // 
-            this.buttonC.AutoSize = true;
             this.buttonC.BackColor = System.Drawing.Color.Transparent;
             this.buttonC.CausesValidation = false;
             this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -218,7 +208,7 @@
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonC.Image = ((System.Drawing.Image)(resources.GetObject("buttonC.Image")));
-            this.buttonC.Location = new System.Drawing.Point(233, 8);
+            this.buttonC.Location = new System.Drawing.Point(90, 8);
             this.buttonC.Name = "buttonC";
             this.buttonC.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonC.Size = new System.Drawing.Size(42, 54);
@@ -244,7 +234,6 @@
             // 
             // buttonV
             // 
-            this.buttonV.AutoSize = true;
             this.buttonV.BackColor = System.Drawing.Color.Transparent;
             this.buttonV.CausesValidation = false;
             this.buttonV.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -257,7 +246,7 @@
             this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonV.Image = ((System.Drawing.Image)(resources.GetObject("buttonV.Image")));
-            this.buttonV.Location = new System.Drawing.Point(976, 5);
+            this.buttonV.Location = new System.Drawing.Point(833, 5);
             this.buttonV.Name = "buttonV";
             this.buttonV.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonV.Size = new System.Drawing.Size(41, 53);
@@ -271,7 +260,6 @@
             // 
             // buttonX
             // 
-            this.buttonX.AutoSize = true;
             this.buttonX.BackColor = System.Drawing.Color.Transparent;
             this.buttonX.CausesValidation = false;
             this.buttonX.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -284,7 +272,7 @@
             this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonX.Image = ((System.Drawing.Image)(resources.GetObject("buttonX.Image")));
-            this.buttonX.Location = new System.Drawing.Point(1058, 5);
+            this.buttonX.Location = new System.Drawing.Point(915, 5);
             this.buttonX.Name = "buttonX";
             this.buttonX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonX.Size = new System.Drawing.Size(44, 47);
@@ -298,7 +286,6 @@
             // 
             // buttonT
             // 
-            this.buttonT.AutoSize = true;
             this.buttonT.BackColor = System.Drawing.Color.Transparent;
             this.buttonT.CausesValidation = false;
             this.buttonT.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -311,7 +298,7 @@
             this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonT.Image = ((System.Drawing.Image)(resources.GetObject("buttonT.Image")));
-            this.buttonT.Location = new System.Drawing.Point(904, 1);
+            this.buttonT.Location = new System.Drawing.Point(761, 1);
             this.buttonT.Name = "buttonT";
             this.buttonT.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonT.Size = new System.Drawing.Size(49, 56);
@@ -331,9 +318,9 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(425, 101);
+            this.panelGameOver.Location = new System.Drawing.Point(475, 101);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(564, 248);
+            this.panelGameOver.Size = new System.Drawing.Size(514, 134);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
@@ -389,6 +376,7 @@
             // 
             // panelLetras
             // 
+            this.panelLetras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panelLetras.BackColor = System.Drawing.Color.Transparent;
             this.panelLetras.Controls.Add(this.buttonC);
             this.panelLetras.Controls.Add(this.labelLetrasRepetidas);
@@ -418,17 +406,15 @@
             this.panelLetras.Controls.Add(this.buttonZ);
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
-            this.panelLetras.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelLetras.Location = new System.Drawing.Point(0, 693);
             this.panelLetras.Name = "panelLetras";
-            this.panelLetras.Size = new System.Drawing.Size(1351, 63);
+            this.panelLetras.Size = new System.Drawing.Size(1351, 630);
             this.panelLetras.TabIndex = 48;
             this.panelLetras.Visible = false;
             // 
             // buttonH
             // 
-            this.buttonH.AutoSize = true;
             this.buttonH.BackColor = System.Drawing.Color.Transparent;
             this.buttonH.CausesValidation = false;
             this.buttonH.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -441,7 +427,7 @@
             this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonH.Image = ((System.Drawing.Image)(resources.GetObject("buttonH.Image")));
-            this.buttonH.Location = new System.Drawing.Point(417, 6);
+            this.buttonH.Location = new System.Drawing.Point(274, 6);
             this.buttonH.Name = "buttonH";
             this.buttonH.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonH.Size = new System.Drawing.Size(43, 51);
@@ -455,7 +441,6 @@
             // 
             // buttonG
             // 
-            this.buttonG.AutoSize = true;
             this.buttonG.BackColor = System.Drawing.Color.Transparent;
             this.buttonG.CausesValidation = false;
             this.buttonG.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -468,7 +453,7 @@
             this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonG.Image = ((System.Drawing.Image)(resources.GetObject("buttonG.Image")));
-            this.buttonG.Location = new System.Drawing.Point(381, 6);
+            this.buttonG.Location = new System.Drawing.Point(238, 6);
             this.buttonG.Name = "buttonG";
             this.buttonG.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonG.Size = new System.Drawing.Size(41, 45);
@@ -482,7 +467,6 @@
             // 
             // buttonE
             // 
-            this.buttonE.AutoSize = true;
             this.buttonE.BackColor = System.Drawing.Color.Transparent;
             this.buttonE.CausesValidation = false;
             this.buttonE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -495,7 +479,7 @@
             this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonE.Image = ((System.Drawing.Image)(resources.GetObject("buttonE.Image")));
-            this.buttonE.Location = new System.Drawing.Point(309, 9);
+            this.buttonE.Location = new System.Drawing.Point(166, 9);
             this.buttonE.Name = "buttonE";
             this.buttonE.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonE.Size = new System.Drawing.Size(41, 46);
@@ -509,7 +493,6 @@
             // 
             // buttonJ
             // 
-            this.buttonJ.AutoSize = true;
             this.buttonJ.BackColor = System.Drawing.Color.Transparent;
             this.buttonJ.CausesValidation = false;
             this.buttonJ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -522,7 +505,7 @@
             this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonJ.Image = ((System.Drawing.Image)(resources.GetObject("buttonJ.Image")));
-            this.buttonJ.Location = new System.Drawing.Point(485, 3);
+            this.buttonJ.Location = new System.Drawing.Point(342, 3);
             this.buttonJ.Name = "buttonJ";
             this.buttonJ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonJ.Size = new System.Drawing.Size(41, 53);
@@ -536,7 +519,6 @@
             // 
             // buttonF
             // 
-            this.buttonF.AutoSize = true;
             this.buttonF.BackColor = System.Drawing.Color.Transparent;
             this.buttonF.CausesValidation = false;
             this.buttonF.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -549,7 +531,7 @@
             this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonF.Image = ((System.Drawing.Image)(resources.GetObject("buttonF.Image")));
-            this.buttonF.Location = new System.Drawing.Point(345, 8);
+            this.buttonF.Location = new System.Drawing.Point(202, 8);
             this.buttonF.Name = "buttonF";
             this.buttonF.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonF.Size = new System.Drawing.Size(41, 44);
@@ -563,7 +545,6 @@
             // 
             // buttonD
             // 
-            this.buttonD.AutoSize = true;
             this.buttonD.BackColor = System.Drawing.Color.Transparent;
             this.buttonD.CausesValidation = false;
             this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -576,7 +557,7 @@
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonD.Image = ((System.Drawing.Image)(resources.GetObject("buttonD.Image")));
-            this.buttonD.Location = new System.Drawing.Point(272, 12);
+            this.buttonD.Location = new System.Drawing.Point(129, 12);
             this.buttonD.Name = "buttonD";
             this.buttonD.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonD.Size = new System.Drawing.Size(41, 46);
@@ -590,7 +571,6 @@
             // 
             // buttonL
             // 
-            this.buttonL.AutoSize = true;
             this.buttonL.BackColor = System.Drawing.Color.Transparent;
             this.buttonL.CausesValidation = false;
             this.buttonL.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -603,7 +583,7 @@
             this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonL.Image = ((System.Drawing.Image)(resources.GetObject("buttonL.Image")));
-            this.buttonL.Location = new System.Drawing.Point(560, 3);
+            this.buttonL.Location = new System.Drawing.Point(417, 3);
             this.buttonL.Name = "buttonL";
             this.buttonL.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonL.Size = new System.Drawing.Size(41, 53);
@@ -617,7 +597,6 @@
             // 
             // buttonI
             // 
-            this.buttonI.AutoSize = true;
             this.buttonI.BackColor = System.Drawing.Color.Transparent;
             this.buttonI.CausesValidation = false;
             this.buttonI.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -630,7 +609,7 @@
             this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonI.Image = ((System.Drawing.Image)(resources.GetObject("buttonI.Image")));
-            this.buttonI.Location = new System.Drawing.Point(453, 5);
+            this.buttonI.Location = new System.Drawing.Point(310, 5);
             this.buttonI.Name = "buttonI";
             this.buttonI.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonI.Size = new System.Drawing.Size(41, 50);
@@ -644,7 +623,6 @@
             // 
             // buttonM
             // 
-            this.buttonM.AutoSize = true;
             this.buttonM.BackColor = System.Drawing.Color.Transparent;
             this.buttonM.CausesValidation = false;
             this.buttonM.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -657,7 +635,7 @@
             this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonM.Image = ((System.Drawing.Image)(resources.GetObject("buttonM.Image")));
-            this.buttonM.Location = new System.Drawing.Point(593, 4);
+            this.buttonM.Location = new System.Drawing.Point(450, 4);
             this.buttonM.Name = "buttonM";
             this.buttonM.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonM.Size = new System.Drawing.Size(48, 55);
@@ -671,7 +649,6 @@
             // 
             // buttonA
             // 
-            this.buttonA.AutoSize = true;
             this.buttonA.BackColor = System.Drawing.Color.Transparent;
             this.buttonA.CausesValidation = false;
             this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -684,7 +661,7 @@
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonA.Image = ((System.Drawing.Image)(resources.GetObject("buttonA.Image")));
-            this.buttonA.Location = new System.Drawing.Point(155, 2);
+            this.buttonA.Location = new System.Drawing.Point(12, 2);
             this.buttonA.Name = "buttonA";
             this.buttonA.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonA.Size = new System.Drawing.Size(48, 66);
@@ -698,7 +675,6 @@
             // 
             // buttonN
             // 
-            this.buttonN.AutoSize = true;
             this.buttonN.BackColor = System.Drawing.Color.Transparent;
             this.buttonN.CausesValidation = false;
             this.buttonN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -711,7 +687,7 @@
             this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonN.Image = ((System.Drawing.Image)(resources.GetObject("buttonN.Image")));
-            this.buttonN.Location = new System.Drawing.Point(639, 4);
+            this.buttonN.Location = new System.Drawing.Point(496, 4);
             this.buttonN.Name = "buttonN";
             this.buttonN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonN.Size = new System.Drawing.Size(45, 53);
@@ -725,7 +701,6 @@
             // 
             // buttonÑ
             // 
-            this.buttonÑ.AutoSize = true;
             this.buttonÑ.BackColor = System.Drawing.Color.Transparent;
             this.buttonÑ.CausesValidation = false;
             this.buttonÑ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -738,7 +713,7 @@
             this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonÑ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonÑ.Image = ((System.Drawing.Image)(resources.GetObject("buttonÑ.Image")));
-            this.buttonÑ.Location = new System.Drawing.Point(679, 3);
+            this.buttonÑ.Location = new System.Drawing.Point(536, 3);
             this.buttonÑ.Name = "buttonÑ";
             this.buttonÑ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonÑ.Size = new System.Drawing.Size(45, 60);
@@ -752,7 +727,6 @@
             // 
             // buttonO
             // 
-            this.buttonO.AutoSize = true;
             this.buttonO.BackColor = System.Drawing.Color.Transparent;
             this.buttonO.CausesValidation = false;
             this.buttonO.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -765,7 +739,7 @@
             this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonO.Image = ((System.Drawing.Image)(resources.GetObject("buttonO.Image")));
-            this.buttonO.Location = new System.Drawing.Point(724, 4);
+            this.buttonO.Location = new System.Drawing.Point(581, 4);
             this.buttonO.Name = "buttonO";
             this.buttonO.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonO.Size = new System.Drawing.Size(41, 57);
@@ -779,7 +753,6 @@
             // 
             // buttonP
             // 
-            this.buttonP.AutoSize = true;
             this.buttonP.BackColor = System.Drawing.Color.Transparent;
             this.buttonP.CausesValidation = false;
             this.buttonP.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -792,7 +765,7 @@
             this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonP.Image = ((System.Drawing.Image)(resources.GetObject("buttonP.Image")));
-            this.buttonP.Location = new System.Drawing.Point(760, 5);
+            this.buttonP.Location = new System.Drawing.Point(617, 5);
             this.buttonP.Name = "buttonP";
             this.buttonP.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonP.Size = new System.Drawing.Size(41, 55);
@@ -806,7 +779,6 @@
             // 
             // buttonU
             // 
-            this.buttonU.AutoSize = true;
             this.buttonU.BackColor = System.Drawing.Color.Transparent;
             this.buttonU.CausesValidation = false;
             this.buttonU.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -819,7 +791,7 @@
             this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonU.Image = ((System.Drawing.Image)(resources.GetObject("buttonU.Image")));
-            this.buttonU.Location = new System.Drawing.Point(940, 7);
+            this.buttonU.Location = new System.Drawing.Point(797, 7);
             this.buttonU.Name = "buttonU";
             this.buttonU.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonU.Size = new System.Drawing.Size(41, 49);
@@ -833,7 +805,6 @@
             // 
             // buttonS
             // 
-            this.buttonS.AutoSize = true;
             this.buttonS.BackColor = System.Drawing.Color.Transparent;
             this.buttonS.CausesValidation = false;
             this.buttonS.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -846,7 +817,7 @@
             this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonS.Image = ((System.Drawing.Image)(resources.GetObject("buttonS.Image")));
-            this.buttonS.Location = new System.Drawing.Point(868, 4);
+            this.buttonS.Location = new System.Drawing.Point(725, 4);
             this.buttonS.Name = "buttonS";
             this.buttonS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonS.Size = new System.Drawing.Size(44, 56);
@@ -860,7 +831,6 @@
             // 
             // buttonQ
             // 
-            this.buttonQ.AutoSize = true;
             this.buttonQ.BackColor = System.Drawing.Color.Transparent;
             this.buttonQ.CausesValidation = false;
             this.buttonQ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -873,7 +843,7 @@
             this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonQ.Image = ((System.Drawing.Image)(resources.GetObject("buttonQ.Image")));
-            this.buttonQ.Location = new System.Drawing.Point(796, 6);
+            this.buttonQ.Location = new System.Drawing.Point(653, 6);
             this.buttonQ.Name = "buttonQ";
             this.buttonQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonQ.Size = new System.Drawing.Size(44, 51);
@@ -887,7 +857,6 @@
             // 
             // buttonR
             // 
-            this.buttonR.AutoSize = true;
             this.buttonR.BackColor = System.Drawing.Color.Transparent;
             this.buttonR.CausesValidation = false;
             this.buttonR.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -900,7 +869,7 @@
             this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonR.Image = ((System.Drawing.Image)(resources.GetObject("buttonR.Image")));
-            this.buttonR.Location = new System.Drawing.Point(832, 2);
+            this.buttonR.Location = new System.Drawing.Point(689, 2);
             this.buttonR.Name = "buttonR";
             this.buttonR.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonR.Size = new System.Drawing.Size(46, 58);
@@ -914,7 +883,6 @@
             // 
             // buttonW
             // 
-            this.buttonW.AutoSize = true;
             this.buttonW.BackColor = System.Drawing.Color.Transparent;
             this.buttonW.CausesValidation = false;
             this.buttonW.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -927,7 +895,7 @@
             this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonW.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonW.Image = ((System.Drawing.Image)(resources.GetObject("buttonW.Image")));
-            this.buttonW.Location = new System.Drawing.Point(1012, 5);
+            this.buttonW.Location = new System.Drawing.Point(869, 5);
             this.buttonW.Name = "buttonW";
             this.buttonW.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonW.Size = new System.Drawing.Size(56, 52);
@@ -941,7 +909,6 @@
             // 
             // buttonY
             // 
-            this.buttonY.AutoSize = true;
             this.buttonY.BackColor = System.Drawing.Color.Transparent;
             this.buttonY.CausesValidation = false;
             this.buttonY.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -954,7 +921,7 @@
             this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonY.Image = ((System.Drawing.Image)(resources.GetObject("buttonY.Image")));
-            this.buttonY.Location = new System.Drawing.Point(1095, 6);
+            this.buttonY.Location = new System.Drawing.Point(952, 6);
             this.buttonY.Name = "buttonY";
             this.buttonY.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonY.Size = new System.Drawing.Size(41, 49);
@@ -968,7 +935,6 @@
             // 
             // buttonZ
             // 
-            this.buttonZ.AutoSize = true;
             this.buttonZ.BackColor = System.Drawing.Color.Transparent;
             this.buttonZ.CausesValidation = false;
             this.buttonZ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -981,7 +947,7 @@
             this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonZ.Image = ((System.Drawing.Image)(resources.GetObject("buttonZ.Image")));
-            this.buttonZ.Location = new System.Drawing.Point(1140, 2);
+            this.buttonZ.Location = new System.Drawing.Point(997, 2);
             this.buttonZ.Name = "buttonZ";
             this.buttonZ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonZ.Size = new System.Drawing.Size(54, 53);
@@ -995,7 +961,6 @@
             // 
             // buttonK
             // 
-            this.buttonK.AutoSize = true;
             this.buttonK.BackColor = System.Drawing.Color.Transparent;
             this.buttonK.CausesValidation = false;
             this.buttonK.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1008,7 +973,7 @@
             this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonK.Image = ((System.Drawing.Image)(resources.GetObject("buttonK.Image")));
-            this.buttonK.Location = new System.Drawing.Point(521, 3);
+            this.buttonK.Location = new System.Drawing.Point(378, 3);
             this.buttonK.Name = "buttonK";
             this.buttonK.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonK.Size = new System.Drawing.Size(45, 55);
@@ -1022,7 +987,6 @@
             // 
             // buttonB
             // 
-            this.buttonB.AutoSize = true;
             this.buttonB.BackColor = System.Drawing.Color.Transparent;
             this.buttonB.CausesValidation = false;
             this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1035,7 +999,7 @@
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonB.Image = ((System.Drawing.Image)(resources.GetObject("buttonB.Image")));
-            this.buttonB.Location = new System.Drawing.Point(197, 7);
+            this.buttonB.Location = new System.Drawing.Point(54, 7);
             this.buttonB.Name = "buttonB";
             this.buttonB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonB.Size = new System.Drawing.Size(41, 54);
@@ -1066,7 +1030,7 @@
             this.labelNumeroAciertos.AutoSize = true;
             this.labelNumeroAciertos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroAciertos.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelNumeroAciertos.Location = new System.Drawing.Point(113, 14);
+            this.labelNumeroAciertos.Location = new System.Drawing.Point(216, 8);
             this.labelNumeroAciertos.Name = "labelNumeroAciertos";
             this.labelNumeroAciertos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroAciertos.TabIndex = 24;
@@ -1077,7 +1041,7 @@
             this.labelNumeroFallos.AutoSize = true;
             this.labelNumeroFallos.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelNumeroFallos.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelNumeroFallos.Location = new System.Drawing.Point(293, 14);
+            this.labelNumeroFallos.Location = new System.Drawing.Point(396, 8);
             this.labelNumeroFallos.Name = "labelNumeroFallos";
             this.labelNumeroFallos.Size = new System.Drawing.Size(33, 33);
             this.labelNumeroFallos.TabIndex = 23;
@@ -1088,7 +1052,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MV Boli", 19F);
             this.label10.ForeColor = System.Drawing.Color.DarkGray;
-            this.label10.Location = new System.Drawing.Point(191, 14);
+            this.label10.Location = new System.Drawing.Point(294, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 33);
             this.label10.TabIndex = 22;
@@ -1106,7 +1070,7 @@
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.panelScore.Location = new System.Drawing.Point(240, 5);
             this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(537, 51);
+            this.panelScore.Size = new System.Drawing.Size(657, 51);
             this.panelScore.TabIndex = 42;
             this.panelScore.Visible = false;
             // 
@@ -1115,7 +1079,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MV Boli", 19F);
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(3, 14);
+            this.label9.Location = new System.Drawing.Point(106, 8);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 33);
             this.label9.TabIndex = 21;
@@ -1126,7 +1090,7 @@
             this.labelPuntuacion.AutoSize = true;
             this.labelPuntuacion.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelPuntuacion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelPuntuacion.Location = new System.Drawing.Point(492, 14);
+            this.labelPuntuacion.Location = new System.Drawing.Point(595, 8);
             this.labelPuntuacion.Name = "labelPuntuacion";
             this.labelPuntuacion.Size = new System.Drawing.Size(33, 33);
             this.labelPuntuacion.TabIndex = 17;
@@ -1137,7 +1101,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MV Boli", 19F);
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(376, 14);
+            this.label5.Location = new System.Drawing.Point(479, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 33);
             this.label5.TabIndex = 16;
@@ -1208,7 +1172,7 @@
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
             this.labelPista.Font = new System.Drawing.Font("Caladea", 25F, System.Drawing.FontStyle.Bold);
             this.labelPista.ForeColor = System.Drawing.Color.Orange;
-            this.labelPista.Location = new System.Drawing.Point(261, 611);
+            this.labelPista.Location = new System.Drawing.Point(267, 600);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelPista.Size = new System.Drawing.Size(974, 51);
@@ -1266,6 +1230,29 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // pbPresentacion
+            // 
+            this.pbPresentacion.Image = ((System.Drawing.Image)(resources.GetObject("pbPresentacion.Image")));
+            this.pbPresentacion.Location = new System.Drawing.Point(48, 647);
+            this.pbPresentacion.Name = "pbPresentacion";
+            this.pbPresentacion.Size = new System.Drawing.Size(16, 32);
+            this.pbPresentacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPresentacion.TabIndex = 52;
+            this.pbPresentacion.TabStop = false;
+            this.pbPresentacion.Visible = false;
+            // 
+            // p
+            // 
+            this.p.AutoSize = true;
+            this.p.BackColor = System.Drawing.Color.Transparent;
+            this.p.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.p.Location = new System.Drawing.Point(319, 6);
+            this.p.Name = "p";
+            this.p.Size = new System.Drawing.Size(145, 21);
+            this.p.TabIndex = 22;
+            this.p.Text = "Nivel vida jugador";
+            // 
             // Halloween
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1273,6 +1260,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1351, 756);
+            this.Controls.Add(this.pbPresentacion);
             this.Controls.Add(this.panelBarraHerramientas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panelGameOver);
@@ -1292,7 +1280,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Halloween";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Halloween_Load);
             this.panelBarraHerramientas.ResumeLayout(false);
             this.panelBarraHerramientas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
@@ -1308,14 +1295,13 @@
             this.panelResolver.ResumeLayout(false);
             this.panelResolver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label p;
         private System.Windows.Forms.Panel panelBarraHerramientas;
         private System.Windows.Forms.PictureBox pbMostrarPista;
         private System.Windows.Forms.Label label4;
@@ -1376,5 +1362,7 @@
         private System.Windows.Forms.Label labelCategoria;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.PictureBox pbPresentacion;
+        private System.Windows.Forms.Label p;
     }
 }

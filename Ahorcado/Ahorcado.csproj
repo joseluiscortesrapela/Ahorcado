@@ -90,6 +90,12 @@
     <Compile Include="Forms\Exorcismo.Designer.cs">
       <DependentUpon>Exorcismo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PresentacionExorcismo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PresentacionExorcismo.Designer.cs">
+      <DependentUpon>PresentacionExorcismo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Jugador.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Exorcismo.resx">
       <DependentUpon>Exorcismo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PresentacionExorcismo.resx">
+      <DependentUpon>PresentacionExorcismo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

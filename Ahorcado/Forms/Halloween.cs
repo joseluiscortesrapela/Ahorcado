@@ -37,9 +37,6 @@ namespace Ahorcado
         public Halloween()
         {
             InitializeComponent();  // Importo las palabras
-
-            Console.WriteLine("Constructor añade las palabras al dgv");
-
             // Añado las palabras al dgv
             añadirPalabrasDGV();
 
@@ -52,28 +49,6 @@ namespace Ahorcado
             {
                 Console.WriteLine("No se han ecnontrado palabras en el dgv, tabla vacia.");
             }
-        }
-
-
-
-        // Evento auto load ventana
-        private void Halloween_Load(object sender, EventArgs e)
-        {
-            Console.WriteLine("Autoload: Muestro panel preentancion juego");
-            // Inicio animacion inicial del juego
-          //  mostrarPresentacionJuego();
-
-        }
-
-        // El timer acaba de terminar.
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            // Oculto panel
-            //panePresentacionJuego.Hide();
-            // Detengo el timer
-            timer.Enabled = false;
-
-            Console.WriteLine("Temporizador ha finalizado");
         }
 
 
@@ -93,6 +68,8 @@ namespace Ahorcado
         // Incia el juego.
         private void prepararPartida()
         {
+
+            mostrarPresentacionJuego();
 
             // La palabra a jugar.
             palabra = damePalabra();
@@ -528,29 +505,36 @@ namespace Ahorcado
             labelPista.Text = pista;
         }
 
-       
-        private void btnIniciarPresentacion_Click(object sender, EventArgs e)
-        {
-            activarTimerPresentacion();
-        }
+
+
 
 
         // Muestro la vengana de presentacion del juego
         private void mostrarPresentacionJuego()
         {
+            pbPresentacion.Visible = true;
             // El panel ocupara toda la ventana.
-           // panePresentacionJuego.Dock = DockStyle.Fill;
+            pbPresentacion.Dock = DockStyle.Fill;
             // Muestro el panel de la animacion.
-           // panePresentacionJuego.Visible = true;
-        }
-
-        private void activarTimerPresentacion()
-        {
+            pbPresentacion.Visible = true;
             // Inicio el temporizador con un temporizador de 14 segundos.
             timer.Interval = 14000;
             // Inicio el timer
             timer.Enabled = true;
         }
+
+
+        // El timer acaba de terminar.
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            // Oculto presentacion
+            pbPresentacion.Hide();
+            // Detengo el timer
+            timer.Enabled = false;
+
+            Console.WriteLine("Temporizador ha finalizado");
+        }
+
 
         // Se cierra el juego
         private void pbExit_Click(object sender, EventArgs e)

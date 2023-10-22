@@ -1258,7 +1258,7 @@
             this.label4.TabIndex = 37;
             this.label4.Text = "Pista";
             // 
-            // Juego
+            // Exorcismo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1284,7 +1284,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
-            this.Name = "Juego";
+            this.Name = "Exorcismo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
