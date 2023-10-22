@@ -30,13 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Halloween));
-            this.panelBarraHerramientas = new System.Windows.Forms.Panel();
-            this.pbMostrarPista = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.p = new System.Windows.Forms.Label();
-            this.progressBarVida = new System.Windows.Forms.ProgressBar();
-            this.pbResolver = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonC = new System.Windows.Forms.Button();
             this.labelLetrasRepetidas = new System.Windows.Forms.Label();
@@ -92,10 +86,12 @@
             this.labelCategoria = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pbPresentacion = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelBarraHerramientas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelBarraHerramientas = new System.Windows.Forms.Panel();
+            this.pbResolver = new System.Windows.Forms.PictureBox();
+            this.progressBarVida = new System.Windows.Forms.ProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbMostrarPista = new System.Windows.Forms.PictureBox();
             this.panelGameOver.SuspendLayout();
             this.panelLetras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
@@ -104,49 +100,10 @@
             this.panelResolver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelBarraHerramientas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelBarraHerramientas
-            // 
-            this.panelBarraHerramientas.AutoSize = true;
-            this.panelBarraHerramientas.BackColor = System.Drawing.Color.Transparent;
-            this.panelBarraHerramientas.Controls.Add(this.pbMostrarPista);
-            this.panelBarraHerramientas.Controls.Add(this.label4);
-            this.panelBarraHerramientas.Controls.Add(this.p);
-            this.panelBarraHerramientas.Controls.Add(this.progressBarVida);
-            this.panelBarraHerramientas.Controls.Add(this.pbResolver);
-            this.panelBarraHerramientas.Controls.Add(this.label2);
-            this.panelBarraHerramientas.Location = new System.Drawing.Point(1012, 5);
-            this.panelBarraHerramientas.Name = "panelBarraHerramientas";
-            this.panelBarraHerramientas.Size = new System.Drawing.Size(15207, 86);
-            this.panelBarraHerramientas.TabIndex = 51;
-            this.panelBarraHerramientas.Visible = false;
-            // 
-            // pbMostrarPista
-            // 
-            this.pbMostrarPista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
-            this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
-            this.pbMostrarPista.Location = new System.Drawing.Point(115, 30);
-            this.pbMostrarPista.Name = "pbMostrarPista";
-            this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
-            this.pbMostrarPista.TabIndex = 38;
-            this.pbMostrarPista.TabStop = false;
-            this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(132, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Pista";
             // 
             // p
             // 
@@ -154,47 +111,11 @@
             this.p.BackColor = System.Drawing.Color.Transparent;
             this.p.Font = new System.Drawing.Font("MV Boli", 12F);
             this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.p.Location = new System.Drawing.Point(319, 6);
+            this.p.Location = new System.Drawing.Point(215, 68);
             this.p.Name = "p";
             this.p.Size = new System.Drawing.Size(145, 21);
             this.p.TabIndex = 22;
             this.p.Text = "Nivel vida jugador";
-            // 
-            // progressBarVida
-            // 
-            this.progressBarVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
-            this.progressBarVida.Location = new System.Drawing.Point(310, 30);
-            this.progressBarVida.Maximum = 6;
-            this.progressBarVida.Name = "progressBarVida";
-            this.progressBarVida.Size = new System.Drawing.Size(141, 21);
-            this.progressBarVida.TabIndex = 21;
-            this.progressBarVida.Value = 6;
-            // 
-            // pbResolver
-            // 
-            this.pbResolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbResolver.BackColor = System.Drawing.Color.Transparent;
-            this.pbResolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbResolver.BackgroundImage")));
-            this.pbResolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbResolver.Location = new System.Drawing.Point(211, 30);
-            this.pbResolver.Name = "pbResolver";
-            this.pbResolver.Size = new System.Drawing.Size(57, 50);
-            this.pbResolver.TabIndex = 36;
-            this.pbResolver.TabStop = false;
-            this.pbResolver.Click += new System.EventHandler(this.btnShowPanelResolver_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label2.Location = new System.Drawing.Point(220, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 21);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Resolver";
             // 
             // label3
             // 
@@ -202,7 +123,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(8, 7);
+            this.label3.Location = new System.Drawing.Point(8, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 50;
@@ -210,6 +131,8 @@
             // 
             // buttonC
             // 
+            this.buttonC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonC.AutoSize = true;
             this.buttonC.BackColor = System.Drawing.Color.Transparent;
             this.buttonC.CausesValidation = false;
             this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -222,10 +145,10 @@
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonC.Image = ((System.Drawing.Image)(resources.GetObject("buttonC.Image")));
-            this.buttonC.Location = new System.Drawing.Point(90, 8);
+            this.buttonC.Location = new System.Drawing.Point(159, 20);
             this.buttonC.Name = "buttonC";
             this.buttonC.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonC.Size = new System.Drawing.Size(42, 54);
+            this.buttonC.Size = new System.Drawing.Size(53, 76);
             this.buttonC.TabIndex = 31;
             this.buttonC.Text = "C";
             this.buttonC.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -248,6 +171,8 @@
             // 
             // buttonV
             // 
+            this.buttonV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonV.AutoSize = true;
             this.buttonV.BackColor = System.Drawing.Color.Transparent;
             this.buttonV.CausesValidation = false;
             this.buttonV.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -260,10 +185,10 @@
             this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonV.Image = ((System.Drawing.Image)(resources.GetObject("buttonV.Image")));
-            this.buttonV.Location = new System.Drawing.Point(833, 5);
+            this.buttonV.Location = new System.Drawing.Point(1292, 15);
             this.buttonV.Name = "buttonV";
             this.buttonV.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonV.Size = new System.Drawing.Size(41, 53);
+            this.buttonV.Size = new System.Drawing.Size(66, 82);
             this.buttonV.TabIndex = 28;
             this.buttonV.Text = "V";
             this.buttonV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -274,6 +199,8 @@
             // 
             // buttonX
             // 
+            this.buttonX.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonX.AutoSize = true;
             this.buttonX.BackColor = System.Drawing.Color.Transparent;
             this.buttonX.CausesValidation = false;
             this.buttonX.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -286,10 +213,10 @@
             this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonX.Image = ((System.Drawing.Image)(resources.GetObject("buttonX.Image")));
-            this.buttonX.Location = new System.Drawing.Point(915, 5);
+            this.buttonX.Location = new System.Drawing.Point(1444, 14);
             this.buttonX.Name = "buttonX";
             this.buttonX.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonX.Size = new System.Drawing.Size(44, 47);
+            this.buttonX.Size = new System.Drawing.Size(58, 81);
             this.buttonX.TabIndex = 27;
             this.buttonX.Text = "X";
             this.buttonX.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -300,6 +227,8 @@
             // 
             // buttonT
             // 
+            this.buttonT.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonT.AutoSize = true;
             this.buttonT.BackColor = System.Drawing.Color.Transparent;
             this.buttonT.CausesValidation = false;
             this.buttonT.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -312,10 +241,10 @@
             this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonT.Image = ((System.Drawing.Image)(resources.GetObject("buttonT.Image")));
-            this.buttonT.Location = new System.Drawing.Point(761, 1);
+            this.buttonT.Location = new System.Drawing.Point(1182, 8);
             this.buttonT.Name = "buttonT";
             this.buttonT.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonT.Size = new System.Drawing.Size(49, 56);
+            this.buttonT.Size = new System.Drawing.Size(76, 96);
             this.buttonT.TabIndex = 26;
             this.buttonT.Text = "T";
             this.buttonT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -332,7 +261,7 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(427, 101);
+            this.panelGameOver.Location = new System.Drawing.Point(509, 101);
             this.panelGameOver.Name = "panelGameOver";
             this.panelGameOver.Size = new System.Drawing.Size(588, 234);
             this.panelGameOver.TabIndex = 47;
@@ -390,7 +319,7 @@
             // 
             // panelLetras
             // 
-            this.panelLetras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelLetras.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panelLetras.BackColor = System.Drawing.Color.Transparent;
             this.panelLetras.Controls.Add(this.buttonC);
             this.panelLetras.Controls.Add(this.labelLetrasRepetidas);
@@ -421,14 +350,16 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(0, 693);
+            this.panelLetras.Location = new System.Drawing.Point(-29, 654);
             this.panelLetras.Name = "panelLetras";
-            this.panelLetras.Size = new System.Drawing.Size(1351, 630);
+            this.panelLetras.Size = new System.Drawing.Size(1900, 399);
             this.panelLetras.TabIndex = 48;
             this.panelLetras.Visible = false;
             // 
             // buttonH
             // 
+            this.buttonH.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonH.AutoSize = true;
             this.buttonH.BackColor = System.Drawing.Color.Transparent;
             this.buttonH.CausesValidation = false;
             this.buttonH.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -441,10 +372,10 @@
             this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonH.Image = ((System.Drawing.Image)(resources.GetObject("buttonH.Image")));
-            this.buttonH.Location = new System.Drawing.Point(274, 6);
+            this.buttonH.Location = new System.Drawing.Point(446, 12);
             this.buttonH.Name = "buttonH";
             this.buttonH.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonH.Size = new System.Drawing.Size(43, 51);
+            this.buttonH.Size = new System.Drawing.Size(58, 86);
             this.buttonH.TabIndex = 25;
             this.buttonH.Text = "H";
             this.buttonH.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -455,6 +386,8 @@
             // 
             // buttonG
             // 
+            this.buttonG.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonG.AutoSize = true;
             this.buttonG.BackColor = System.Drawing.Color.Transparent;
             this.buttonG.CausesValidation = false;
             this.buttonG.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -467,10 +400,10 @@
             this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonG.Image = ((System.Drawing.Image)(resources.GetObject("buttonG.Image")));
-            this.buttonG.Location = new System.Drawing.Point(238, 6);
+            this.buttonG.Location = new System.Drawing.Point(382, 17);
             this.buttonG.Name = "buttonG";
             this.buttonG.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonG.Size = new System.Drawing.Size(41, 45);
+            this.buttonG.Size = new System.Drawing.Size(64, 80);
             this.buttonG.TabIndex = 24;
             this.buttonG.Text = "G";
             this.buttonG.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -481,6 +414,8 @@
             // 
             // buttonE
             // 
+            this.buttonE.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonE.AutoSize = true;
             this.buttonE.BackColor = System.Drawing.Color.Transparent;
             this.buttonE.CausesValidation = false;
             this.buttonE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -493,10 +428,10 @@
             this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonE.Image = ((System.Drawing.Image)(resources.GetObject("buttonE.Image")));
-            this.buttonE.Location = new System.Drawing.Point(166, 9);
+            this.buttonE.Location = new System.Drawing.Point(269, 15);
             this.buttonE.Name = "buttonE";
             this.buttonE.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonE.Size = new System.Drawing.Size(41, 46);
+            this.buttonE.Size = new System.Drawing.Size(56, 81);
             this.buttonE.TabIndex = 23;
             this.buttonE.Text = "E";
             this.buttonE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -507,6 +442,8 @@
             // 
             // buttonJ
             // 
+            this.buttonJ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonJ.AutoSize = true;
             this.buttonJ.BackColor = System.Drawing.Color.Transparent;
             this.buttonJ.CausesValidation = false;
             this.buttonJ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -519,10 +456,10 @@
             this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonJ.Image = ((System.Drawing.Image)(resources.GetObject("buttonJ.Image")));
-            this.buttonJ.Location = new System.Drawing.Point(342, 3);
+            this.buttonJ.Location = new System.Drawing.Point(538, 14);
             this.buttonJ.Name = "buttonJ";
             this.buttonJ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonJ.Size = new System.Drawing.Size(41, 53);
+            this.buttonJ.Size = new System.Drawing.Size(51, 84);
             this.buttonJ.TabIndex = 22;
             this.buttonJ.Text = "J";
             this.buttonJ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -533,6 +470,8 @@
             // 
             // buttonF
             // 
+            this.buttonF.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonF.AutoSize = true;
             this.buttonF.BackColor = System.Drawing.Color.Transparent;
             this.buttonF.CausesValidation = false;
             this.buttonF.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -545,10 +484,10 @@
             this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonF.Image = ((System.Drawing.Image)(resources.GetObject("buttonF.Image")));
-            this.buttonF.Location = new System.Drawing.Point(202, 8);
+            this.buttonF.Location = new System.Drawing.Point(325, 17);
             this.buttonF.Name = "buttonF";
             this.buttonF.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonF.Size = new System.Drawing.Size(41, 44);
+            this.buttonF.Size = new System.Drawing.Size(63, 79);
             this.buttonF.TabIndex = 21;
             this.buttonF.Text = "F";
             this.buttonF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -559,6 +498,8 @@
             // 
             // buttonD
             // 
+            this.buttonD.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonD.AutoSize = true;
             this.buttonD.BackColor = System.Drawing.Color.Transparent;
             this.buttonD.CausesValidation = false;
             this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -571,10 +512,10 @@
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonD.Image = ((System.Drawing.Image)(resources.GetObject("buttonD.Image")));
-            this.buttonD.Location = new System.Drawing.Point(129, 12);
+            this.buttonD.Location = new System.Drawing.Point(210, 20);
             this.buttonD.Name = "buttonD";
             this.buttonD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonD.Size = new System.Drawing.Size(41, 46);
+            this.buttonD.Size = new System.Drawing.Size(53, 77);
             this.buttonD.TabIndex = 20;
             this.buttonD.Text = "D";
             this.buttonD.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -585,6 +526,8 @@
             // 
             // buttonL
             // 
+            this.buttonL.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonL.AutoSize = true;
             this.buttonL.BackColor = System.Drawing.Color.Transparent;
             this.buttonL.CausesValidation = false;
             this.buttonL.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -597,10 +540,10 @@
             this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonL.Image = ((System.Drawing.Image)(resources.GetObject("buttonL.Image")));
-            this.buttonL.Location = new System.Drawing.Point(417, 3);
+            this.buttonL.Location = new System.Drawing.Point(648, 11);
             this.buttonL.Name = "buttonL";
             this.buttonL.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonL.Size = new System.Drawing.Size(41, 53);
+            this.buttonL.Size = new System.Drawing.Size(63, 88);
             this.buttonL.TabIndex = 19;
             this.buttonL.Text = "L";
             this.buttonL.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -611,6 +554,8 @@
             // 
             // buttonI
             // 
+            this.buttonI.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonI.AutoSize = true;
             this.buttonI.BackColor = System.Drawing.Color.Transparent;
             this.buttonI.CausesValidation = false;
             this.buttonI.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -623,10 +568,10 @@
             this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonI.Image = ((System.Drawing.Image)(resources.GetObject("buttonI.Image")));
-            this.buttonI.Location = new System.Drawing.Point(310, 5);
+            this.buttonI.Location = new System.Drawing.Point(502, 11);
             this.buttonI.Name = "buttonI";
             this.buttonI.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonI.Size = new System.Drawing.Size(41, 50);
+            this.buttonI.Size = new System.Drawing.Size(41, 85);
             this.buttonI.TabIndex = 18;
             this.buttonI.Text = "I";
             this.buttonI.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -637,6 +582,8 @@
             // 
             // buttonM
             // 
+            this.buttonM.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonM.AutoSize = true;
             this.buttonM.BackColor = System.Drawing.Color.Transparent;
             this.buttonM.CausesValidation = false;
             this.buttonM.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -649,10 +596,10 @@
             this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonM.Image = ((System.Drawing.Image)(resources.GetObject("buttonM.Image")));
-            this.buttonM.Location = new System.Drawing.Point(450, 4);
+            this.buttonM.Location = new System.Drawing.Point(707, 9);
             this.buttonM.Name = "buttonM";
             this.buttonM.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonM.Size = new System.Drawing.Size(48, 55);
+            this.buttonM.Size = new System.Drawing.Size(68, 94);
             this.buttonM.TabIndex = 16;
             this.buttonM.Text = "M";
             this.buttonM.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -663,7 +610,10 @@
             // 
             // buttonA
             // 
+            this.buttonA.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonA.AutoSize = true;
             this.buttonA.BackColor = System.Drawing.Color.Transparent;
+            this.buttonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonA.CausesValidation = false;
             this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonA.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -675,10 +625,10 @@
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonA.Image = ((System.Drawing.Image)(resources.GetObject("buttonA.Image")));
-            this.buttonA.Location = new System.Drawing.Point(12, 2);
+            this.buttonA.Location = new System.Drawing.Point(41, 16);
             this.buttonA.Name = "buttonA";
             this.buttonA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonA.Size = new System.Drawing.Size(48, 66);
+            this.buttonA.Size = new System.Drawing.Size(56, 80);
             this.buttonA.TabIndex = 15;
             this.buttonA.Text = "A";
             this.buttonA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -689,6 +639,8 @@
             // 
             // buttonN
             // 
+            this.buttonN.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonN.AutoSize = true;
             this.buttonN.BackColor = System.Drawing.Color.Transparent;
             this.buttonN.CausesValidation = false;
             this.buttonN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -701,10 +653,10 @@
             this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonN.Image = ((System.Drawing.Image)(resources.GetObject("buttonN.Image")));
-            this.buttonN.Location = new System.Drawing.Point(496, 4);
+            this.buttonN.Location = new System.Drawing.Point(775, 16);
             this.buttonN.Name = "buttonN";
             this.buttonN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonN.Size = new System.Drawing.Size(45, 53);
+            this.buttonN.Size = new System.Drawing.Size(59, 84);
             this.buttonN.TabIndex = 14;
             this.buttonN.Text = "N";
             this.buttonN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -715,6 +667,8 @@
             // 
             // buttonÑ
             // 
+            this.buttonÑ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonÑ.AutoSize = true;
             this.buttonÑ.BackColor = System.Drawing.Color.Transparent;
             this.buttonÑ.CausesValidation = false;
             this.buttonÑ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -727,10 +681,10 @@
             this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonÑ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonÑ.Image = ((System.Drawing.Image)(resources.GetObject("buttonÑ.Image")));
-            this.buttonÑ.Location = new System.Drawing.Point(536, 3);
+            this.buttonÑ.Location = new System.Drawing.Point(838, -2);
             this.buttonÑ.Name = "buttonÑ";
             this.buttonÑ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonÑ.Size = new System.Drawing.Size(45, 60);
+            this.buttonÑ.Size = new System.Drawing.Size(80, 115);
             this.buttonÑ.TabIndex = 13;
             this.buttonÑ.Text = "Ñ";
             this.buttonÑ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -741,6 +695,8 @@
             // 
             // buttonO
             // 
+            this.buttonO.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonO.AutoSize = true;
             this.buttonO.BackColor = System.Drawing.Color.Transparent;
             this.buttonO.CausesValidation = false;
             this.buttonO.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -753,10 +709,10 @@
             this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonO.Image = ((System.Drawing.Image)(resources.GetObject("buttonO.Image")));
-            this.buttonO.Location = new System.Drawing.Point(581, 4);
+            this.buttonO.Location = new System.Drawing.Point(907, 17);
             this.buttonO.Name = "buttonO";
             this.buttonO.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonO.Size = new System.Drawing.Size(41, 57);
+            this.buttonO.Size = new System.Drawing.Size(66, 81);
             this.buttonO.TabIndex = 12;
             this.buttonO.Text = "O";
             this.buttonO.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -767,6 +723,8 @@
             // 
             // buttonP
             // 
+            this.buttonP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonP.AutoSize = true;
             this.buttonP.BackColor = System.Drawing.Color.Transparent;
             this.buttonP.CausesValidation = false;
             this.buttonP.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -779,10 +737,10 @@
             this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonP.Image = ((System.Drawing.Image)(resources.GetObject("buttonP.Image")));
-            this.buttonP.Location = new System.Drawing.Point(617, 5);
+            this.buttonP.Location = new System.Drawing.Point(963, 17);
             this.buttonP.Name = "buttonP";
             this.buttonP.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonP.Size = new System.Drawing.Size(41, 55);
+            this.buttonP.Size = new System.Drawing.Size(58, 80);
             this.buttonP.TabIndex = 11;
             this.buttonP.Text = "P";
             this.buttonP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -793,6 +751,8 @@
             // 
             // buttonU
             // 
+            this.buttonU.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonU.AutoSize = true;
             this.buttonU.BackColor = System.Drawing.Color.Transparent;
             this.buttonU.CausesValidation = false;
             this.buttonU.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -805,10 +765,10 @@
             this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonU.Image = ((System.Drawing.Image)(resources.GetObject("buttonU.Image")));
-            this.buttonU.Location = new System.Drawing.Point(797, 7);
+            this.buttonU.Location = new System.Drawing.Point(1236, 5);
             this.buttonU.Name = "buttonU";
             this.buttonU.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonU.Size = new System.Drawing.Size(41, 49);
+            this.buttonU.Size = new System.Drawing.Size(68, 91);
             this.buttonU.TabIndex = 10;
             this.buttonU.Text = "U";
             this.buttonU.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -819,6 +779,8 @@
             // 
             // buttonS
             // 
+            this.buttonS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonS.AutoSize = true;
             this.buttonS.BackColor = System.Drawing.Color.Transparent;
             this.buttonS.CausesValidation = false;
             this.buttonS.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -831,10 +793,10 @@
             this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonS.Image = ((System.Drawing.Image)(resources.GetObject("buttonS.Image")));
-            this.buttonS.Location = new System.Drawing.Point(725, 4);
+            this.buttonS.Location = new System.Drawing.Point(1118, 10);
             this.buttonS.Name = "buttonS";
             this.buttonS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonS.Size = new System.Drawing.Size(44, 56);
+            this.buttonS.Size = new System.Drawing.Size(68, 95);
             this.buttonS.TabIndex = 9;
             this.buttonS.Text = "S";
             this.buttonS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -845,6 +807,8 @@
             // 
             // buttonQ
             // 
+            this.buttonQ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonQ.AutoSize = true;
             this.buttonQ.BackColor = System.Drawing.Color.Transparent;
             this.buttonQ.CausesValidation = false;
             this.buttonQ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -857,10 +821,10 @@
             this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonQ.Image = ((System.Drawing.Image)(resources.GetObject("buttonQ.Image")));
-            this.buttonQ.Location = new System.Drawing.Point(653, 6);
+            this.buttonQ.Location = new System.Drawing.Point(1016, 15);
             this.buttonQ.Name = "buttonQ";
             this.buttonQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonQ.Size = new System.Drawing.Size(44, 51);
+            this.buttonQ.Size = new System.Drawing.Size(67, 79);
             this.buttonQ.TabIndex = 7;
             this.buttonQ.Text = "Q";
             this.buttonQ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -871,6 +835,8 @@
             // 
             // buttonR
             // 
+            this.buttonR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonR.AutoSize = true;
             this.buttonR.BackColor = System.Drawing.Color.Transparent;
             this.buttonR.CausesValidation = false;
             this.buttonR.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -883,10 +849,10 @@
             this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonR.Image = ((System.Drawing.Image)(resources.GetObject("buttonR.Image")));
-            this.buttonR.Location = new System.Drawing.Point(689, 2);
+            this.buttonR.Location = new System.Drawing.Point(1068, 16);
             this.buttonR.Name = "buttonR";
             this.buttonR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonR.Size = new System.Drawing.Size(46, 58);
+            this.buttonR.Size = new System.Drawing.Size(71, 89);
             this.buttonR.TabIndex = 6;
             this.buttonR.Text = "R";
             this.buttonR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -897,6 +863,8 @@
             // 
             // buttonW
             // 
+            this.buttonW.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonW.AutoSize = true;
             this.buttonW.BackColor = System.Drawing.Color.Transparent;
             this.buttonW.CausesValidation = false;
             this.buttonW.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -909,10 +877,10 @@
             this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonW.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonW.Image = ((System.Drawing.Image)(resources.GetObject("buttonW.Image")));
-            this.buttonW.Location = new System.Drawing.Point(869, 5);
+            this.buttonW.Location = new System.Drawing.Point(1351, -7);
             this.buttonW.Name = "buttonW";
             this.buttonW.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonW.Size = new System.Drawing.Size(56, 52);
+            this.buttonW.Size = new System.Drawing.Size(93, 99);
             this.buttonW.TabIndex = 4;
             this.buttonW.Text = "W";
             this.buttonW.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -923,6 +891,8 @@
             // 
             // buttonY
             // 
+            this.buttonY.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonY.AutoSize = true;
             this.buttonY.BackColor = System.Drawing.Color.Transparent;
             this.buttonY.CausesValidation = false;
             this.buttonY.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -935,10 +905,10 @@
             this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonY.Image = ((System.Drawing.Image)(resources.GetObject("buttonY.Image")));
-            this.buttonY.Location = new System.Drawing.Point(952, 6);
+            this.buttonY.Location = new System.Drawing.Point(1498, 16);
             this.buttonY.Name = "buttonY";
             this.buttonY.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonY.Size = new System.Drawing.Size(41, 49);
+            this.buttonY.Size = new System.Drawing.Size(61, 77);
             this.buttonY.TabIndex = 3;
             this.buttonY.Text = "Y";
             this.buttonY.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -949,6 +919,8 @@
             // 
             // buttonZ
             // 
+            this.buttonZ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonZ.AutoSize = true;
             this.buttonZ.BackColor = System.Drawing.Color.Transparent;
             this.buttonZ.CausesValidation = false;
             this.buttonZ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -961,10 +933,10 @@
             this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonZ.Image = ((System.Drawing.Image)(resources.GetObject("buttonZ.Image")));
-            this.buttonZ.Location = new System.Drawing.Point(997, 2);
+            this.buttonZ.Location = new System.Drawing.Point(1560, 12);
             this.buttonZ.Name = "buttonZ";
             this.buttonZ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonZ.Size = new System.Drawing.Size(54, 53);
+            this.buttonZ.Size = new System.Drawing.Size(77, 78);
             this.buttonZ.TabIndex = 2;
             this.buttonZ.Text = "Z";
             this.buttonZ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -975,6 +947,8 @@
             // 
             // buttonK
             // 
+            this.buttonK.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonK.AutoSize = true;
             this.buttonK.BackColor = System.Drawing.Color.Transparent;
             this.buttonK.CausesValidation = false;
             this.buttonK.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -987,10 +961,10 @@
             this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonK.Image = ((System.Drawing.Image)(resources.GetObject("buttonK.Image")));
-            this.buttonK.Location = new System.Drawing.Point(378, 3);
+            this.buttonK.Location = new System.Drawing.Point(591, 10);
             this.buttonK.Name = "buttonK";
             this.buttonK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonK.Size = new System.Drawing.Size(45, 55);
+            this.buttonK.Size = new System.Drawing.Size(65, 88);
             this.buttonK.TabIndex = 1;
             this.buttonK.Text = "K";
             this.buttonK.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1001,6 +975,8 @@
             // 
             // buttonB
             // 
+            this.buttonB.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonB.AutoSize = true;
             this.buttonB.BackColor = System.Drawing.Color.Transparent;
             this.buttonB.CausesValidation = false;
             this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1013,10 +989,10 @@
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonB.Image = ((System.Drawing.Image)(resources.GetObject("buttonB.Image")));
-            this.buttonB.Location = new System.Drawing.Point(54, 7);
+            this.buttonB.Location = new System.Drawing.Point(103, 17);
             this.buttonB.Name = "buttonB";
             this.buttonB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonB.Size = new System.Drawing.Size(41, 54);
+            this.buttonB.Size = new System.Drawing.Size(52, 80);
             this.buttonB.TabIndex = 0;
             this.buttonB.Text = "B";
             this.buttonB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1032,7 +1008,7 @@
             this.dgvPalabras.AllowUserToResizeColumns = false;
             this.dgvPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(12, 647);
+            this.dgvPalabras.Location = new System.Drawing.Point(16, 539);
             this.dgvPalabras.Name = "dgvPalabras";
             this.dgvPalabras.ReadOnly = true;
             this.dgvPalabras.Size = new System.Drawing.Size(10, 32);
@@ -1074,6 +1050,7 @@
             // 
             // panelScore
             // 
+            this.panelScore.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelScore.BackColor = System.Drawing.Color.Transparent;
             this.panelScore.Controls.Add(this.labelNumeroAciertos);
             this.panelScore.Controls.Add(this.labelNumeroFallos);
@@ -1082,9 +1059,9 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(357, 5);
+            this.panelScore.Location = new System.Drawing.Point(473, 5);
             this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(649, 51);
+            this.panelScore.Size = new System.Drawing.Size(647, 51);
             this.panelScore.TabIndex = 42;
             this.panelScore.Visible = false;
             // 
@@ -1125,12 +1102,12 @@
             // 
             this.cbCategorias.BackColor = System.Drawing.Color.Black;
             this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.cbCategorias.FormattingEnabled = true;
-            this.cbCategorias.Location = new System.Drawing.Point(12, 31);
+            this.cbCategorias.Location = new System.Drawing.Point(12, 44);
             this.cbCategorias.Name = "cbCategorias";
-            this.cbCategorias.Size = new System.Drawing.Size(222, 33);
+            this.cbCategorias.Size = new System.Drawing.Size(222, 39);
             this.cbCategorias.TabIndex = 40;
             this.cbCategorias.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategorias_SelectedIndexChanged);
             // 
@@ -1223,7 +1200,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(1307, 5);
+            this.pbExit.Location = new System.Drawing.Point(1585, 5);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(32, 35);
             this.pbExit.TabIndex = 45;
@@ -1248,7 +1225,7 @@
             // pbPresentacion
             // 
             this.pbPresentacion.Image = ((System.Drawing.Image)(resources.GetObject("pbPresentacion.Image")));
-            this.pbPresentacion.Location = new System.Drawing.Point(48, 647);
+            this.pbPresentacion.Location = new System.Drawing.Point(50, 539);
             this.pbPresentacion.Name = "pbPresentacion";
             this.pbPresentacion.Size = new System.Drawing.Size(16, 32);
             this.pbPresentacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1256,15 +1233,81 @@
             this.pbPresentacion.TabStop = false;
             this.pbPresentacion.Visible = false;
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(104, 609);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label2.Location = new System.Drawing.Point(113, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Resolver";
+            // 
+            // panelBarraHerramientas
+            // 
+            this.panelBarraHerramientas.BackColor = System.Drawing.Color.Transparent;
+            this.panelBarraHerramientas.Controls.Add(this.p);
+            this.panelBarraHerramientas.Controls.Add(this.pbMostrarPista);
+            this.panelBarraHerramientas.Controls.Add(this.label4);
+            this.panelBarraHerramientas.Controls.Add(this.label2);
+            this.panelBarraHerramientas.Controls.Add(this.pbResolver);
+            this.panelBarraHerramientas.Controls.Add(this.progressBarVida);
+            this.panelBarraHerramientas.Location = new System.Drawing.Point(1223, 31);
+            this.panelBarraHerramientas.Name = "panelBarraHerramientas";
+            this.panelBarraHerramientas.Size = new System.Drawing.Size(536, 91);
+            this.panelBarraHerramientas.TabIndex = 39;
+            this.panelBarraHerramientas.Visible = false;
+            // 
+            // pbResolver
+            // 
+            this.pbResolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbResolver.BackColor = System.Drawing.Color.Transparent;
+            this.pbResolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbResolver.BackgroundImage")));
+            this.pbResolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbResolver.Location = new System.Drawing.Point(120, 13);
+            this.pbResolver.Name = "pbResolver";
+            this.pbResolver.Size = new System.Drawing.Size(57, 50);
+            this.pbResolver.TabIndex = 36;
+            this.pbResolver.TabStop = false;
+            this.pbResolver.Click += new System.EventHandler(this.btnShowPanelResolver_Click);
+            // 
+            // progressBarVida
+            // 
+            this.progressBarVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
+            this.progressBarVida.Location = new System.Drawing.Point(222, 13);
+            this.progressBarVida.Maximum = 6;
+            this.progressBarVida.Name = "progressBarVida";
+            this.progressBarVida.Size = new System.Drawing.Size(141, 45);
+            this.progressBarVida.TabIndex = 21;
+            this.progressBarVida.Value = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label4.Location = new System.Drawing.Point(20, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Pista";
+            // 
+            // pbMostrarPista
+            // 
+            this.pbMostrarPista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
+            this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
+            this.pbMostrarPista.Location = new System.Drawing.Point(19, 13);
+            this.pbMostrarPista.Name = "pbMostrarPista";
+            this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
+            this.pbMostrarPista.TabIndex = 38;
+            this.pbMostrarPista.TabStop = false;
+            this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
             // 
             // Halloween
             // 
@@ -1273,10 +1316,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1351, 756);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pbPresentacion);
+            this.ClientSize = new System.Drawing.Size(1620, 756);
             this.Controls.Add(this.panelBarraHerramientas);
+            this.Controls.Add(this.pbPresentacion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panelGameOver);
             this.Controls.Add(this.panelLetras);
@@ -1295,10 +1337,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Halloween";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panelBarraHerramientas.ResumeLayout(false);
-            this.panelBarraHerramientas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).EndInit();
             this.panelGameOver.ResumeLayout(false);
             this.panelGameOver.PerformLayout();
             this.panelLetras.ResumeLayout(false);
@@ -1311,19 +1349,16 @@
             this.panelResolver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelBarraHerramientas.ResumeLayout(false);
+            this.panelBarraHerramientas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelBarraHerramientas;
-        private System.Windows.Forms.PictureBox pbMostrarPista;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ProgressBar progressBarVida;
-        private System.Windows.Forms.PictureBox pbResolver;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.Label labelLetrasRepetidas;
@@ -1380,6 +1415,11 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox pbPresentacion;
         private System.Windows.Forms.Label p;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelBarraHerramientas;
+        private System.Windows.Forms.PictureBox pbMostrarPista;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pbResolver;
+        private System.Windows.Forms.ProgressBar progressBarVida;
     }
 }
