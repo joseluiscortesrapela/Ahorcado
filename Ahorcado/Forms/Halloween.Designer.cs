@@ -92,6 +92,7 @@
             this.labelCategoria = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pbPresentacion = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBarraHerramientas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
@@ -103,6 +104,7 @@
             this.panelResolver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraHerramientas
@@ -1254,6 +1256,16 @@
             this.pbPresentacion.TabStop = false;
             this.pbPresentacion.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(104, 609);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            // 
             // Halloween
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1262,6 +1274,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1351, 756);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbPresentacion);
             this.Controls.Add(this.panelBarraHerramientas);
             this.Controls.Add(this.label3);
@@ -1298,6 +1311,7 @@
             this.panelResolver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1366,5 +1380,6 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox pbPresentacion;
         private System.Windows.Forms.Label p;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

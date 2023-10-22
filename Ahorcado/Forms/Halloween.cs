@@ -1,5 +1,6 @@
 ﻿using Ahorcado.Utilidades;
 using NAudio.Wave;
+using NAudio.Wave.SampleProviders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -503,7 +504,7 @@ namespace Ahorcado
 
         private void buttonNoJugarOtra_Click(object sender, EventArgs e)
         {
-            apagarMusicaFondo();
+            apagarMusicaFondoJuegoHalloween();
             // Oculto la ventana de login
             this.Hide();
             // Intancia
@@ -561,9 +562,27 @@ namespace Ahorcado
             
         }
 
-        private void apagarMusicaFondo()
+        // Disminuye el sonido lentamente hasta apagarlo.
+        private async Task apagarMusicaFondoJuegoHalloween()
         {
-            player.Stop();
+            if (audioFile != null && player != null)
+            {
+                int fadeDurationMs = 3000; // Duración del fade-out en milisegundos
+                int fadeIntervalMs = 100;  // Intervalo de ajuste del volumen en milisegundos
+
+                float initialVolume = audioFile.Volume;
+
+                for (int t = 0; t < fadeDurationMs; t += fadeIntervalMs)
+                {
+                    float volume = initialVolume - (float)t / fadeDurationMs;
+                    if (volume < 0) volume = 0;
+
+                    audioFile.Volume = volume;
+                    await Task.Delay(fadeIntervalMs);
+                }
+
+                player.Stop();
+            }
         }
 
 
