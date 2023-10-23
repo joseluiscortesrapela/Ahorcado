@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<WordList>
-  <Word>
+<wordList>
+  <word>
     <id>1</id>
     <palabra>Huelva</palabra>
     <pista>Es la ciudad más antigua de occidente</pista>
     <categoria>Historia</categoria>
-  </Word>
-  <Word>
+  </word>
+  <word>
     <id>2</id>
     <palabra>Plus ultra</palabra>
     <pista>Fue el primer hidroavión en realizar un vuelo entre España y Sudamérica, partiendo desde Palos de la Frontera en 1926.</pista>
     <categoria>Historia</categoria>
-  </Word>
-  <Word>
+  </word>
+  <word>
     <id>3</id>
     <palabra>El quijote</palabra>
     <pista>En un lugar de La Mancha, de cuyo nombre no quiero acordarme...</pista>
     <categoria>Libros</categoria>
-  </Word>
-  <Word>
+  </word>
+  <word>
     <id>4</id>
     <palabra>Platero y yo</palabra>
     <pista>Es pequeño, peludo, suave; tan blando por fuera, que se diría todo de algodón, que no lleva huesos.</pista>
     <categoria>Libros</categoria>
-  </Word>
-  <Word>
+  </word>
+  <word>
     <id>5</id>
     <palabra>Cristobal Colon</palabra>
     <pista>Descubridor del nuevo mundo</pista>
     <categoria>Historia</categoria>
-  </Word>
-  <Word>
+  </word>
+  <word>
     <id>6</id>
     <palabra>Dracula</palabra>
     <pista>Abraham "Bram" Stoker fue un novelista y escritor irlandés, conocido por su novela...</pista>
     <categoria>Libros</categoria>
-  </Word>
-</WordList>
+  </word>
+</wordList>

@@ -697,6 +697,13 @@ namespace Ahorcado
             labelMensaje.Text = "";
         }
 
-
+        private void pbGuardar_Click(object sender, EventArgs e)
+        {
+            
+            // Guardo el contenido del dgv jugadores y creo su fichero xml.
+            ProcesarFicherosXML.crearJugadoresXML(dgvJugadores);
+            // Guardo el contenido del dgv palabras y creo su fichero xml.
+            
+        }
     }
 }
