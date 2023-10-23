@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelMensajeLogin = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.tbContraseña = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -76,17 +76,6 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(637, 488);
             this.panelLogin.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Location = new System.Drawing.Point(74, 416);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 22);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Practica 2º DAM  ";
             // 
             // pbExit
             // 
@@ -226,8 +215,19 @@
             this.tbNombre.Size = new System.Drawing.Size(165, 32);
             this.tbNombre.TabIndex = 11;
             this.tbNombre.TabStop = false;
-            this.tbNombre.Text = "Serena";
+            this.tbNombre.Text = "admin";
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label4.Location = new System.Drawing.Point(74, 416);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(197, 22);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Practica 2º DAM  ";
             // 
             // error
             // 

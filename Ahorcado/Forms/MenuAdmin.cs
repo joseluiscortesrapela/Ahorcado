@@ -23,6 +23,7 @@ namespace Ahorcado
         private String accionARealizar;
 
 
+
         public MenuAdmin()
         {
             InitializeComponent();
@@ -36,11 +37,7 @@ namespace Ahorcado
             importarJugadoresDesdeXMLAlDGV();
             importarPalabrasDesdeXMLAlDGV();
             // Cargo las categorias
-            // cargarCategorias();
-
-            // BindingSource bindingSource = new BindingSource();
-            //  bindingSource.DataSource = null;
-            // dgvTablaGenerica.DataSource = null; // Desvincula el BindingSource del control
+            cargarCategorias();
 
         }
 
@@ -70,8 +67,6 @@ namespace Ahorcado
             }
 
         }
-
-
 
 
         // Muestra la tabla con los jugadores
@@ -117,7 +112,7 @@ namespace Ahorcado
         {
 
             // Si se ha seleccionado una fila
-            if (true)
+            if (fila != null)
             {
                 // Accion que quiero realizar.
                 accionARealizar = "actualizar";
@@ -229,9 +224,23 @@ namespace Ahorcado
         private void cargarCategorias()
         {
             // Cargo las categorias 
-            // cbCategorias.DisplayMember = "categoria";
-            // cbCategorias.ValueMember = "idPalabra";
-            // cbCategorias.DataSource = model_administrador.getCategorias();
+            // Lista de categorias repetidas.
+            List<String> lista = new List<string>();
+
+            // Recorro por la columna categorias.
+            foreach (DataGridViewRow fila in dgvPalabras.Rows)
+            {
+
+                // Si la palabra NO EXISTE
+                if (!lista.Contains(fila.Cells["categoria"].Value))
+                {
+                    // Añado categoria al select princpal
+                    cbCategorias.Items.Add(fila.Cells["categoria"].Value);
+                    // Guardo en la lista la catetoria para no repetirla
+                    lista.Add(fila.Cells["categoria"].Value.ToString());
+                }
+
+            }
         }
 
         // Me dice el numero de fila que tien el datagridview
@@ -309,30 +318,12 @@ namespace Ahorcado
                 // dgvTablaGenerica.DataSource = model_administrador.getPalabras();
             }
 
+            Console.WriteLine("volver menu principal");
+
             // Muestro el panel menu principal
             panelPrincipal.Visible = true;
         }
 
-
-
-        // Actualiza los datos del dgv
-        private void pbRefrescarTabla_Click(object sender, EventArgs e)
-        {
-            if (nombreTabla.Equals("jugadores"))
-            {
-                // dgvTablaGenerica.DataSource = model_administrador.getJugadores();
-            }
-            else if (nombreTabla.Equals("palabras"))
-            {
-                //dgvTablaGenerica.DataSource = model_administrador.getPalabras();
-            }
-
-            // Mensaje que quiero mostrar tras actualizar el dgv
-            String mensaje = "Acabas de refrestar datos tabla: " + nombreTabla;
-            // Muestro mensaje
-            mostrarMensaje(mensaje);
-
-        }
 
         // Boton de accion panel jugador para crear o actulizar
         private void ButtonJugadorAceptar(object sender, EventArgs e)
@@ -359,6 +350,8 @@ namespace Ahorcado
                     dgvJugadores.Rows.Add(id, usuario, contraseña, puntuacion, rol);
                     // Muestro mensaje 
                     labelMensajeJugador.Text = "Acabas de crear un nuevo usuario.";
+                    // Reseteo formulario 
+                    limpiarFormulario();
                     // Muestro el nuevo identificador que se utilizara en el caso de seguir creando usuarios.
                     tbIdJugador.Text = dameSiguienteID().ToString();
 
@@ -399,8 +392,12 @@ namespace Ahorcado
                     dgvPalabras.Rows.Add(id, palabra, pista, categoria);
                     // Muestro mensaje 
                     labelMensajePalabra.Text = "Acabas de crear una nueva palabra.";
+                    // Reseteo el formulario a cero.
+                    limpiarFormulario();
                     // Muestro el nuevo identificador que se utilizara en el caso de seguir creando palabras.
                     tbIdPalabra.Text = dameSiguienteID().ToString();
+                    Console.WriteLine("Creo una palabra");
+
                 }
                 else if (accionARealizar.Equals("actualizar"))
                 {
@@ -429,15 +426,24 @@ namespace Ahorcado
         // Devuelve el ultimo id de la tabla
         private int dameSiguienteID()
         {
-            // Guardo la ultima fila de la tabla
-            //DataGridViewRow idRow = dgvTablaGenerica.Rows[dgvTablaGenerica.RowCount - 1];
-            // Guardo el id
-            //int ultimoID = (int)idRow.Cells[0].Value;
+
+            if (nombreTabla == "jugadores")
+            {
+                // Obtengo la ultima fila del dgv de jugadoers.
+                fila = dgvJugadores.Rows[dgvJugadores.RowCount - 1];
+            }
+            else
+            {   // Obtengo la ultima fila del dgv palabras.
+                fila = dgvPalabras.Rows[dgvPalabras.RowCount - 1];
+            }
+
+            // Obtengo el valor de la primera columna que corresponde a los identificadores de ambas tablas.
+            int ultimoID = (int)fila.Cells[0].Value;
             // Incremento en uno 
-            // ultimoID++;
+            ultimoID++;
             // Devuelvo su valor
-            //return ultimoID;
-            return 0;
+            return ultimoID;
+
         }
 
         // Realiza la validacion de los campos del formulario del usuario/jugador

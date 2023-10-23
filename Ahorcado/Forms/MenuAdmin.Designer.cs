@@ -47,8 +47,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelVertical = new System.Windows.Forms.Panel();
             this.panelVerticalMenu = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPalabras = new System.Windows.Forms.Panel();
             this.labelMensajePalabra = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -76,7 +76,6 @@
             this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puntuacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pbRefrescarTabla = new System.Windows.Forms.PictureBox();
             this.pbIconoMensaje = new System.Windows.Forms.PictureBox();
             this.labelMensaje = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -108,15 +107,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelVertical.SuspendLayout();
-            this.panelVerticalMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelPalabras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoFormularioPalabra)).BeginInit();
             this.panelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefrescarTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelActualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarVentanEliminar)).BeginInit();
@@ -154,7 +151,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 135);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 38);
             this.pictureBox1.TabIndex = 11;
@@ -166,7 +163,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Coral;
-            this.label2.Location = new System.Drawing.Point(37, 27);
+            this.label2.Location = new System.Drawing.Point(51, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 29);
             this.label2.TabIndex = 12;
@@ -175,7 +172,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(40, 91);
+            this.pictureBox2.Location = new System.Drawing.Point(54, 206);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 35);
             this.pictureBox2.TabIndex = 13;
@@ -185,7 +182,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(40, 156);
+            this.pictureBox4.Location = new System.Drawing.Point(54, 271);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 35);
             this.pictureBox4.TabIndex = 15;
@@ -198,7 +195,7 @@
             this.lbJugadores.BackColor = System.Drawing.Color.Transparent;
             this.lbJugadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbJugadores.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lbJugadores.Location = new System.Drawing.Point(88, 99);
+            this.lbJugadores.Location = new System.Drawing.Point(102, 214);
             this.lbJugadores.Name = "lbJugadores";
             this.lbJugadores.Size = new System.Drawing.Size(99, 24);
             this.lbJugadores.TabIndex = 16;
@@ -211,7 +208,7 @@
             this.lbPalabras.BackColor = System.Drawing.Color.Transparent;
             this.lbPalabras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPalabras.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lbPalabras.Location = new System.Drawing.Point(89, 164);
+            this.lbPalabras.Location = new System.Drawing.Point(103, 279);
             this.lbPalabras.Name = "lbPalabras";
             this.lbPalabras.Size = new System.Drawing.Size(82, 24);
             this.lbPalabras.TabIndex = 18;
@@ -231,10 +228,16 @@
             // panelVertical
             // 
             this.panelVertical.BackColor = System.Drawing.Color.Transparent;
+            this.panelVertical.Controls.Add(this.pictureBox1);
             this.panelVertical.Controls.Add(this.panelVerticalMenu);
+            this.panelVertical.Controls.Add(this.pictureBox4);
             this.panelVertical.Controls.Add(this.pictureBox6);
+            this.panelVertical.Controls.Add(this.lbJugadores);
+            this.panelVertical.Controls.Add(this.pictureBox2);
             this.panelVertical.Controls.Add(this.pictureBox5);
+            this.panelVertical.Controls.Add(this.lbPalabras);
             this.panelVertical.Controls.Add(this.label1);
+            this.panelVertical.Controls.Add(this.label2);
             this.panelVertical.Controls.Add(this.labelNombreUsuario);
             this.panelVertical.Location = new System.Drawing.Point(2, 1);
             this.panelVertical.Name = "panelVertical";
@@ -243,16 +246,19 @@
             // 
             // panelVerticalMenu
             // 
-            this.panelVerticalMenu.Controls.Add(this.pictureBox1);
-            this.panelVerticalMenu.Controls.Add(this.pictureBox4);
-            this.panelVerticalMenu.Controls.Add(this.lbJugadores);
-            this.panelVerticalMenu.Controls.Add(this.pictureBox2);
-            this.panelVerticalMenu.Controls.Add(this.lbPalabras);
-            this.panelVerticalMenu.Controls.Add(this.label2);
-            this.panelVerticalMenu.Location = new System.Drawing.Point(2, 161);
+            this.panelVerticalMenu.Location = new System.Drawing.Point(17, 492);
             this.panelVerticalMenu.Name = "panelVerticalMenu";
-            this.panelVerticalMenu.Size = new System.Drawing.Size(192, 299);
+            this.panelVerticalMenu.Size = new System.Drawing.Size(192, 116);
             this.panelVerticalMenu.TabIndex = 26;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(106, 45);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(23, 31);
+            this.pictureBox6.TabIndex = 20;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -264,15 +270,6 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pbExit_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(106, 45);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 31);
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
             // 
             // panelPalabras
             // 
@@ -291,7 +288,7 @@
             this.panelPalabras.Controls.Add(this.label17);
             this.panelPalabras.Controls.Add(this.tbPista);
             this.panelPalabras.Controls.Add(this.tbPalabra);
-            this.panelPalabras.Location = new System.Drawing.Point(238, 202);
+            this.panelPalabras.Location = new System.Drawing.Point(238, 199);
             this.panelPalabras.Name = "panelPalabras";
             this.panelPalabras.Size = new System.Drawing.Size(919, 279);
             this.panelPalabras.TabIndex = 37;
@@ -302,10 +299,11 @@
             this.labelMensajePalabra.AutoSize = true;
             this.labelMensajePalabra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMensajePalabra.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelMensajePalabra.Location = new System.Drawing.Point(256, 162);
+            this.labelMensajePalabra.Location = new System.Drawing.Point(257, 165);
             this.labelMensajePalabra.Name = "labelMensajePalabra";
-            this.labelMensajePalabra.Size = new System.Drawing.Size(0, 24);
+            this.labelMensajePalabra.Size = new System.Drawing.Size(82, 24);
             this.labelMensajePalabra.TabIndex = 35;
+            this.labelMensajePalabra.Text = "mensaje";
             // 
             // label11
             // 
@@ -355,9 +353,6 @@
             this.cbCategorias.DisplayMember = "ald";
             this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.FormattingEnabled = true;
-            this.cbCategorias.Items.AddRange(new object[] {
-            "Historia",
-            "Libros"});
             this.cbCategorias.Location = new System.Drawing.Point(737, 110);
             this.cbCategorias.Name = "cbCategorias";
             this.cbCategorias.Size = new System.Drawing.Size(142, 32);
@@ -452,7 +447,6 @@
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.panelPrincipal.Controls.Add(this.dgvPalabras);
             this.panelPrincipal.Controls.Add(this.dgvJugadores);
-            this.panelPrincipal.Controls.Add(this.pbRefrescarTabla);
             this.panelPrincipal.Controls.Add(this.pbIconoMensaje);
             this.panelPrincipal.Controls.Add(this.labelMensaje);
             this.panelPrincipal.Controls.Add(this.label3);
@@ -625,16 +619,6 @@
             this.Rol.HeaderText = "Rol";
             this.Rol.Name = "Rol";
             this.Rol.ReadOnly = true;
-            // 
-            // pbRefrescarTabla
-            // 
-            this.pbRefrescarTabla.Image = ((System.Drawing.Image)(resources.GetObject("pbRefrescarTabla.Image")));
-            this.pbRefrescarTabla.Location = new System.Drawing.Point(10, 45);
-            this.pbRefrescarTabla.Name = "pbRefrescarTabla";
-            this.pbRefrescarTabla.Size = new System.Drawing.Size(36, 40);
-            this.pbRefrescarTabla.TabIndex = 36;
-            this.pbRefrescarTabla.TabStop = false;
-            this.pbRefrescarTabla.Click += new System.EventHandler(this.pbRefrescarTabla_Click);
             // 
             // pbIconoMensaje
             // 
@@ -929,9 +913,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1188, 697);
+            this.Controls.Add(this.panelPalabras);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panelPalabras);
             this.Controls.Add(this.panelJugador);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panelVertical);
@@ -948,10 +932,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelVertical.ResumeLayout(false);
             this.panelVertical.PerformLayout();
-            this.panelVerticalMenu.ResumeLayout(false);
-            this.panelVerticalMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelPalabras.ResumeLayout(false);
             this.panelPalabras.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoFormularioPalabra)).EndInit();
@@ -959,7 +941,6 @@
             this.panelPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefrescarTabla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelActualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarVentanEliminar)).EndInit();
@@ -994,7 +975,6 @@
         private System.Windows.Forms.PictureBox pbIconoMensaje;
         private System.Windows.Forms.Label labelMensaje;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pbRefrescarTabla;
         private System.Windows.Forms.Panel panelJugador;
         private System.Windows.Forms.PictureBox iconoFormularioJugador;
         private System.Windows.Forms.ComboBox cbTipoRol;

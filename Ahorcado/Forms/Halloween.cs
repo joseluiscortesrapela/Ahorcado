@@ -39,15 +39,12 @@ namespace Ahorcado
         // Clases para reproducir musica
         private IWavePlayer player;
         private AudioFileReader audioFile;
-        private string rutaMp3;
-
-
-
+ 
         public Halloween()
         {
             InitializeComponent();  // Importo las palabras
 
-            player = new WaveOut();;
+            player = new WaveOut(); ;
             string rutaRelativa = @"..\..\Resources\Juegos\Halloween\Sonidos\halloween.mp3";
             audioFile = new AudioFileReader(rutaRelativa);
             // Añado las palabras al dgv
@@ -63,9 +60,10 @@ namespace Ahorcado
             {
                 Console.WriteLine("No se han ecnontrado palabras en el dgv, tabla vacia.");
             }
+
+
+
         }
-
-
 
         // Obtengo la categoria 
         private void comboBoxCategorias_SelectedIndexChanged(object sender, EventArgs e)
@@ -509,20 +507,21 @@ namespace Ahorcado
             // Muestro la pista
             labelPista.Show();
             // Pongo la musica de fondo
-           // ponerMusicaFondo();
+            // ponerMusicaFondo();
 
         }
 
         private void buttonNoJugarOtra_Click(object sender, EventArgs e)
         {
-            apagarMusicaFondoJuegoHalloween();
+
             // Oculto la ventana de login
             this.Hide();
             // Intancia
             MenuJugador menuJugador = new MenuJugador();
             // Muestro la ventana del jugador
             menuJugador.Show();
-
+            // Detengo la musica.
+            Task task = apagarMusicaFondoJuegoHalloween();
         }
 
 
@@ -567,10 +566,10 @@ namespace Ahorcado
         }
 
         private void ponerMusicaFondo()
-        {           
+        {
             player.Init(audioFile);
             player.Play();
-            
+
         }
 
         // Disminuye el sonido lentamente hasta apagarlo.
