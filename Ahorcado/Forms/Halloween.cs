@@ -114,6 +114,17 @@ namespace Ahorcado
             pbResolver.Show();
             // Oculto select categorias
             cbCategorias.Hide();
+            // Muestro el buho
+            pbBuho.Show();
+            // Muestro el gato
+            pbGato.Show();
+            // Muestro otros pajaros
+            pbPajaros.Show();
+            // Muestros los muercielagos
+            pbMuercielagos.Show();
+            // Muestro los fuegos.
+            pbFuego.Show();
+            pbFuego2.Show();
             // Muestro las letras
             buttonA.Show();
             buttonB.Show();

@@ -33,7 +33,6 @@
             this.p = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonC = new System.Windows.Forms.Button();
-            this.labelLetrasRepetidas = new System.Windows.Forms.Label();
             this.buttonV = new System.Windows.Forms.Button();
             this.buttonX = new System.Windows.Forms.Button();
             this.buttonT = new System.Windows.Forms.Button();
@@ -88,10 +87,16 @@
             this.pbPresentacion = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelBarraHerramientas = new System.Windows.Forms.Panel();
+            this.pbMostrarPista = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pbResolver = new System.Windows.Forms.PictureBox();
             this.progressBarVida = new System.Windows.Forms.ProgressBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pbMostrarPista = new System.Windows.Forms.PictureBox();
+            this.pbBuho = new System.Windows.Forms.PictureBox();
+            this.pbGato = new System.Windows.Forms.PictureBox();
+            this.pbMuercielagos = new System.Windows.Forms.PictureBox();
+            this.pbFuego = new System.Windows.Forms.PictureBox();
+            this.pbFuego2 = new System.Windows.Forms.PictureBox();
+            this.pbPajaros = new System.Windows.Forms.PictureBox();
             this.panelGameOver.SuspendLayout();
             this.panelLetras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
@@ -101,8 +106,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).BeginInit();
             this.panelBarraHerramientas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBuho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMuercielagos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).BeginInit();
             this.SuspendLayout();
             // 
             // p
@@ -123,7 +134,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(8, 17);
+            this.label3.Location = new System.Drawing.Point(-1, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 50;
@@ -145,7 +156,7 @@
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonC.Image = ((System.Drawing.Image)(resources.GetObject("buttonC.Image")));
-            this.buttonC.Location = new System.Drawing.Point(159, 20);
+            this.buttonC.Location = new System.Drawing.Point(159, 6);
             this.buttonC.Name = "buttonC";
             this.buttonC.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonC.Size = new System.Drawing.Size(53, 76);
@@ -156,18 +167,6 @@
             this.buttonC.UseCompatibleTextRendering = true;
             this.buttonC.UseVisualStyleBackColor = false;
             this.buttonC.Click += new System.EventHandler(this.buttonLetter_Click);
-            // 
-            // labelLetrasRepetidas
-            // 
-            this.labelLetrasRepetidas.AutoSize = true;
-            this.labelLetrasRepetidas.BackColor = System.Drawing.Color.Transparent;
-            this.labelLetrasRepetidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLetrasRepetidas.ForeColor = System.Drawing.Color.Violet;
-            this.labelLetrasRepetidas.Location = new System.Drawing.Point(442, 2);
-            this.labelLetrasRepetidas.Name = "labelLetrasRepetidas";
-            this.labelLetrasRepetidas.Size = new System.Drawing.Size(0, 20);
-            this.labelLetrasRepetidas.TabIndex = 30;
-            this.labelLetrasRepetidas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonV
             // 
@@ -185,7 +184,7 @@
             this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonV.Image = ((System.Drawing.Image)(resources.GetObject("buttonV.Image")));
-            this.buttonV.Location = new System.Drawing.Point(1292, 15);
+            this.buttonV.Location = new System.Drawing.Point(1292, 1);
             this.buttonV.Name = "buttonV";
             this.buttonV.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonV.Size = new System.Drawing.Size(66, 82);
@@ -213,7 +212,7 @@
             this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonX.Image = ((System.Drawing.Image)(resources.GetObject("buttonX.Image")));
-            this.buttonX.Location = new System.Drawing.Point(1444, 14);
+            this.buttonX.Location = new System.Drawing.Point(1444, 0);
             this.buttonX.Name = "buttonX";
             this.buttonX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonX.Size = new System.Drawing.Size(58, 81);
@@ -241,7 +240,7 @@
             this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonT.Image = ((System.Drawing.Image)(resources.GetObject("buttonT.Image")));
-            this.buttonT.Location = new System.Drawing.Point(1182, 8);
+            this.buttonT.Location = new System.Drawing.Point(1182, -6);
             this.buttonT.Name = "buttonT";
             this.buttonT.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonT.Size = new System.Drawing.Size(76, 96);
@@ -261,20 +260,20 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(509, 101);
+            this.panelGameOver.Location = new System.Drawing.Point(536, 253);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(588, 234);
+            this.panelGameOver.Size = new System.Drawing.Size(483, 164);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label13.Font = new System.Drawing.Font("MV Boli", 20F);
             this.label13.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label13.Location = new System.Drawing.Point(101, 146);
+            this.label13.Location = new System.Drawing.Point(71, 79);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(281, 26);
+            this.label13.Size = new System.Drawing.Size(376, 34);
             this.label13.TabIndex = 35;
             this.label13.Text = "¿Quieres jugar otra partida?";
             // 
@@ -284,7 +283,7 @@
             this.buttonNoJugarOtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNoJugarOtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonNoJugarOtra.ForeColor = System.Drawing.Color.Brown;
-            this.buttonNoJugarOtra.Location = new System.Drawing.Point(88, 186);
+            this.buttonNoJugarOtra.Location = new System.Drawing.Point(91, 116);
             this.buttonNoJugarOtra.Name = "buttonNoJugarOtra";
             this.buttonNoJugarOtra.Size = new System.Drawing.Size(146, 36);
             this.buttonNoJugarOtra.TabIndex = 34;
@@ -297,8 +296,8 @@
             this.buttonJugarOtraPartida.BackColor = System.Drawing.Color.Black;
             this.buttonJugarOtraPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJugarOtraPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonJugarOtraPartida.ForeColor = System.Drawing.Color.Brown;
-            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(260, 186);
+            this.buttonJugarOtraPartida.ForeColor = System.Drawing.Color.BlueViolet;
+            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(292, 116);
             this.buttonJugarOtraPartida.Name = "buttonJugarOtraPartida";
             this.buttonJugarOtraPartida.Size = new System.Drawing.Size(146, 36);
             this.buttonJugarOtraPartida.TabIndex = 33;
@@ -311,7 +310,7 @@
             this.labelFinalPartida.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
             this.labelFinalPartida.ForeColor = System.Drawing.Color.Goldenrod;
-            this.labelFinalPartida.Location = new System.Drawing.Point(22, 55);
+            this.labelFinalPartida.Location = new System.Drawing.Point(18, 10);
             this.labelFinalPartida.Name = "labelFinalPartida";
             this.labelFinalPartida.Size = new System.Drawing.Size(462, 48);
             this.labelFinalPartida.TabIndex = 1;
@@ -322,7 +321,6 @@
             this.panelLetras.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panelLetras.BackColor = System.Drawing.Color.Transparent;
             this.panelLetras.Controls.Add(this.buttonC);
-            this.panelLetras.Controls.Add(this.labelLetrasRepetidas);
             this.panelLetras.Controls.Add(this.buttonV);
             this.panelLetras.Controls.Add(this.buttonX);
             this.panelLetras.Controls.Add(this.buttonT);
@@ -350,9 +348,9 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(-29, 654);
+            this.panelLetras.Location = new System.Drawing.Point(-24, 864);
             this.panelLetras.Name = "panelLetras";
-            this.panelLetras.Size = new System.Drawing.Size(1900, 399);
+            this.panelLetras.Size = new System.Drawing.Size(1900, 385);
             this.panelLetras.TabIndex = 48;
             this.panelLetras.Visible = false;
             // 
@@ -372,7 +370,7 @@
             this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonH.Image = ((System.Drawing.Image)(resources.GetObject("buttonH.Image")));
-            this.buttonH.Location = new System.Drawing.Point(446, 12);
+            this.buttonH.Location = new System.Drawing.Point(446, -2);
             this.buttonH.Name = "buttonH";
             this.buttonH.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonH.Size = new System.Drawing.Size(58, 86);
@@ -400,7 +398,7 @@
             this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonG.Image = ((System.Drawing.Image)(resources.GetObject("buttonG.Image")));
-            this.buttonG.Location = new System.Drawing.Point(382, 17);
+            this.buttonG.Location = new System.Drawing.Point(382, 3);
             this.buttonG.Name = "buttonG";
             this.buttonG.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonG.Size = new System.Drawing.Size(64, 80);
@@ -428,7 +426,7 @@
             this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonE.Image = ((System.Drawing.Image)(resources.GetObject("buttonE.Image")));
-            this.buttonE.Location = new System.Drawing.Point(269, 15);
+            this.buttonE.Location = new System.Drawing.Point(269, 1);
             this.buttonE.Name = "buttonE";
             this.buttonE.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonE.Size = new System.Drawing.Size(56, 81);
@@ -456,7 +454,7 @@
             this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonJ.Image = ((System.Drawing.Image)(resources.GetObject("buttonJ.Image")));
-            this.buttonJ.Location = new System.Drawing.Point(538, 14);
+            this.buttonJ.Location = new System.Drawing.Point(538, 0);
             this.buttonJ.Name = "buttonJ";
             this.buttonJ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonJ.Size = new System.Drawing.Size(51, 84);
@@ -484,7 +482,7 @@
             this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonF.Image = ((System.Drawing.Image)(resources.GetObject("buttonF.Image")));
-            this.buttonF.Location = new System.Drawing.Point(325, 17);
+            this.buttonF.Location = new System.Drawing.Point(325, 3);
             this.buttonF.Name = "buttonF";
             this.buttonF.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonF.Size = new System.Drawing.Size(63, 79);
@@ -512,7 +510,7 @@
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonD.Image = ((System.Drawing.Image)(resources.GetObject("buttonD.Image")));
-            this.buttonD.Location = new System.Drawing.Point(210, 20);
+            this.buttonD.Location = new System.Drawing.Point(210, 6);
             this.buttonD.Name = "buttonD";
             this.buttonD.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonD.Size = new System.Drawing.Size(53, 77);
@@ -540,7 +538,7 @@
             this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonL.Image = ((System.Drawing.Image)(resources.GetObject("buttonL.Image")));
-            this.buttonL.Location = new System.Drawing.Point(648, 11);
+            this.buttonL.Location = new System.Drawing.Point(648, -3);
             this.buttonL.Name = "buttonL";
             this.buttonL.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonL.Size = new System.Drawing.Size(63, 88);
@@ -568,7 +566,7 @@
             this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonI.Image = ((System.Drawing.Image)(resources.GetObject("buttonI.Image")));
-            this.buttonI.Location = new System.Drawing.Point(502, 11);
+            this.buttonI.Location = new System.Drawing.Point(502, -3);
             this.buttonI.Name = "buttonI";
             this.buttonI.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonI.Size = new System.Drawing.Size(41, 85);
@@ -596,7 +594,7 @@
             this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonM.Image = ((System.Drawing.Image)(resources.GetObject("buttonM.Image")));
-            this.buttonM.Location = new System.Drawing.Point(707, 9);
+            this.buttonM.Location = new System.Drawing.Point(707, -5);
             this.buttonM.Name = "buttonM";
             this.buttonM.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonM.Size = new System.Drawing.Size(68, 94);
@@ -625,10 +623,10 @@
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonA.Image = ((System.Drawing.Image)(resources.GetObject("buttonA.Image")));
-            this.buttonA.Location = new System.Drawing.Point(41, 16);
+            this.buttonA.Location = new System.Drawing.Point(41, 2);
             this.buttonA.Name = "buttonA";
             this.buttonA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonA.Size = new System.Drawing.Size(56, 80);
+            this.buttonA.Size = new System.Drawing.Size(51, 80);
             this.buttonA.TabIndex = 15;
             this.buttonA.Text = "A";
             this.buttonA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -653,7 +651,7 @@
             this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonN.Image = ((System.Drawing.Image)(resources.GetObject("buttonN.Image")));
-            this.buttonN.Location = new System.Drawing.Point(775, 16);
+            this.buttonN.Location = new System.Drawing.Point(775, 2);
             this.buttonN.Name = "buttonN";
             this.buttonN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonN.Size = new System.Drawing.Size(59, 84);
@@ -681,7 +679,7 @@
             this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonÑ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonÑ.Image = ((System.Drawing.Image)(resources.GetObject("buttonÑ.Image")));
-            this.buttonÑ.Location = new System.Drawing.Point(838, -2);
+            this.buttonÑ.Location = new System.Drawing.Point(838, -16);
             this.buttonÑ.Name = "buttonÑ";
             this.buttonÑ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonÑ.Size = new System.Drawing.Size(80, 115);
@@ -709,7 +707,7 @@
             this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonO.Image = ((System.Drawing.Image)(resources.GetObject("buttonO.Image")));
-            this.buttonO.Location = new System.Drawing.Point(907, 17);
+            this.buttonO.Location = new System.Drawing.Point(907, 3);
             this.buttonO.Name = "buttonO";
             this.buttonO.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonO.Size = new System.Drawing.Size(66, 81);
@@ -737,7 +735,7 @@
             this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonP.Image = ((System.Drawing.Image)(resources.GetObject("buttonP.Image")));
-            this.buttonP.Location = new System.Drawing.Point(963, 17);
+            this.buttonP.Location = new System.Drawing.Point(963, 3);
             this.buttonP.Name = "buttonP";
             this.buttonP.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonP.Size = new System.Drawing.Size(58, 80);
@@ -765,7 +763,7 @@
             this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonU.Image = ((System.Drawing.Image)(resources.GetObject("buttonU.Image")));
-            this.buttonU.Location = new System.Drawing.Point(1236, 5);
+            this.buttonU.Location = new System.Drawing.Point(1236, -9);
             this.buttonU.Name = "buttonU";
             this.buttonU.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonU.Size = new System.Drawing.Size(68, 91);
@@ -793,7 +791,7 @@
             this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonS.Image = ((System.Drawing.Image)(resources.GetObject("buttonS.Image")));
-            this.buttonS.Location = new System.Drawing.Point(1118, 10);
+            this.buttonS.Location = new System.Drawing.Point(1118, -4);
             this.buttonS.Name = "buttonS";
             this.buttonS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonS.Size = new System.Drawing.Size(68, 95);
@@ -821,7 +819,7 @@
             this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonQ.Image = ((System.Drawing.Image)(resources.GetObject("buttonQ.Image")));
-            this.buttonQ.Location = new System.Drawing.Point(1016, 15);
+            this.buttonQ.Location = new System.Drawing.Point(1016, 1);
             this.buttonQ.Name = "buttonQ";
             this.buttonQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonQ.Size = new System.Drawing.Size(67, 79);
@@ -849,7 +847,7 @@
             this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonR.Image = ((System.Drawing.Image)(resources.GetObject("buttonR.Image")));
-            this.buttonR.Location = new System.Drawing.Point(1068, 16);
+            this.buttonR.Location = new System.Drawing.Point(1068, 2);
             this.buttonR.Name = "buttonR";
             this.buttonR.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonR.Size = new System.Drawing.Size(71, 89);
@@ -877,7 +875,7 @@
             this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonW.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonW.Image = ((System.Drawing.Image)(resources.GetObject("buttonW.Image")));
-            this.buttonW.Location = new System.Drawing.Point(1351, -7);
+            this.buttonW.Location = new System.Drawing.Point(1351, -21);
             this.buttonW.Name = "buttonW";
             this.buttonW.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonW.Size = new System.Drawing.Size(93, 99);
@@ -905,7 +903,7 @@
             this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonY.Image = ((System.Drawing.Image)(resources.GetObject("buttonY.Image")));
-            this.buttonY.Location = new System.Drawing.Point(1498, 16);
+            this.buttonY.Location = new System.Drawing.Point(1498, 2);
             this.buttonY.Name = "buttonY";
             this.buttonY.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonY.Size = new System.Drawing.Size(61, 77);
@@ -933,7 +931,7 @@
             this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonZ.Image = ((System.Drawing.Image)(resources.GetObject("buttonZ.Image")));
-            this.buttonZ.Location = new System.Drawing.Point(1560, 12);
+            this.buttonZ.Location = new System.Drawing.Point(1560, -2);
             this.buttonZ.Name = "buttonZ";
             this.buttonZ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonZ.Size = new System.Drawing.Size(77, 78);
@@ -961,7 +959,7 @@
             this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonK.Image = ((System.Drawing.Image)(resources.GetObject("buttonK.Image")));
-            this.buttonK.Location = new System.Drawing.Point(591, 10);
+            this.buttonK.Location = new System.Drawing.Point(591, -4);
             this.buttonK.Name = "buttonK";
             this.buttonK.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonK.Size = new System.Drawing.Size(65, 88);
@@ -989,7 +987,7 @@
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonB.Image = ((System.Drawing.Image)(resources.GetObject("buttonB.Image")));
-            this.buttonB.Location = new System.Drawing.Point(103, 17);
+            this.buttonB.Location = new System.Drawing.Point(103, 3);
             this.buttonB.Name = "buttonB";
             this.buttonB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonB.Size = new System.Drawing.Size(52, 80);
@@ -1059,7 +1057,7 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(473, 5);
+            this.panelScore.Location = new System.Drawing.Point(455, 5);
             this.panelScore.Name = "panelScore";
             this.panelScore.Size = new System.Drawing.Size(647, 51);
             this.panelScore.TabIndex = 42;
@@ -1103,9 +1101,9 @@
             this.cbCategorias.BackColor = System.Drawing.Color.Black;
             this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategorias.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cbCategorias.ForeColor = System.Drawing.Color.SteelBlue;
             this.cbCategorias.FormattingEnabled = true;
-            this.cbCategorias.Location = new System.Drawing.Point(12, 44);
+            this.cbCategorias.Location = new System.Drawing.Point(2, 28);
             this.cbCategorias.Name = "cbCategorias";
             this.cbCategorias.Size = new System.Drawing.Size(222, 39);
             this.cbCategorias.TabIndex = 40;
@@ -1113,13 +1111,14 @@
             // 
             // labelPalabraGuiones
             // 
+            this.labelPalabraGuiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
-            this.labelPalabraGuiones.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold);
+            this.labelPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 40F);
             this.labelPalabraGuiones.ForeColor = System.Drawing.Color.Magenta;
-            this.labelPalabraGuiones.Location = new System.Drawing.Point(428, 454);
+            this.labelPalabraGuiones.Location = new System.Drawing.Point(435, 420);
             this.labelPalabraGuiones.Name = "labelPalabraGuiones";
             this.labelPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPalabraGuiones.Size = new System.Drawing.Size(527, 60);
+            this.labelPalabraGuiones.Size = new System.Drawing.Size(722, 60);
             this.labelPalabraGuiones.TabIndex = 41;
             this.labelPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -1128,7 +1127,7 @@
             this.buttonRespuestaRapida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRespuestaRapida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonRespuestaRapida.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonRespuestaRapida.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonRespuestaRapida.Location = new System.Drawing.Point(9, 74);
             this.buttonRespuestaRapida.Name = "buttonRespuestaRapida";
             this.buttonRespuestaRapida.Size = new System.Drawing.Size(198, 37);
@@ -1140,11 +1139,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label1.ForeColor = System.Drawing.Color.Chocolate;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 15F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(4, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 26);
+            this.label1.Size = new System.Drawing.Size(202, 26);
             this.label1.TabIndex = 13;
             this.label1.Text = "Introduce la palabra";
             // 
@@ -1161,8 +1160,8 @@
             // labelPista
             // 
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
-            this.labelPista.Font = new System.Drawing.Font("Caladea", 25F, System.Drawing.FontStyle.Bold);
-            this.labelPista.ForeColor = System.Drawing.Color.Orange;
+            this.labelPista.Font = new System.Drawing.Font("MV Boli", 17F);
+            this.labelPista.ForeColor = System.Drawing.Color.PeachPuff;
             this.labelPista.Location = new System.Drawing.Point(267, 600);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1188,7 +1187,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(1036, 256);
+            this.panelResolver.Location = new System.Drawing.Point(1026, 171);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(215, 130);
             this.panelResolver.TabIndex = 43;
@@ -1260,6 +1259,31 @@
             this.panelBarraHerramientas.TabIndex = 39;
             this.panelBarraHerramientas.Visible = false;
             // 
+            // pbMostrarPista
+            // 
+            this.pbMostrarPista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
+            this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
+            this.pbMostrarPista.Location = new System.Drawing.Point(19, 13);
+            this.pbMostrarPista.Name = "pbMostrarPista";
+            this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
+            this.pbMostrarPista.TabIndex = 38;
+            this.pbMostrarPista.TabStop = false;
+            this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label4.Location = new System.Drawing.Point(20, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Pista";
+            // 
             // pbResolver
             // 
             this.pbResolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1284,30 +1308,78 @@
             this.progressBarVida.TabIndex = 21;
             this.progressBarVida.Value = 6;
             // 
-            // label4
+            // pbBuho
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(20, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Pista";
+            this.pbBuho.BackColor = System.Drawing.Color.Transparent;
+            this.pbBuho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbBuho.Image = ((System.Drawing.Image)(resources.GetObject("pbBuho.Image")));
+            this.pbBuho.Location = new System.Drawing.Point(230, 12);
+            this.pbBuho.Name = "pbBuho";
+            this.pbBuho.Size = new System.Drawing.Size(66, 93);
+            this.pbBuho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBuho.TabIndex = 53;
+            this.pbBuho.TabStop = false;
+            this.pbBuho.Visible = false;
             // 
-            // pbMostrarPista
+            // pbGato
             // 
-            this.pbMostrarPista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
-            this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
-            this.pbMostrarPista.Location = new System.Drawing.Point(19, 13);
-            this.pbMostrarPista.Name = "pbMostrarPista";
-            this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
-            this.pbMostrarPista.TabIndex = 38;
-            this.pbMostrarPista.TabStop = false;
-            this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
+            this.pbGato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pbGato.BackColor = System.Drawing.Color.Transparent;
+            this.pbGato.Image = ((System.Drawing.Image)(resources.GetObject("pbGato.Image")));
+            this.pbGato.Location = new System.Drawing.Point(1103, 564);
+            this.pbGato.Name = "pbGato";
+            this.pbGato.Size = new System.Drawing.Size(141, 195);
+            this.pbGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbGato.TabIndex = 54;
+            this.pbGato.TabStop = false;
+            this.pbGato.Visible = false;
+            this.pbGato.WaitOnLoad = true;
+            // 
+            // pbMuercielagos
+            // 
+            this.pbMuercielagos.BackColor = System.Drawing.Color.Transparent;
+            this.pbMuercielagos.Image = ((System.Drawing.Image)(resources.GetObject("pbMuercielagos.Image")));
+            this.pbMuercielagos.Location = new System.Drawing.Point(458, 60);
+            this.pbMuercielagos.Name = "pbMuercielagos";
+            this.pbMuercielagos.Size = new System.Drawing.Size(203, 116);
+            this.pbMuercielagos.TabIndex = 55;
+            this.pbMuercielagos.TabStop = false;
+            this.pbMuercielagos.Visible = false;
+            // 
+            // pbFuego
+            // 
+            this.pbFuego.BackColor = System.Drawing.Color.Transparent;
+            this.pbFuego.Image = ((System.Drawing.Image)(resources.GetObject("pbFuego.Image")));
+            this.pbFuego.Location = new System.Drawing.Point(1066, 763);
+            this.pbFuego.Name = "pbFuego";
+            this.pbFuego.Size = new System.Drawing.Size(184, 37);
+            this.pbFuego.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFuego.TabIndex = 58;
+            this.pbFuego.TabStop = false;
+            this.pbFuego.Visible = false;
+            // 
+            // pbFuego2
+            // 
+            this.pbFuego2.BackColor = System.Drawing.Color.Transparent;
+            this.pbFuego2.Image = ((System.Drawing.Image)(resources.GetObject("pbFuego2.Image")));
+            this.pbFuego2.Location = new System.Drawing.Point(1378, 745);
+            this.pbFuego2.Name = "pbFuego2";
+            this.pbFuego2.Size = new System.Drawing.Size(122, 38);
+            this.pbFuego2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFuego2.TabIndex = 59;
+            this.pbFuego2.TabStop = false;
+            this.pbFuego2.Visible = false;
+            // 
+            // pbPajaros
+            // 
+            this.pbPajaros.BackColor = System.Drawing.Color.Transparent;
+            this.pbPajaros.Image = ((System.Drawing.Image)(resources.GetObject("pbPajaros.Image")));
+            this.pbPajaros.Location = new System.Drawing.Point(1056, 288);
+            this.pbPajaros.Name = "pbPajaros";
+            this.pbPajaros.Size = new System.Drawing.Size(200, 160);
+            this.pbPajaros.TabIndex = 60;
+            this.pbPajaros.TabStop = false;
+            this.pbPajaros.Visible = false;
             // 
             // Halloween
             // 
@@ -1316,12 +1388,17 @@
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1620, 756);
+            this.ClientSize = new System.Drawing.Size(1620, 920);
+            this.Controls.Add(this.pbPajaros);
+            this.Controls.Add(this.pbFuego2);
+            this.Controls.Add(this.pbFuego);
+            this.Controls.Add(this.pbMuercielagos);
+            this.Controls.Add(this.pbGato);
+            this.Controls.Add(this.pbBuho);
             this.Controls.Add(this.panelBarraHerramientas);
             this.Controls.Add(this.pbPresentacion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panelGameOver);
-            this.Controls.Add(this.panelLetras);
             this.Controls.Add(this.dgvPalabras);
             this.Controls.Add(this.panelScore);
             this.Controls.Add(this.cbCategorias);
@@ -1331,6 +1408,7 @@
             this.Controls.Add(this.panelResolver);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.labelCategoria);
+            this.Controls.Add(this.panelLetras);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Halloween";
@@ -1351,8 +1429,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).EndInit();
             this.panelBarraHerramientas.ResumeLayout(false);
             this.panelBarraHerramientas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBuho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMuercielagos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1361,7 +1445,6 @@
         #endregion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonC;
-        private System.Windows.Forms.Label labelLetrasRepetidas;
         private System.Windows.Forms.Button buttonV;
         private System.Windows.Forms.Button buttonX;
         private System.Windows.Forms.Button buttonT;
@@ -1421,5 +1504,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbResolver;
         private System.Windows.Forms.ProgressBar progressBarVida;
+        private System.Windows.Forms.PictureBox pbBuho;
+        private System.Windows.Forms.PictureBox pbGato;
+        private System.Windows.Forms.PictureBox pbMuercielagos;
+        private System.Windows.Forms.PictureBox pbFuego;
+        private System.Windows.Forms.PictureBox pbFuego2;
+        private System.Windows.Forms.PictureBox pbPajaros;
     }
 }
