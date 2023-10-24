@@ -1160,12 +1160,12 @@
             // labelPista
             // 
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
-            this.labelPista.Font = new System.Drawing.Font("MV Boli", 17F);
+            this.labelPista.Font = new System.Drawing.Font("MV Boli", 18F);
             this.labelPista.ForeColor = System.Drawing.Color.PeachPuff;
-            this.labelPista.Location = new System.Drawing.Point(267, 600);
+            this.labelPista.Location = new System.Drawing.Point(239, 520);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPista.Size = new System.Drawing.Size(974, 51);
+            this.labelPista.Size = new System.Drawing.Size(1005, 51);
             this.labelPista.TabIndex = 49;
             this.labelPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

@@ -23,30 +23,11 @@ namespace Ahorcado
             lbPuntuacion.Text = SesionUsuario.Puntuacion.ToString();
            
         }
+   
 
-        private void labelBotonJugar_Click(object sender, EventArgs e)
+        private void labelJugar_Click(object sender, EventArgs e)
         {
-            // Muestro el panel con las versiones del juego.
-            panelVersionesJuego.Visible = true;
-            // Configura el valor alfa para hacer que el Panel sea semi-transparente
-            panelVersionesJuego.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);  
-        }
-
-     
-
-        private void pbJugarExorcista_Click(object sender, EventArgs e)
-        {
-            // Oculto el menu
-            this.Hide();
-            // Instancio el juego
-            Exorcismo juego = new Exorcismo();
-            // Muestro el juego.
-            juego.Show();
-        }
-
-        private void pbJugarHalloween_Click(object sender, EventArgs e)
-        {
-            // Oculto el menu
+             // Oculto el menu
             this.Hide();
             Halloween halloween = new Halloween();
             // Muestro el juego
@@ -58,5 +39,6 @@ namespace Ahorcado
         {
             Application.Exit();
         }
+
     }
 }
