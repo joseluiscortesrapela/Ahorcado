@@ -19,6 +19,13 @@
     <nombre>Jose</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>0</puntuacion>
-    <rol>Administrador</rol>
+    <rol>Jugador</rol>
+  </Jugador>
+  <Jugador>
+    <id>4</id>
+    <nombre>Noelia</nombre>
+    <contraseña>123456</contraseña>
+    <puntuacion>0</puntuacion>
+    <rol>Jugador</rol>
   </Jugador>
 </Jugadores>

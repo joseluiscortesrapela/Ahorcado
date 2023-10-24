@@ -200,13 +200,7 @@
     <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\III.png" />
     <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\IV.png" />
     <None Include="Resources\Juegos\Halloween\dibujo_ahorcado\V.png" />
-    <Content Include="Xml\jugadores - Copy.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Xml\jugadores.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Xml\palabras - Copy.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Xml\palabras.xml">

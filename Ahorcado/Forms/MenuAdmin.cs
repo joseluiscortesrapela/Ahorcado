@@ -33,12 +33,12 @@ namespace Ahorcado
         private void MenuAdmin_Load(object sender, EventArgs e)
         {   // Muestro el nombre del usuario
             labelNombreUsuario.Text = SesionUsuario.Usuario;
-
+            // Cargo el dgv de jugadores con los datos extraidos del fichero xml.
             importarJugadoresDesdeXMLAlDGV();
+            // Cargo el dgv de palabras con los datos extraidos del fichero xml.
             importarPalabrasDesdeXMLAlDGV();
             // Cargo las categorias
             cargarCategorias();
-
         }
 
         // Importo los todos los jugadores desde el ficehro xml y los guardo en el dgv
@@ -49,7 +49,7 @@ namespace Ahorcado
 
             // Recorro la lista de jugadores
             foreach (Jugador jugador in jugadores)
-            {   // Por cada iteracion del bucle voy añadiendo un jugador al dgv
+            {   // Añado jugador al dgv
                 dgvJugadores.Rows.Add(jugador.Id, jugador.Nombre, jugador.Contraseña, jugador.Puntuacion, jugador.Rol);
             }
 
@@ -60,10 +60,11 @@ namespace Ahorcado
         {
             // Obtengo la lista de jugadores y los guardo en el dgv
             List<Word> palabras = ProcesarFicherosXML.dameListaPalabras();
+          
             // Recorro la lista de palabras
             foreach (Word palabra in palabras)
-            {   // Por cada iteracion del bucle voy añadiendo una palabra al dgv
-                dgvPalabras.Rows.Add(palabra.Id, palabra.Palabra, palabra.Palabra, palabra.Categoria);
+            {   // Añado palabra al dgv
+                dgvPalabras.Rows.Add(palabra.Id, palabra.Palabra, palabra.Pista, palabra.Categoria);
             }
 
         }
@@ -72,7 +73,6 @@ namespace Ahorcado
         // Muestra la tabla con los jugadores
         private void lbJugadores_Click(object sender, EventArgs e)
         {
-
             // Guardo que tabla se ha utilizado
             nombreTabla = "jugadores";
             // Muestro el nombre de la tabla
@@ -427,18 +427,41 @@ namespace Ahorcado
         private int dameSiguienteID()
         {
 
+            int ultimoID = 0;
+
+            // Si la tabla seleccionada es jugadores
             if (nombreTabla == "jugadores")
             {
-                // Obtengo la ultima fila del dgv de jugadoers.
-                fila = dgvJugadores.Rows[dgvJugadores.RowCount - 1];
-            }
-            else
-            {   // Obtengo la ultima fila del dgv palabras.
-                fila = dgvPalabras.Rows[dgvPalabras.RowCount - 1];
-            }
+                // Sino esta vacio el dgv
+                if (dgvJugadores.Rows.Count > 0)
+                {   // Obtengo la ultima fila
+                    fila = dgvJugadores.Rows[dgvJugadores.Rows.Count - 1];
+                    // Obtengo el valor de la primera columna que corresponde a los identificadores de ambas tablas.
+                    ultimoID = (int)fila.Cells[0].Value;
+                }
+                else
+                {
+                    ultimoID = 0;
+                }
 
-            // Obtengo el valor de la primera columna que corresponde a los identificadores de ambas tablas.
-            int ultimoID = (int)fila.Cells[0].Value;
+            } 
+            
+            if (nombreTabla == "palabras")
+            {
+                // Si no esta vacio el dgv
+                if (dgvPalabras.Rows.Count > 0)
+                {
+                    fila = dgvPalabras.Rows[dgvPalabras.Rows.Count - 1];
+                    // Obtengo el valor de la primera columna que corresponde a los identificadores de ambas tablas.
+                    ultimoID = (int)fila.Cells[0].Value;
+                }
+                else
+                {
+                    ultimoID = 0;
+                }
+
+            }
+ 
             // Incremento en uno 
             ultimoID++;
             // Devuelvo su valor
@@ -699,11 +722,17 @@ namespace Ahorcado
 
         private void pbGuardar_Click(object sender, EventArgs e)
         {
-            
+
             // Guardo el contenido del dgv jugadores y creo su fichero xml.
             ProcesarFicherosXML.crearJugadoresXML(dgvJugadores);
             // Guardo el contenido del dgv palabras y creo su fichero xml.
-            
+            ProcesarFicherosXML.crearPalabrasXML(dgvPalabras);
+            // Muestro mensaje
+            labelMensaje.Text = "Exportación realizada en la carpeta Ahorcado/Xml";
+            // Muestro el label que estara oculto
+            labelMensaje.Visible = true;
+            // Muestro icono
+            pbIconoMensaje.Visible = true;
         }
     }
 }

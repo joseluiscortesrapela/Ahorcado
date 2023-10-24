@@ -21,15 +21,15 @@ namespace Ahorcado.Utilidades
 
             // Donde tengo el fichero xml
             string archivoXML = "Xml\\jugadores.xml";
-           // string archivoXML = @"Xml\jugadores.xml"; tabmien funciona de esta forma
+            // string archivoXML = @"Xml\jugadores.xml"; tabmien funciona de esta forma
 
             if (File.Exists(archivoXML))
-            {              
+            {
                 Console.WriteLine("Existe fichero jugadores.xml ");
             }
 
 
-          
+
             // Creo un array que guardara objetos del tipo Jugador
             List<Jugador> jugadores = new List<Jugador>();
 
@@ -88,13 +88,11 @@ namespace Ahorcado.Utilidades
                     string pìsta = palabraNode.SelectSingleNode("pista").InnerText;
                     string categoria = palabraNode.SelectSingleNode("categoria").InnerText;
 
-
                     // Instancio e inicializo una nueva palabra
                     Word palabra = new Word(id, word, pìsta, categoria);
 
                     // Lo guardo en el array
                     palabras.Add(palabra);
-
                 }
 
             }
@@ -106,8 +104,9 @@ namespace Ahorcado.Utilidades
 
             return palabras;
         }
-     
-        public static void crearJugadoresXML(DataGridView dgvJugadores )
+
+        // Exporta el contenido del dgv de jugadores a un fichero xml.
+        public static void crearJugadoresXML(DataGridView dgvJugadores)
         {
             string archivoXML = @"..\..\Xml\jugadores.xml";
             //string archivoXML = "Xml\\jugadores.xml";
@@ -117,27 +116,14 @@ namespace Ahorcado.Utilidades
                 // Verifica si el archivo XML existe y lo elimina si es necesario.
                 if (File.Exists(archivoXML))
                 {
-                     File.Delete(archivoXML);
-                    Console.WriteLine("fichero jugadores exite lo eliminio");
+                    File.Delete(archivoXML);
                 }
 
                 // Crea un nuevo documento XML.
                 XmlDocument xmlDoc = new XmlDocument();
-
-
-
-                // Trato de añadir la etiquetas al princpio fichero xml
-
                 // Agrega la declaración XML manualmente.
                 XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "utf-8", null);
                 xmlDoc.AppendChild(xmlDeclaration);
-
-
-
-
-
-
-
                 // Crea el elemento raíz del documento.
                 XmlElement rootElement = xmlDoc.CreateElement("Jugadores");
                 xmlDoc.AppendChild(rootElement);
@@ -185,6 +171,66 @@ namespace Ahorcado.Utilidades
             }
         }
 
+        // Exporta el contenido del dgv de palabras a un fichero xml.
+        public static void crearPalabrasXML(DataGridView dgvPalabras)
+        {
+            string archivoXML = @"..\..\Xml\palabras.xml";
+            //string archivoXML = "Xml\\jugadores.xml";
 
+            try
+            {
+                // Verifica si el archivo XML existe y lo elimina si es necesario.
+                if (File.Exists(archivoXML))
+                {
+                    File.Delete(archivoXML);
+                }
+
+                // Crea un nuevo documento XML.
+                XmlDocument xmlDoc = new XmlDocument();
+                // Agrega la declaración XML manualmente.
+                XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "utf-8", null);
+                xmlDoc.AppendChild(xmlDeclaration);
+                // Crea el elemento raíz del documento.
+                XmlElement rootElement = xmlDoc.CreateElement("WordList");
+                xmlDoc.AppendChild(rootElement);
+
+                // Recorre las filas del DataGridView y agrega cada jugador como un elemento al documento XML.
+                foreach (DataGridViewRow fila in dgvPalabras.Rows)
+                {
+                    if (!fila.IsNewRow)
+                    {
+                        XmlElement wordElement = xmlDoc.CreateElement("Word");
+
+                        // Crea elementos para cada columna y agrega sus valores.
+                        XmlElement idElement = xmlDoc.CreateElement("id");
+                        idElement.InnerText = fila.Cells[0].Value.ToString();
+                        wordElement.AppendChild(idElement);
+
+                        XmlElement palabraElement = xmlDoc.CreateElement("palabra");
+                        palabraElement.InnerText = fila.Cells["palabra"].Value.ToString();
+                        wordElement.AppendChild(palabraElement);
+
+                        XmlElement pistaElement = xmlDoc.CreateElement("pista");
+                        pistaElement.InnerText = fila.Cells["pista"].Value.ToString();
+                        wordElement.AppendChild(pistaElement);
+
+                        XmlElement categoriaElement = xmlDoc.CreateElement("categoria");
+                        categoriaElement.InnerText = fila.Cells["categoria"].Value.ToString();
+                        wordElement.AppendChild(categoriaElement);
+                        // Añade nodo del tipo Word 
+                        rootElement.AppendChild(wordElement);
+                    }
+                }
+
+                // Guarda el documento XML en el archivo.
+                xmlDoc.Save(archivoXML);
+
+                Console.WriteLine("Datos guardados en " + archivoXML);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al guardar los datos en el archivo XML: " + ex.Message);
+            }
+        }
     }
 }

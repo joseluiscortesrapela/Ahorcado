@@ -82,7 +82,7 @@
             this.labelJugar.AutoSize = true;
             this.labelJugar.BackColor = System.Drawing.Color.Transparent;
             this.labelJugar.Font = new System.Drawing.Font("MV Boli", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJugar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelJugar.ForeColor = System.Drawing.Color.Chocolate;
             this.labelJugar.Location = new System.Drawing.Point(584, 629);
             this.labelJugar.Name = "labelJugar";
             this.labelJugar.Size = new System.Drawing.Size(113, 45);
@@ -131,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.ForeColor = System.Drawing.Color.YellowGreen;
             this.label3.Location = new System.Drawing.Point(94, 629);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(236, 45);
@@ -142,7 +142,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(42, 618);
+            this.pictureBox3.Location = new System.Drawing.Point(39, 629);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(49, 56);
             this.pictureBox3.TabIndex = 39;
