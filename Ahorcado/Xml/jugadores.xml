@@ -18,7 +18,7 @@
     <id>3</id>
     <nombre>Jose</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>0</puntuacion>
+    <puntuacion>-5</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>

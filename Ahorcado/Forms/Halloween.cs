@@ -39,11 +39,10 @@ namespace Ahorcado
         // Clases para reproducir musica
         private IWavePlayer player;
         private AudioFileReader audioFile;
- 
+
         public Halloween()
         {
             InitializeComponent();  // Importo las palabras
-
             player = new WaveOut(); ;
             string rutaRelativa = @"..\..\Resources\Juegos\Halloween\Sonidos\halloween.mp3";
             audioFile = new AudioFileReader(rutaRelativa);
@@ -60,8 +59,6 @@ namespace Ahorcado
             {
                 Console.WriteLine("No se han ecnontrado palabras en el dgv, tabla vacia.");
             }
-
-
 
         }
 
@@ -281,13 +278,13 @@ namespace Ahorcado
             {
                 // Incremento en diez puntos la puntuación.
                 puntuacion += 10;
-                finDelJuego("Has acertado la palabra");
+                finDelJuego("Has ganado!");
             }
             else
             {
                 // Resto 5 puntos por respuesta fallida.
                 puntuacion -= 5;
-                finDelJuego("No has acertado la palabra");
+                finDelJuego("Has perdido!");
             }
             // Muestro las puntuaciones
             mostrarPuntuacionesJugador();
@@ -370,7 +367,7 @@ namespace Ahorcado
                 {
                     puntuacion -= 5; // Por cada palabra fallada cinco puntos menos.
                     // El juego ha finalizado
-                    finDelJuego("Has perdido, fin del juego");
+                    finDelJuego("Has perdido!");
                 }
                 else
                 {
@@ -451,7 +448,8 @@ namespace Ahorcado
         // Fin de la partida
         private void finDelJuego(String mensaje)
         {
-
+            // Detengo la musica
+            Task task = apagarMusicaFondoJuego();
             // Muestro al jugador la palabra secreta.
             labelPalabraGuiones.Text = palabra;
             // Muestro al jugador el siguiente mensaje
@@ -468,13 +466,10 @@ namespace Ahorcado
             panelGameOver.Show();
             // Configura el valor alfa para hacer que el Panel sea semi-transparente
             panelGameOver.BackColor = System.Drawing.Color.FromArgb(128, 0, 0, 0);
-            // Guardo la ultima puntuacion
-            int totalPuntuacion = SesionUsuario.Puntuacion + puntuacion;
             // Actualizo la puntuacion para la sesion del jugador
-            SesionUsuario.Puntuacion = totalPuntuacion;
-            // Detengo la musica
-            //apagarMusicaFondo();
-
+            SesionUsuario.Puntuacion = puntuacion;
+            // Guardo la puntuacion del jugador
+            ProcesarFicherosXML.ActualizarPuntuacionJugador(SesionUsuario.Id, puntuacion);
         }
 
         // Jugar otra partida
@@ -506,8 +501,6 @@ namespace Ahorcado
             labelPista.Text = "";
             // Muestro la pista
             labelPista.Show();
-            // Pongo la musica de fondo
-            // ponerMusicaFondo();
 
         }
 
@@ -521,7 +514,7 @@ namespace Ahorcado
             // Muestro la ventana del jugador
             menuJugador.Show();
             // Detengo la musica.
-            Task task = apagarMusicaFondoJuegoHalloween();
+            Task task = apagarMusicaFondoJuego();
         }
 
 
@@ -567,17 +560,20 @@ namespace Ahorcado
 
         private void ponerMusicaFondo()
         {
+            // Volumen activo
+            audioFile.Volume = 1;
             player.Init(audioFile);
             player.Play();
 
         }
 
         // Disminuye el sonido lentamente hasta apagarlo.
-        private async Task apagarMusicaFondoJuegoHalloween()
+        private async Task apagarMusicaFondoJuego()
         {
+            
             if (audioFile != null && player != null)
             {
-                int fadeDurationMs = 3000; // Duración del fade-out en milisegundos
+                int fadeDurationMs = 2000; // Duración del fade-out en milisegundos
                 int fadeIntervalMs = 100;  // Intervalo de ajuste del volumen en milisegundos
 
                 float initialVolume = audioFile.Volume;
@@ -590,9 +586,11 @@ namespace Ahorcado
                     audioFile.Volume = volume;
                     await Task.Delay(fadeIntervalMs);
                 }
+           }
+            
+              
+            player.Stop();
 
-                player.Stop();
-            }
         }
 
 

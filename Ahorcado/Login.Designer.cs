@@ -215,7 +215,7 @@
             this.tbNombre.Size = new System.Drawing.Size(165, 32);
             this.tbNombre.TabIndex = 11;
             this.tbNombre.TabStop = false;
-            this.tbNombre.Text = "admin";
+            this.tbNombre.Text = "Jose";
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -272,7 +272,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(14, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(301, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,6 +283,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(964, 490);
             this.Controls.Add(this.pictureBox2);

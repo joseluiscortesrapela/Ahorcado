@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 using System.Xml.Serialization;
 
 namespace Ahorcado.Utilidades
@@ -20,8 +21,8 @@ namespace Ahorcado.Utilidades
 
 
             // Donde tengo el fichero xml
-            string archivoXML = "Xml\\jugadores.xml";
-            // string archivoXML = @"Xml\jugadores.xml"; tabmien funciona de esta forma
+            string archivoXML = @"..\..\Xml\jugadores.xml";
+            //  string archivoXML = @"Xml\jugadores.xml";  
 
             if (File.Exists(archivoXML))
             {
@@ -70,14 +71,15 @@ namespace Ahorcado.Utilidades
         // Lee palabras.xml y devuelve un array de palabras.
         public static List<Word> dameListaPalabras()
         {
-            string rutaFichero = "Xml\\palabras.xml";
+            string archivoXML = @"..\..\Xml\palabras.xml";
+            // Array de objetos de tipo Word
             List<Word> palabras = new List<Word>();
 
 
             try
             {
                 XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(rutaFichero);
+                xmlDoc.Load(archivoXML);
 
                 XmlNodeList palabraNodes = xmlDoc.SelectNodes("/WordList/Word");
 
@@ -109,7 +111,7 @@ namespace Ahorcado.Utilidades
         public static void crearJugadoresXML(DataGridView dgvJugadores)
         {
             string archivoXML = @"..\..\Xml\jugadores.xml";
-            //string archivoXML = "Xml\\jugadores.xml";
+
 
             try
             {
@@ -175,7 +177,6 @@ namespace Ahorcado.Utilidades
         public static void crearPalabrasXML(DataGridView dgvPalabras)
         {
             string archivoXML = @"..\..\Xml\palabras.xml";
-            //string archivoXML = "Xml\\jugadores.xml";
 
             try
             {
@@ -232,5 +233,40 @@ namespace Ahorcado.Utilidades
                 Console.WriteLine("Error al guardar los datos en el archivo XML: " + ex.Message);
             }
         }
+
+        // Actualiza l apuntuacion del jugador
+        public static void ActualizarPuntuacionJugador(int idJugador, int nuevaPuntuacion)
+        {
+
+            string archivoXML = @"..\..\Xml\jugadores.xml";
+            // Cargar el documento XML
+            XDocument xdoc = XDocument.Load(archivoXML);
+
+            // Buscar el jugador por su ID
+            var jugador = xdoc.Descendants("Jugador")
+                .Where(j => (int)j.Element("id") == idJugador)
+                .FirstOrDefault();
+
+            if (jugador != null)
+            {
+                // Actualizar la puntuación del jugador
+                jugador.Element("puntuacion").Value = nuevaPuntuacion.ToString();
+
+                Console.WriteLine("Nombre: " + jugador.Element("nombre").Value);
+                // Guardar el archivo XML con los cambios
+                xdoc.Save(archivoXML);
+                Console.WriteLine("Encontrado");
+            }
+            else
+            {
+                Console.WriteLine("Usuario no encontrado en jugadores.xml");
+            }
+
+
+
+        }
+
+
+
     }
 }

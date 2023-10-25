@@ -143,7 +143,6 @@
             // buttonC
             // 
             this.buttonC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonC.AutoSize = true;
             this.buttonC.BackColor = System.Drawing.Color.Transparent;
             this.buttonC.CausesValidation = false;
             this.buttonC.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -171,7 +170,6 @@
             // buttonV
             // 
             this.buttonV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonV.AutoSize = true;
             this.buttonV.BackColor = System.Drawing.Color.Transparent;
             this.buttonV.CausesValidation = false;
             this.buttonV.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -199,7 +197,6 @@
             // buttonX
             // 
             this.buttonX.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonX.AutoSize = true;
             this.buttonX.BackColor = System.Drawing.Color.Transparent;
             this.buttonX.CausesValidation = false;
             this.buttonX.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -227,7 +224,6 @@
             // buttonT
             // 
             this.buttonT.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonT.AutoSize = true;
             this.buttonT.BackColor = System.Drawing.Color.Transparent;
             this.buttonT.CausesValidation = false;
             this.buttonT.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -260,9 +256,9 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(536, 253);
+            this.panelGameOver.Location = new System.Drawing.Point(536, 193);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(483, 164);
+            this.panelGameOver.Size = new System.Drawing.Size(514, 153);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
@@ -270,8 +266,8 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("MV Boli", 20F);
-            this.label13.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label13.Location = new System.Drawing.Point(71, 79);
+            this.label13.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label13.Location = new System.Drawing.Point(71, 73);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(376, 34);
             this.label13.TabIndex = 35;
@@ -357,7 +353,6 @@
             // buttonH
             // 
             this.buttonH.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonH.AutoSize = true;
             this.buttonH.BackColor = System.Drawing.Color.Transparent;
             this.buttonH.CausesValidation = false;
             this.buttonH.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -385,7 +380,6 @@
             // buttonG
             // 
             this.buttonG.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonG.AutoSize = true;
             this.buttonG.BackColor = System.Drawing.Color.Transparent;
             this.buttonG.CausesValidation = false;
             this.buttonG.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -413,7 +407,6 @@
             // buttonE
             // 
             this.buttonE.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonE.AutoSize = true;
             this.buttonE.BackColor = System.Drawing.Color.Transparent;
             this.buttonE.CausesValidation = false;
             this.buttonE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -441,7 +434,6 @@
             // buttonJ
             // 
             this.buttonJ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonJ.AutoSize = true;
             this.buttonJ.BackColor = System.Drawing.Color.Transparent;
             this.buttonJ.CausesValidation = false;
             this.buttonJ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -469,7 +461,6 @@
             // buttonF
             // 
             this.buttonF.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonF.AutoSize = true;
             this.buttonF.BackColor = System.Drawing.Color.Transparent;
             this.buttonF.CausesValidation = false;
             this.buttonF.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -497,7 +488,6 @@
             // buttonD
             // 
             this.buttonD.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonD.AutoSize = true;
             this.buttonD.BackColor = System.Drawing.Color.Transparent;
             this.buttonD.CausesValidation = false;
             this.buttonD.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -525,7 +515,6 @@
             // buttonL
             // 
             this.buttonL.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonL.AutoSize = true;
             this.buttonL.BackColor = System.Drawing.Color.Transparent;
             this.buttonL.CausesValidation = false;
             this.buttonL.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -553,7 +542,6 @@
             // buttonI
             // 
             this.buttonI.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonI.AutoSize = true;
             this.buttonI.BackColor = System.Drawing.Color.Transparent;
             this.buttonI.CausesValidation = false;
             this.buttonI.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -581,7 +569,6 @@
             // buttonM
             // 
             this.buttonM.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonM.AutoSize = true;
             this.buttonM.BackColor = System.Drawing.Color.Transparent;
             this.buttonM.CausesValidation = false;
             this.buttonM.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -609,9 +596,7 @@
             // buttonA
             // 
             this.buttonA.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonA.AutoSize = true;
             this.buttonA.BackColor = System.Drawing.Color.Transparent;
-            this.buttonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonA.CausesValidation = false;
             this.buttonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonA.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -638,7 +623,6 @@
             // buttonN
             // 
             this.buttonN.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonN.AutoSize = true;
             this.buttonN.BackColor = System.Drawing.Color.Transparent;
             this.buttonN.CausesValidation = false;
             this.buttonN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -666,7 +650,6 @@
             // buttonÑ
             // 
             this.buttonÑ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonÑ.AutoSize = true;
             this.buttonÑ.BackColor = System.Drawing.Color.Transparent;
             this.buttonÑ.CausesValidation = false;
             this.buttonÑ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -694,7 +677,6 @@
             // buttonO
             // 
             this.buttonO.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonO.AutoSize = true;
             this.buttonO.BackColor = System.Drawing.Color.Transparent;
             this.buttonO.CausesValidation = false;
             this.buttonO.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -722,7 +704,6 @@
             // buttonP
             // 
             this.buttonP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonP.AutoSize = true;
             this.buttonP.BackColor = System.Drawing.Color.Transparent;
             this.buttonP.CausesValidation = false;
             this.buttonP.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -750,7 +731,6 @@
             // buttonU
             // 
             this.buttonU.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonU.AutoSize = true;
             this.buttonU.BackColor = System.Drawing.Color.Transparent;
             this.buttonU.CausesValidation = false;
             this.buttonU.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -778,7 +758,6 @@
             // buttonS
             // 
             this.buttonS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonS.AutoSize = true;
             this.buttonS.BackColor = System.Drawing.Color.Transparent;
             this.buttonS.CausesValidation = false;
             this.buttonS.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -806,7 +785,6 @@
             // buttonQ
             // 
             this.buttonQ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonQ.AutoSize = true;
             this.buttonQ.BackColor = System.Drawing.Color.Transparent;
             this.buttonQ.CausesValidation = false;
             this.buttonQ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -834,7 +812,6 @@
             // buttonR
             // 
             this.buttonR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonR.AutoSize = true;
             this.buttonR.BackColor = System.Drawing.Color.Transparent;
             this.buttonR.CausesValidation = false;
             this.buttonR.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -862,7 +839,6 @@
             // buttonW
             // 
             this.buttonW.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonW.AutoSize = true;
             this.buttonW.BackColor = System.Drawing.Color.Transparent;
             this.buttonW.CausesValidation = false;
             this.buttonW.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -890,7 +866,6 @@
             // buttonY
             // 
             this.buttonY.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonY.AutoSize = true;
             this.buttonY.BackColor = System.Drawing.Color.Transparent;
             this.buttonY.CausesValidation = false;
             this.buttonY.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -918,7 +893,6 @@
             // buttonZ
             // 
             this.buttonZ.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonZ.AutoSize = true;
             this.buttonZ.BackColor = System.Drawing.Color.Transparent;
             this.buttonZ.CausesValidation = false;
             this.buttonZ.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -946,7 +920,6 @@
             // buttonK
             // 
             this.buttonK.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonK.AutoSize = true;
             this.buttonK.BackColor = System.Drawing.Color.Transparent;
             this.buttonK.CausesValidation = false;
             this.buttonK.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -974,7 +947,6 @@
             // buttonB
             // 
             this.buttonB.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonB.AutoSize = true;
             this.buttonB.BackColor = System.Drawing.Color.Transparent;
             this.buttonB.CausesValidation = false;
             this.buttonB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1017,7 +989,7 @@
             // 
             this.labelNumeroAciertos.AutoSize = true;
             this.labelNumeroAciertos.Font = new System.Drawing.Font("MV Boli", 19F);
-            this.labelNumeroAciertos.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelNumeroAciertos.ForeColor = System.Drawing.Color.SeaShell;
             this.labelNumeroAciertos.Location = new System.Drawing.Point(216, 8);
             this.labelNumeroAciertos.Name = "labelNumeroAciertos";
             this.labelNumeroAciertos.Size = new System.Drawing.Size(33, 33);
@@ -1113,9 +1085,9 @@
             // 
             this.labelPalabraGuiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
-            this.labelPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 40F);
-            this.labelPalabraGuiones.ForeColor = System.Drawing.Color.Magenta;
-            this.labelPalabraGuiones.Location = new System.Drawing.Point(435, 420);
+            this.labelPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
+            this.labelPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
+            this.labelPalabraGuiones.Location = new System.Drawing.Point(429, 437);
             this.labelPalabraGuiones.Name = "labelPalabraGuiones";
             this.labelPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelPalabraGuiones.Size = new System.Drawing.Size(722, 60);
@@ -1126,11 +1098,11 @@
             // 
             this.buttonRespuestaRapida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRespuestaRapida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonRespuestaRapida.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonRespuestaRapida.Location = new System.Drawing.Point(9, 74);
+            this.buttonRespuestaRapida.Location = new System.Drawing.Point(472, 35);
             this.buttonRespuestaRapida.Name = "buttonRespuestaRapida";
-            this.buttonRespuestaRapida.Size = new System.Drawing.Size(198, 37);
+            this.buttonRespuestaRapida.Size = new System.Drawing.Size(117, 37);
             this.buttonRespuestaRapida.TabIndex = 14;
             this.buttonRespuestaRapida.Text = "Comprobar";
             this.buttonRespuestaRapida.UseVisualStyleBackColor = false;
@@ -1139,33 +1111,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 15F);
+            this.label1.Font = new System.Drawing.Font("MV Boli", 16F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(4, 10);
+            this.label1.Location = new System.Drawing.Point(24, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 26);
+            this.label1.Size = new System.Drawing.Size(219, 29);
             this.label1.TabIndex = 13;
             this.label1.Text = "Introduce la palabra";
             // 
             // tbRespuesta
             // 
-            this.tbRespuesta.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.tbRespuesta.ForeColor = System.Drawing.Color.Violet;
-            this.tbRespuesta.Location = new System.Drawing.Point(10, 39);
+            this.tbRespuesta.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tbRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.tbRespuesta.ForeColor = System.Drawing.Color.Black;
+            this.tbRespuesta.Location = new System.Drawing.Point(252, 39);
             this.tbRespuesta.Name = "tbRespuesta";
-            this.tbRespuesta.Size = new System.Drawing.Size(198, 29);
+            this.tbRespuesta.Size = new System.Drawing.Size(198, 32);
             this.tbRespuesta.TabIndex = 12;
             // 
             // labelPista
             // 
+            this.labelPista.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
-            this.labelPista.Font = new System.Drawing.Font("MV Boli", 18F);
-            this.labelPista.ForeColor = System.Drawing.Color.PeachPuff;
-            this.labelPista.Location = new System.Drawing.Point(239, 520);
+            this.labelPista.Font = new System.Drawing.Font("MV Boli", 22F);
+            this.labelPista.ForeColor = System.Drawing.Color.RosyBrown;
+            this.labelPista.Location = new System.Drawing.Point(268, 510);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPista.Size = new System.Drawing.Size(1005, 51);
+            this.labelPista.Size = new System.Drawing.Size(1109, 51);
             this.labelPista.TabIndex = 49;
             this.labelPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1187,9 +1160,9 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(1026, 171);
+            this.panelResolver.Location = new System.Drawing.Point(458, 741);
             this.panelResolver.Name = "panelResolver";
-            this.panelResolver.Size = new System.Drawing.Size(215, 130);
+            this.panelResolver.Size = new System.Drawing.Size(678, 85);
             this.panelResolver.TabIndex = 43;
             this.panelResolver.Visible = false;
             // 
@@ -1210,11 +1183,11 @@
             // 
             this.labelCategoria.AutoSize = true;
             this.labelCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelCategoria.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelCategoria.Location = new System.Drawing.Point(12, 38);
+            this.labelCategoria.Font = new System.Drawing.Font("MV Boli", 19F);
+            this.labelCategoria.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelCategoria.Location = new System.Drawing.Point(12, 5);
             this.labelCategoria.Name = "labelCategoria";
-            this.labelCategoria.Size = new System.Drawing.Size(0, 24);
+            this.labelCategoria.Size = new System.Drawing.Size(0, 33);
             this.labelCategoria.TabIndex = 44;
             // 
             // timer
@@ -1326,7 +1299,7 @@
             this.pbGato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbGato.BackColor = System.Drawing.Color.Transparent;
             this.pbGato.Image = ((System.Drawing.Image)(resources.GetObject("pbGato.Image")));
-            this.pbGato.Location = new System.Drawing.Point(1103, 564);
+            this.pbGato.Location = new System.Drawing.Point(1103, 566);
             this.pbGato.Name = "pbGato";
             this.pbGato.Size = new System.Drawing.Size(141, 195);
             this.pbGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1418,7 +1391,6 @@
             this.panelGameOver.ResumeLayout(false);
             this.panelGameOver.PerformLayout();
             this.panelLetras.ResumeLayout(false);
-            this.panelLetras.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.panelScore.ResumeLayout(false);
             this.panelScore.PerformLayout();

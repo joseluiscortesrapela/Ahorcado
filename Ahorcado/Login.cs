@@ -14,7 +14,7 @@ namespace Ahorcado
 {
     public partial class Login : Form
     {
-        
+
         private List<Jugador> jugadores;  // Array de jugadores
         private string nombre;            // Nombre del usuario
         private string contraseña;        // Contraseña del usuario
@@ -27,19 +27,8 @@ namespace Ahorcado
         // Autoload de la ventana
         private void Login_Load(object sender, EventArgs e)
         {
-
-            Console.WriteLine("Autoload login");
             // Obtengo todos los jugadores.
             jugadores = ProcesarFicherosXML.dameListaJugadores();
-
-            Console.WriteLine("Array size: " + jugadores.Count);
-
-
-            foreach( Jugador jugador in jugadores )
-            {
-                Console.WriteLine( jugador.ToString() );
-            }
-
         }
 
         // Login usuario
