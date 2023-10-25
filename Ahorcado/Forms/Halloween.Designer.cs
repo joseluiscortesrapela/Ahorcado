@@ -1087,10 +1087,10 @@
             this.labelPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
             this.labelPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
             this.labelPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
-            this.labelPalabraGuiones.Location = new System.Drawing.Point(429, 437);
+            this.labelPalabraGuiones.Location = new System.Drawing.Point(416, 362);
             this.labelPalabraGuiones.Name = "labelPalabraGuiones";
             this.labelPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPalabraGuiones.Size = new System.Drawing.Size(722, 60);
+            this.labelPalabraGuiones.Size = new System.Drawing.Size(735, 60);
             this.labelPalabraGuiones.TabIndex = 41;
             this.labelPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -1134,11 +1134,11 @@
             this.labelPista.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelPista.BackColor = System.Drawing.Color.Transparent;
             this.labelPista.Font = new System.Drawing.Font("MV Boli", 22F);
-            this.labelPista.ForeColor = System.Drawing.Color.RosyBrown;
-            this.labelPista.Location = new System.Drawing.Point(268, 510);
+            this.labelPista.ForeColor = System.Drawing.Color.Salmon;
+            this.labelPista.Location = new System.Drawing.Point(416, 471);
             this.labelPista.Name = "labelPista";
             this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPista.Size = new System.Drawing.Size(1109, 51);
+            this.labelPista.Size = new System.Drawing.Size(897, 51);
             this.labelPista.TabIndex = 49;
             this.labelPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1160,7 +1160,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(458, 741);
+            this.panelResolver.Location = new System.Drawing.Point(458, 698);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(678, 85);
             this.panelResolver.TabIndex = 43;
@@ -1185,7 +1185,7 @@
             this.labelCategoria.BackColor = System.Drawing.Color.Transparent;
             this.labelCategoria.Font = new System.Drawing.Font("MV Boli", 19F);
             this.labelCategoria.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelCategoria.Location = new System.Drawing.Point(12, 5);
+            this.labelCategoria.Location = new System.Drawing.Point(12, 13);
             this.labelCategoria.Name = "labelCategoria";
             this.labelCategoria.Size = new System.Drawing.Size(0, 33);
             this.labelCategoria.TabIndex = 44;
@@ -1347,7 +1347,7 @@
             // 
             this.pbPajaros.BackColor = System.Drawing.Color.Transparent;
             this.pbPajaros.Image = ((System.Drawing.Image)(resources.GetObject("pbPajaros.Image")));
-            this.pbPajaros.Location = new System.Drawing.Point(1056, 288);
+            this.pbPajaros.Location = new System.Drawing.Point(1094, 250);
             this.pbPajaros.Name = "pbPajaros";
             this.pbPajaros.Size = new System.Drawing.Size(200, 160);
             this.pbPajaros.TabIndex = 60;
