@@ -74,12 +74,12 @@
             this.labelPuntuacion = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbCategorias = new System.Windows.Forms.ComboBox();
-            this.labelPalabraGuiones = new System.Windows.Forms.Label();
+            this.lbPalabraGuiones = new System.Windows.Forms.Label();
             this.buttonRespuestaRapida = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbRespuesta = new System.Windows.Forms.TextBox();
-            this.labelPista = new System.Windows.Forms.Label();
-            this.pictureBoxAhorcado = new System.Windows.Forms.PictureBox();
+            this.lbPista = new System.Windows.Forms.Label();
+            this.pbAhorcado = new System.Windows.Forms.PictureBox();
             this.panelResolver = new System.Windows.Forms.Panel();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.labelCategoria = new System.Windows.Forms.Label();
@@ -92,16 +92,18 @@
             this.pbResolver = new System.Windows.Forms.PictureBox();
             this.progressBarVida = new System.Windows.Forms.ProgressBar();
             this.pbBuho = new System.Windows.Forms.PictureBox();
-            this.pbGato = new System.Windows.Forms.PictureBox();
             this.pbMuercielagos = new System.Windows.Forms.PictureBox();
             this.pbFuego = new System.Windows.Forms.PictureBox();
             this.pbFuego2 = new System.Windows.Forms.PictureBox();
             this.pbPajaros = new System.Windows.Forms.PictureBox();
+            this.pbGato = new System.Windows.Forms.PictureBox();
+            this.timerPista = new System.Windows.Forms.Timer(this.components);
+            this.timerResolver = new System.Windows.Forms.Timer(this.components);
             this.panelGameOver.SuspendLayout();
             this.panelLetras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             this.panelScore.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAhorcado)).BeginInit();
             this.panelResolver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPresentacion)).BeginInit();
@@ -109,11 +111,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMuercielagos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).BeginInit();
             this.SuspendLayout();
             // 
             // p
@@ -256,7 +258,7 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(536, 193);
+            this.panelGameOver.Location = new System.Drawing.Point(530, 206);
             this.panelGameOver.Name = "panelGameOver";
             this.panelGameOver.Size = new System.Drawing.Size(514, 153);
             this.panelGameOver.TabIndex = 47;
@@ -1081,18 +1083,18 @@
             this.cbCategorias.TabIndex = 40;
             this.cbCategorias.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategorias_SelectedIndexChanged);
             // 
-            // labelPalabraGuiones
+            // lbPalabraGuiones
             // 
-            this.labelPalabraGuiones.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
-            this.labelPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
-            this.labelPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
-            this.labelPalabraGuiones.Location = new System.Drawing.Point(416, 362);
-            this.labelPalabraGuiones.Name = "labelPalabraGuiones";
-            this.labelPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPalabraGuiones.Size = new System.Drawing.Size(735, 60);
-            this.labelPalabraGuiones.TabIndex = 41;
-            this.labelPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbPalabraGuiones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
+            this.lbPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
+            this.lbPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
+            this.lbPalabraGuiones.Location = new System.Drawing.Point(416, 382);
+            this.lbPalabraGuiones.Name = "lbPalabraGuiones";
+            this.lbPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbPalabraGuiones.Size = new System.Drawing.Size(735, 77);
+            this.lbPalabraGuiones.TabIndex = 41;
+            this.lbPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonRespuestaRapida
             // 
@@ -1129,30 +1131,30 @@
             this.tbRespuesta.Size = new System.Drawing.Size(198, 32);
             this.tbRespuesta.TabIndex = 12;
             // 
-            // labelPista
+            // lbPista
             // 
-            this.labelPista.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelPista.BackColor = System.Drawing.Color.Transparent;
-            this.labelPista.Font = new System.Drawing.Font("MV Boli", 22F);
-            this.labelPista.ForeColor = System.Drawing.Color.Salmon;
-            this.labelPista.Location = new System.Drawing.Point(416, 471);
-            this.labelPista.Name = "labelPista";
-            this.labelPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelPista.Size = new System.Drawing.Size(897, 51);
-            this.labelPista.TabIndex = 49;
-            this.labelPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbPista.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbPista.BackColor = System.Drawing.Color.Transparent;
+            this.lbPista.Font = new System.Drawing.Font("MV Boli", 22F);
+            this.lbPista.ForeColor = System.Drawing.Color.Wheat;
+            this.lbPista.Location = new System.Drawing.Point(-4, 618);
+            this.lbPista.Name = "lbPista";
+            this.lbPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbPista.Size = new System.Drawing.Size(1442, 43);
+            this.lbPista.TabIndex = 47;
+            this.lbPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBoxAhorcado
+            // pbAhorcado
             // 
-            this.pictureBoxAhorcado.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAhorcado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxAhorcado.Location = new System.Drawing.Point(117, 121);
-            this.pictureBoxAhorcado.Name = "pictureBoxAhorcado";
-            this.pictureBoxAhorcado.Size = new System.Drawing.Size(293, 450);
-            this.pictureBoxAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxAhorcado.TabIndex = 46;
-            this.pictureBoxAhorcado.TabStop = false;
-            this.pictureBoxAhorcado.WaitOnLoad = true;
+            this.pbAhorcado.BackColor = System.Drawing.Color.Transparent;
+            this.pbAhorcado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAhorcado.Location = new System.Drawing.Point(117, 121);
+            this.pbAhorcado.Name = "pbAhorcado";
+            this.pbAhorcado.Size = new System.Drawing.Size(293, 450);
+            this.pbAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAhorcado.TabIndex = 46;
+            this.pbAhorcado.TabStop = false;
+            this.pbAhorcado.WaitOnLoad = true;
             // 
             // panelResolver
             // 
@@ -1160,7 +1162,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(458, 698);
+            this.panelResolver.Location = new System.Drawing.Point(430, 462);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(678, 85);
             this.panelResolver.TabIndex = 43;
@@ -1192,6 +1194,7 @@
             // 
             // timer
             // 
+            this.timer.Interval = 14000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // pbPresentacion
@@ -1294,20 +1297,6 @@
             this.pbBuho.TabStop = false;
             this.pbBuho.Visible = false;
             // 
-            // pbGato
-            // 
-            this.pbGato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pbGato.BackColor = System.Drawing.Color.Transparent;
-            this.pbGato.Image = ((System.Drawing.Image)(resources.GetObject("pbGato.Image")));
-            this.pbGato.Location = new System.Drawing.Point(1103, 566);
-            this.pbGato.Name = "pbGato";
-            this.pbGato.Size = new System.Drawing.Size(141, 195);
-            this.pbGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbGato.TabIndex = 54;
-            this.pbGato.TabStop = false;
-            this.pbGato.Visible = false;
-            this.pbGato.WaitOnLoad = true;
-            // 
             // pbMuercielagos
             // 
             this.pbMuercielagos.BackColor = System.Drawing.Color.Transparent;
@@ -1354,6 +1343,30 @@
             this.pbPajaros.TabStop = false;
             this.pbPajaros.Visible = false;
             // 
+            // pbGato
+            // 
+            this.pbGato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pbGato.BackColor = System.Drawing.Color.Transparent;
+            this.pbGato.Image = ((System.Drawing.Image)(resources.GetObject("pbGato.Image")));
+            this.pbGato.Location = new System.Drawing.Point(1343, 591);
+            this.pbGato.Name = "pbGato";
+            this.pbGato.Size = new System.Drawing.Size(141, 195);
+            this.pbGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbGato.TabIndex = 61;
+            this.pbGato.TabStop = false;
+            this.pbGato.Visible = false;
+            this.pbGato.WaitOnLoad = true;
+            // 
+            // timerPista
+            // 
+            this.timerPista.Interval = 7000;
+            this.timerPista.Tick += new System.EventHandler(this.timerPista_Tick);
+            // 
+            // timerResolver
+            // 
+            this.timerResolver.Interval = 10000;
+            this.timerResolver.Tick += new System.EventHandler(this.timerResolver_Tick);
+            // 
             // Halloween
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1362,11 +1375,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1620, 920);
+            this.Controls.Add(this.pbGato);
             this.Controls.Add(this.pbPajaros);
             this.Controls.Add(this.pbFuego2);
             this.Controls.Add(this.pbFuego);
             this.Controls.Add(this.pbMuercielagos);
-            this.Controls.Add(this.pbGato);
             this.Controls.Add(this.pbBuho);
             this.Controls.Add(this.panelBarraHerramientas);
             this.Controls.Add(this.pbPresentacion);
@@ -1375,9 +1388,9 @@
             this.Controls.Add(this.dgvPalabras);
             this.Controls.Add(this.panelScore);
             this.Controls.Add(this.cbCategorias);
-            this.Controls.Add(this.labelPalabraGuiones);
-            this.Controls.Add(this.labelPista);
-            this.Controls.Add(this.pictureBoxAhorcado);
+            this.Controls.Add(this.lbPalabraGuiones);
+            this.Controls.Add(this.lbPista);
+            this.Controls.Add(this.pbAhorcado);
             this.Controls.Add(this.panelResolver);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.labelCategoria);
@@ -1394,7 +1407,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             this.panelScore.ResumeLayout(false);
             this.panelScore.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAhorcado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAhorcado)).EndInit();
             this.panelResolver.ResumeLayout(false);
             this.panelResolver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
@@ -1404,11 +1417,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbResolver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMuercielagos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1457,12 +1470,12 @@
         private System.Windows.Forms.Label labelPuntuacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbCategorias;
-        private System.Windows.Forms.Label labelPalabraGuiones;
+        private System.Windows.Forms.Label lbPalabraGuiones;
         private System.Windows.Forms.Button buttonRespuestaRapida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbRespuesta;
-        private System.Windows.Forms.Label labelPista;
-        private System.Windows.Forms.PictureBox pictureBoxAhorcado;
+        private System.Windows.Forms.Label lbPista;
+        private System.Windows.Forms.PictureBox pbAhorcado;
         private System.Windows.Forms.Panel panelResolver;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Label labelCategoria;
@@ -1477,10 +1490,12 @@
         private System.Windows.Forms.PictureBox pbResolver;
         private System.Windows.Forms.ProgressBar progressBarVida;
         private System.Windows.Forms.PictureBox pbBuho;
-        private System.Windows.Forms.PictureBox pbGato;
         private System.Windows.Forms.PictureBox pbMuercielagos;
         private System.Windows.Forms.PictureBox pbFuego;
         private System.Windows.Forms.PictureBox pbFuego2;
         private System.Windows.Forms.PictureBox pbPajaros;
+        private System.Windows.Forms.PictureBox pbGato;
+        private System.Windows.Forms.Timer timerPista;
+        private System.Windows.Forms.Timer timerResolver;
     }
 }

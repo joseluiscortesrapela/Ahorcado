@@ -3,7 +3,7 @@
   <Word>
     <id>1</id>
     <palabra>Huelva</palabra>
-    <pista>Es la ciudad más antigua de occidente</pista>
+    <pista>Segun los ultimos estudios sitúan a esta ciudad como la ciudad más antigua de Occidente.</pista>
     <categoria>Historia</categoria>
   </Word>
   <Word>
@@ -15,14 +15,8 @@
   <Word>
     <id>3</id>
     <palabra>El quijote</palabra>
-    <pista>En un lugar de La Mancha, de cuyo nombre no quiero acordarme...</pista>
-    <categoria>Historia</categoria>
-  </Word>
-  <Word>
-    <id>4</id>
-    <palabra>palbrilla</palabra>
-    <pista>la pista de la palabra</pista>
-    <categoria>Historia</categoria>
+    <pista>Este libro empieza asi, en un lugar de La Mancha, de cuyo nombre no quiero acordarme...</pista>
+    <categoria>Libros</categoria>
   </Word>
   <Word>
     <id>5</id>
@@ -32,8 +26,8 @@
   </Word>
   <Word>
     <id>6</id>
-    <palabra>Cristobal Colon</palabra>
-    <pista>Descubridor del nuevo mundo</pista>
+    <palabra>Alonso Sanchez</palabra>
+    <pista>Cristobal Colón tenia un mapa de como llegar al nuevo mundo gracias a un marino onubense conocido como el prenauta.</pista>
     <categoria>Historia</categoria>
   </Word>
   <Word>

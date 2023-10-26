@@ -21,8 +21,8 @@ namespace Ahorcado.Utilidades
 
 
             // Donde tengo el fichero xml
-            string archivoXML = @"..\..\Xml\jugadores.xml";
-            //  string archivoXML = @"Xml\jugadores.xml";  
+             string archivoXML = @"..\..\Xml\jugadores.xml";
+           // string archivoXML = @"Xml\jugadores.xml";  
 
             if (File.Exists(archivoXML))
             {

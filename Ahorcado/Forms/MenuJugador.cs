@@ -29,6 +29,7 @@ namespace Ahorcado
             mostrarRanking();
         }
 
+        // Muestro las siete mejores puntuaciones.
         private void mostrarRanking()
         {
             // Ordena la lista de jugadores de mayor a menor puntuación

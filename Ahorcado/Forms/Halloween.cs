@@ -42,10 +42,14 @@ namespace Ahorcado
 
         public Halloween()
         {
-            InitializeComponent();  // Importo las palabras
+            InitializeComponent();   
+            
+            // Los sonidos que utilizare en el juego
+            // Sonido de fondo
             player = new WaveOut(); ;
             string rutaRelativa = @"..\..\Resources\Juegos\Halloween\Sonidos\halloween.mp3";
             audioFile = new AudioFileReader(rutaRelativa);
+
             // Añado las palabras al dgv
             añadirPalabrasDGV();
 
@@ -100,7 +104,7 @@ namespace Ahorcado
             // Muestro el panel con las letras/botones
             panelLetras.Show();
             // Muestro los guiones de la palabra que hay que adivinar
-            labelPalabraGuiones.Show();
+            lbPalabraGuiones.Show();
             //Muestro panel puntuacion
             panelScore.Show();
             // Muestro el panel de herramientas 
@@ -208,7 +212,7 @@ namespace Ahorcado
         {   // Convierto el array de caracteres con los guiones y letras completadas a String.
             String adivinar = new string(charsGionesPalabra);
             // Muestro la palabra por adivinar con giones y letras acertadas.
-            labelPalabraGuiones.Text = adivinar;
+            lbPalabraGuiones.Text = adivinar;
         }
 
         // Genera un numero aleatorio
@@ -315,12 +319,12 @@ namespace Ahorcado
 
             switch (parte)
             {
-                case 1: pictureBoxAhorcado.Image = Properties.Resources.I; break;
-                case 2: pictureBoxAhorcado.Image = Properties.Resources.II; break;
-                case 3: pictureBoxAhorcado.Image = Properties.Resources.III; break;
-                case 4: pictureBoxAhorcado.Image = Properties.Resources.IV; break;
-                case 5: pictureBoxAhorcado.Image = Properties.Resources.V; break;
-                case 6: pictureBoxAhorcado.Image = Properties.Resources.VI; break;
+                case 1: pbAhorcado.Image = Properties.Resources._1; break;
+                case 2: pbAhorcado.Image = Properties.Resources._2; break;
+                case 3: pbAhorcado.Image = Properties.Resources._3; break;
+                case 4: pbAhorcado.Image = Properties.Resources._4; break;
+                case 5: pbAhorcado.Image = Properties.Resources._5; break;
+                case 6: pbAhorcado.Image = Properties.Resources._6; break;
 
             }
 
@@ -349,7 +353,7 @@ namespace Ahorcado
                     puntuacion += 2;
                     // Incremento el numero de aciertos.
                     numeroAciertos += 1;
-
+              
                 }
             }
 
@@ -393,6 +397,7 @@ namespace Ahorcado
 
         }
 
+    
 
         // Obtengo la letra que acaba de pulsar el jugador.
         private void buttonLetter_Click(object sender, EventArgs e)
@@ -407,6 +412,7 @@ namespace Ahorcado
             comprobarLetra(letra);
         }
 
+   
         // Muestra las puntuaciones
         private void mostrarPuntuacionesJugador()
         {
@@ -443,6 +449,7 @@ namespace Ahorcado
         private void btnShowPanelResolver_Click(object sender, EventArgs e)
         {
             panelResolver.Show();
+            timerResolver.Start();
         }
 
         // Fin de la partida
@@ -451,7 +458,7 @@ namespace Ahorcado
             // Detengo la musica
             Task task = apagarMusicaFondoJuego();
             // Muestro al jugador la palabra secreta.
-            labelPalabraGuiones.Text = palabra;
+            lbPalabraGuiones.Text = palabra;
             // Muestro al jugador el siguiente mensaje
             labelFinalPartida.Text = mensaje;
             // Oculto el panel de botones/letras
@@ -459,7 +466,7 @@ namespace Ahorcado
             // Oculto el paner respuesta rapida.
             panelResolver.Hide();
             // Oculto pista 
-            labelPista.Hide();
+            lbPista.Hide();
             // Oculto boton resolver
             pbResolver.Hide();
             //Muestro panel game over
@@ -488,7 +495,7 @@ namespace Ahorcado
             // Oculto el panel scores
             panelScore.Hide();
             // Quito la imagen del ahorcado
-            pictureBoxAhorcado.Image = null;
+            pbAhorcado.Image = null;
             // Oculto panel 
             panelBarraHerramientas.Hide();
             // Oculto mensaje al fnalizar partda
@@ -496,11 +503,11 @@ namespace Ahorcado
             // Oculto el label categoria
             labelCategoria.Text = "";
             // Oculto los guiones palabra
-            labelPalabraGuiones.Text = "";
+            lbPalabraGuiones.Text = "";
             // Quito la pista anterior.
-            labelPista.Text = "";
+            lbPista.Text = "";
             // Muestro la pista
-            labelPista.Show();
+            lbPista.Show();
 
         }
 
@@ -523,7 +530,11 @@ namespace Ahorcado
             // Obtengo la pista asociada a la palabra
             pista = damePista(palabra);
             // Muestro la pista en un label.
-            labelPista.Text = pista;
+            lbPista.Text = pista;
+            // Muestro la pista
+            lbPista.Visible = true;
+            // Activo el temmporizador
+            timerPista.Start();
         }
 
 
@@ -538,8 +549,6 @@ namespace Ahorcado
             pbPresentacion.Dock = DockStyle.Fill;
             // Muestro el panel de la animacion.
             pbPresentacion.Visible = true;
-            // Inicio el temporizador con un temporizador de 14 segundos.
-            timer.Interval = 14000;
             // Inicio el timer
             timer.Enabled = true;
             // Pongo la musica de fondo del juego
@@ -570,7 +579,7 @@ namespace Ahorcado
         // Disminuye el sonido lentamente hasta apagarlo.
         private async Task apagarMusicaFondoJuego()
         {
-            
+
             if (audioFile != null && player != null)
             {
                 int fadeDurationMs = 2000; // Duración del fade-out en milisegundos
@@ -586,9 +595,9 @@ namespace Ahorcado
                     audioFile.Volume = volume;
                     await Task.Delay(fadeIntervalMs);
                 }
-           }
-            
-              
+            }
+
+
             player.Stop();
 
         }
@@ -600,6 +609,23 @@ namespace Ahorcado
             Application.Exit();
         }
 
+        // Oculta la pista
+        private void timerPista_Tick(object sender, EventArgs e)
+        {
+            // Oculta el Label
+            lbPista.Visible = false;
+            // Detiene el Timer para que no siga ejecutándose
+            timerPista.Stop();
+        }
+
+        // Oculta la respuesta rapida
+        private void timerResolver_Tick(object sender, EventArgs e)
+        {
+            // Oculta el panel
+            panelResolver.Visible = false;
+            // Detiene el Timer para que no siga ejecutándose
+            timerResolver.Stop();
+        }
     }
 
 
