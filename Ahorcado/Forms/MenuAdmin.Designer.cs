@@ -78,13 +78,13 @@
             this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puntuacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pbIconoMensaje = new System.Windows.Forms.PictureBox();
-            this.labelMensaje = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pbMostrarPanelActualizar = new System.Windows.Forms.PictureBox();
             this.pbMostrarVentanEliminar = new System.Windows.Forms.PictureBox();
             this.pbMostrarPanelCrear = new System.Windows.Forms.PictureBox();
             this.lbNombreTabla = new System.Windows.Forms.Label();
+            this.pbIconoMensaje = new System.Windows.Forms.PictureBox();
+            this.labelMensaje = new System.Windows.Forms.Label();
             this.panelJugador = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.tbIdJugador = new System.Windows.Forms.TextBox();
@@ -118,10 +118,10 @@
             this.panelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelActualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarVentanEliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelCrear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).BeginInit();
             this.panelJugador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoFormularioJugador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
@@ -326,7 +326,7 @@
             this.labelMensajePalabra.AutoSize = true;
             this.labelMensajePalabra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMensajePalabra.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelMensajePalabra.Location = new System.Drawing.Point(257, 165);
+            this.labelMensajePalabra.Location = new System.Drawing.Point(178, 165);
             this.labelMensajePalabra.Name = "labelMensajePalabra";
             this.labelMensajePalabra.Size = new System.Drawing.Size(82, 24);
             this.labelMensajePalabra.TabIndex = 35;
@@ -645,28 +645,6 @@
             this.Rol.Name = "Rol";
             this.Rol.ReadOnly = true;
             // 
-            // pbIconoMensaje
-            // 
-            this.pbIconoMensaje.Image = ((System.Drawing.Image)(resources.GetObject("pbIconoMensaje.Image")));
-            this.pbIconoMensaje.Location = new System.Drawing.Point(316, 653);
-            this.pbIconoMensaje.Name = "pbIconoMensaje";
-            this.pbIconoMensaje.Size = new System.Drawing.Size(33, 35);
-            this.pbIconoMensaje.TabIndex = 34;
-            this.pbIconoMensaje.TabStop = false;
-            this.pbIconoMensaje.Visible = false;
-            // 
-            // labelMensaje
-            // 
-            this.labelMensaje.AutoSize = true;
-            this.labelMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMensaje.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.labelMensaje.Location = new System.Drawing.Point(355, 657);
-            this.labelMensaje.Name = "labelMensaje";
-            this.labelMensaje.Size = new System.Drawing.Size(278, 24);
-            this.labelMensaje.TabIndex = 33;
-            this.labelMensaje.Text = "Aqui iran los mensajes genrales";
-            this.labelMensaje.Visible = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -718,6 +696,28 @@
             this.lbNombreTabla.Name = "lbNombreTabla";
             this.lbNombreTabla.Size = new System.Drawing.Size(0, 29);
             this.lbNombreTabla.TabIndex = 26;
+            // 
+            // pbIconoMensaje
+            // 
+            this.pbIconoMensaje.Image = ((System.Drawing.Image)(resources.GetObject("pbIconoMensaje.Image")));
+            this.pbIconoMensaje.Location = new System.Drawing.Point(316, 653);
+            this.pbIconoMensaje.Name = "pbIconoMensaje";
+            this.pbIconoMensaje.Size = new System.Drawing.Size(33, 35);
+            this.pbIconoMensaje.TabIndex = 34;
+            this.pbIconoMensaje.TabStop = false;
+            this.pbIconoMensaje.Visible = false;
+            // 
+            // labelMensaje
+            // 
+            this.labelMensaje.AutoSize = true;
+            this.labelMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMensaje.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labelMensaje.Location = new System.Drawing.Point(355, 657);
+            this.labelMensaje.Name = "labelMensaje";
+            this.labelMensaje.Size = new System.Drawing.Size(278, 24);
+            this.labelMensaje.TabIndex = 33;
+            this.labelMensaje.Text = "Aqui iran los mensajes genrales";
+            this.labelMensaje.Visible = false;
             // 
             // panelJugador
             // 
@@ -970,10 +970,10 @@
             this.panelPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalabras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelActualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarVentanEliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPanelCrear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIconoMensaje)).EndInit();
             this.panelJugador.ResumeLayout(false);
             this.panelJugador.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoFormularioJugador)).EndInit();

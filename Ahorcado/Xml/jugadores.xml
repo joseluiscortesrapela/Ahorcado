@@ -9,51 +9,58 @@
   </Jugador>
   <Jugador>
     <id>2</id>
-    <nombre>Serena</nombre>
+    <nombre>serena</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>35</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>3</id>
-    <nombre>Jose</nombre>
+    <nombre>jose</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>20</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>4</id>
-    <nombre>Noelia</nombre>
-    <contraseña>123456</contraseña>
+    <nombre>noelia</nombre>
+    <contraseña>1234</contraseña>
     <puntuacion>34</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>5</id>
-    <nombre>Manolo</nombre>
-    <contraseña>123456</contraseña>
+    <nombre>manolo</nombre>
+    <contraseña>1234</contraseña>
     <puntuacion>23</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>6</id>
-    <nombre>Alejandro</nombre>
+    <nombre>alejandro</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>15</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>7</id>
-    <nombre>Rocio</nombre>
+    <nombre>rocio</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>10</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>8</id>
-    <nombre>Rodrigo</nombre>
+    <nombre>rodrigo</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>5</puntuacion>
+    <rol>Jugador</rol>
+  </Jugador>
+  <Jugador>
+    <id>9</id>
+    <nombre>ana</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>23</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
 </Jugadores>
