@@ -54,10 +54,13 @@
             this.lbScore5 = new System.Windows.Forms.Label();
             this.lbScore6 = new System.Windows.Forms.Label();
             this.lbScore7 = new System.Windows.Forms.Label();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNombreUsuario
@@ -123,11 +126,11 @@
             // 
             this.lbPuntuacion.AutoSize = true;
             this.lbPuntuacion.BackColor = System.Drawing.Color.Transparent;
-            this.lbPuntuacion.Font = new System.Drawing.Font("MV Boli", 16F, System.Drawing.FontStyle.Bold);
-            this.lbPuntuacion.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbPuntuacion.Location = new System.Drawing.Point(29, 93);
+            this.lbPuntuacion.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold);
+            this.lbPuntuacion.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbPuntuacion.Location = new System.Drawing.Point(254, 86);
             this.lbPuntuacion.Name = "lbPuntuacion";
-            this.lbPuntuacion.Size = new System.Drawing.Size(29, 29);
+            this.lbPuntuacion.Size = new System.Drawing.Size(24, 23);
             this.lbPuntuacion.TabIndex = 37;
             this.lbPuntuacion.Text = "0";
             // 
@@ -355,6 +358,30 @@
             this.lbScore7.TabIndex = 59;
             this.lbScore7.Text = "0";
             // 
+            // pbSalir
+            // 
+            this.pbSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
+            this.pbSalir.Location = new System.Drawing.Point(12, 85);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(65, 63);
+            this.pbSalir.TabIndex = 60;
+            this.pbSalir.TabStop = false;
+            this.pbSalir.Tag = "Sale a la vengana de login";
+            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.SpringGreen;
+            this.label2.Location = new System.Drawing.Point(120, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 23);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Puntuación";
+            // 
             // MenuJugador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,6 +390,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1188, 697);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pbSalir);
             this.Controls.Add(this.lbScore7);
             this.Controls.Add(this.lbScore6);
             this.Controls.Add(this.lbScore5);
@@ -397,6 +426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,5 +458,7 @@
         private System.Windows.Forms.Label lbScore5;
         private System.Windows.Forms.Label lbScore6;
         private System.Windows.Forms.Label lbScore7;
+        private System.Windows.Forms.PictureBox pbSalir;
+        private System.Windows.Forms.Label label2;
     }
 }

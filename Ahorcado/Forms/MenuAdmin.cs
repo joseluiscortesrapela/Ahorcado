@@ -375,44 +375,6 @@ namespace Ahorcado
         // Boton de accion panel palabras para crear o actualizar
         private void buttonPalabraAceptar(object sender, EventArgs e)
         {
-            // Recogo los datos del formulario
-            // Id 
-            int id = int.Parse(tbIdPalabra.Text);
-            string palabra = tbPalabra.Text;
-            string pista = tbPista.Text;
-            string categoria = cbCategorias.Text;
-
-            // Validar datos formulario
-            if (validarFormularioPalabras(palabra, pista, categoria))
-            {
-                // Si quiere crear nueva palabra
-                if (accionARealizar.Equals("crear"))
-                {
-                    // Añado una nueva palabra al dgv
-                    dgvPalabras.Rows.Add(id, palabra, pista, categoria);
-                    // Muestro mensaje 
-                    labelMensajePalabra.Text = "Acabas de crear una nueva palabra.";
-                    // Reseteo el formulario a cero.
-                    limpiarFormulario();
-                    // Muestro el nuevo identificador que se utilizara en el caso de seguir creando palabras.
-                    tbIdPalabra.Text = dameSiguienteID().ToString();
-                    Console.WriteLine("Creo una palabra");
-
-                }
-                else if (accionARealizar.Equals("actualizar"))
-                {
-                    // Actualizo las celdas de la fila con los nuevos valores.
-                    fila.Cells["palabra"].Value = palabra;
-                    fila.Cells["pista"].Value = pista;
-                    fila.Cells["categoria"].Value = categoria;
-
-                    // Actualizo los datos del jugador
-                    labelMensajePalabra.Text = "Acabas de actualizar la palabra.";
-
-                }
-
-            }
-
 
         }
 
