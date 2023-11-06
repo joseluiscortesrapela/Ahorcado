@@ -734,5 +734,13 @@ namespace Ahorcado
             // Muestro icono
             pbIconoMensaje.Visible = true;
         }
+
+        // Salgo de la ventana de administracion y abro la ventana de login
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }
