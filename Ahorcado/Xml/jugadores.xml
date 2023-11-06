@@ -63,4 +63,11 @@
     <puntuacion>23</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
+  <Jugador>
+    <id>10</id>
+    <nombre>martin</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>17</puntuacion>
+    <rol>Jugador</rol>
+  </Jugador>
 </Jugadores>
