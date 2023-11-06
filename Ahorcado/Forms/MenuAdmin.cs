@@ -60,7 +60,7 @@ namespace Ahorcado
         {
             // Obtengo la lista de jugadores y los guardo en el dgv
             List<Word> palabras = ProcesarFicherosXML.dameListaPalabras();
-          
+
             // Recorro la lista de palabras
             foreach (Word palabra in palabras)
             {   // Añado palabra al dgv
@@ -348,12 +348,13 @@ namespace Ahorcado
                 {
                     // Añado un nuevo jugador al dgv
                     dgvJugadores.Rows.Add(id, usuario, contraseña, puntuacion, rol);
-                    // Muestro mensaje 
-                    labelMensajeJugador.Text = "Acabas de crear un nuevo usuario.";
                     // Reseteo formulario 
                     limpiarFormulario();
                     // Muestro el nuevo identificador que se utilizara en el caso de seguir creando usuarios.
                     tbIdJugador.Text = dameSiguienteID().ToString();
+                    // Muestro mensaje 
+                    labelMensajeJugador.Text = "Acabas de crear un nuevo usuario.";
+                    Console.WriteLine("Jugdor creado");
 
                 } // Si quiere actulizar los datos de un jugador
                 else if (accionARealizar.Equals("actualizar"))
@@ -364,6 +365,7 @@ namespace Ahorcado
                     fila.Cells["rol"].Value = rol;
                     // Muestro mensaje
                     labelMensajeJugador.Text = "Acabas de actualizar los datos del usuario.";
+                    Console.WriteLine("jugador actulizado");
                 }
             }
 
@@ -390,12 +392,12 @@ namespace Ahorcado
                 {
                     // Añado una nueva palabra al dgv
                     dgvPalabras.Rows.Add(id, palabra, pista, categoria);
-                    // Muestro mensaje 
-                    labelMensajePalabra.Text = "Acabas de crear una nueva palabra.";
                     // Reseteo el formulario a cero.
                     limpiarFormulario();
                     // Muestro el nuevo identificador que se utilizara en el caso de seguir creando palabras.
                     tbIdPalabra.Text = dameSiguienteID().ToString();
+                    // Muestro mensaje 
+                    labelMensajePalabra.Text = "Acabas de crear una nueva palabra.";
                     Console.WriteLine("Creo una palabra");
 
                 }
@@ -408,7 +410,7 @@ namespace Ahorcado
 
                     // Actualizo los datos del jugador
                     labelMensajePalabra.Text = "Acabas de actualizar la palabra.";
-
+                    Console.WriteLine("Actualizo palabra");
                 }
 
             }
@@ -442,8 +444,8 @@ namespace Ahorcado
                     ultimoID = 0;
                 }
 
-            } 
-            
+            }
+
             if (nombreTabla == "palabras")
             {
                 // Si no esta vacio el dgv
@@ -459,7 +461,7 @@ namespace Ahorcado
                 }
 
             }
- 
+
             // Incremento en uno 
             ultimoID++;
             // Devuelvo su valor

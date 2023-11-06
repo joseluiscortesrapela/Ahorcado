@@ -70,4 +70,11 @@
     <puntuacion>17</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
+  <Jugador>
+    <id>11</id>
+    <nombre>raul</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>24</puntuacion>
+    <rol>Jugador</rol>
+  </Jugador>
 </Jugadores>
