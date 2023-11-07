@@ -71,10 +71,10 @@
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
-    <id>0</id>
-    <nombre>lucas</nombre>
+    <id>11</id>
+    <nombre>rucanor</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>14</puntuacion>
+    <puntuacion>28</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
 </Jugadores>

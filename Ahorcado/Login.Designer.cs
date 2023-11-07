@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelRegistro = new System.Windows.Forms.Panel();
+            this.lbVolverLogin = new System.Windows.Forms.Label();
             this.lbMensajeRegistro = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,9 +61,7 @@
             this.tbUsuario = new System.Windows.Forms.TextBox();
             this.lbMostrarPanelRegistro = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.lbVolverLogin = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
@@ -77,7 +75,6 @@
             // panelPrincipal
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.panelPrincipal.Controls.Add(this.pictureBox4);
             this.panelPrincipal.Controls.Add(this.pbExit);
             this.panelPrincipal.Controls.Add(this.pictureBox1);
             this.panelPrincipal.Controls.Add(this.label2);
@@ -86,18 +83,6 @@
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Size = new System.Drawing.Size(637, 488);
             this.panelPrincipal.TabIndex = 10;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(269, 391);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(218, 78);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
             // 
             // pbExit
             // 
@@ -276,6 +261,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(326, 490);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
             // 
@@ -296,7 +282,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(306, 97);
+            this.pictureBox2.Size = new System.Drawing.Size(303, 97);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
@@ -314,11 +300,25 @@
             this.panelRegistro.Controls.Add(this.label11);
             this.panelRegistro.Controls.Add(this.tbPassword);
             this.panelRegistro.Controls.Add(this.tbUsuario);
-            this.panelRegistro.Location = new System.Drawing.Point(328, 9);
+            this.panelRegistro.Location = new System.Drawing.Point(328, 0);
             this.panelRegistro.Name = "panelRegistro";
-            this.panelRegistro.Size = new System.Drawing.Size(235, 478);
+            this.panelRegistro.Size = new System.Drawing.Size(235, 487);
             this.panelRegistro.TabIndex = 23;
             this.panelRegistro.Visible = false;
+            // 
+            // lbVolverLogin
+            // 
+            this.lbVolverLogin.AutoSize = true;
+            this.lbVolverLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbVolverLogin.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVolverLogin.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lbVolverLogin.Location = new System.Drawing.Point(54, 444);
+            this.lbVolverLogin.Name = "lbVolverLogin";
+            this.lbVolverLogin.Size = new System.Drawing.Size(93, 15);
+            this.lbVolverLogin.TabIndex = 34;
+            this.lbVolverLogin.Text = "Volver al login";
+            this.lbVolverLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbVolverLogin.Click += new System.EventHandler(this.lbVolverLogin_Click);
             // 
             // lbMensajeRegistro
             // 
@@ -460,24 +460,10 @@
             this.panelLogin.Controls.Add(this.buttonLogin);
             this.panelLogin.Controls.Add(this.label1);
             this.panelLogin.Controls.Add(this.label8);
-            this.panelLogin.Location = new System.Drawing.Point(331, 12);
+            this.panelLogin.Location = new System.Drawing.Point(330, 3);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(237, 475);
+            this.panelLogin.Size = new System.Drawing.Size(237, 484);
             this.panelLogin.TabIndex = 32;
-            // 
-            // lbVolverLogin
-            // 
-            this.lbVolverLogin.AutoSize = true;
-            this.lbVolverLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbVolverLogin.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVolverLogin.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbVolverLogin.Location = new System.Drawing.Point(54, 444);
-            this.lbVolverLogin.Name = "lbVolverLogin";
-            this.lbVolverLogin.Size = new System.Drawing.Size(93, 15);
-            this.lbVolverLogin.TabIndex = 34;
-            this.lbVolverLogin.Text = "Volver al login";
-            this.lbVolverLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lbVolverLogin.Click += new System.EventHandler(this.lbVolverLogin_Click);
             // 
             // Login
             // 
@@ -501,7 +487,6 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelPrincipal.ResumeLayout(false);
             this.panelPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
@@ -547,7 +532,6 @@
         private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.Label lbMensajeRegistro;
         private System.Windows.Forms.Label lbMostrarPanelRegistro;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Label lbVolverLogin;
     }

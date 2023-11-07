@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -112,7 +113,7 @@ namespace Ahorcado
             foreach (Jugador jugador in jugadores)
             {
                 // Si encuentro un jugador con el nombre y contraseña que busco.
-                if (jugador.Nombre == nombre)
+                if (jugador.Nombre.ToLower() == nombre.ToLower())
                 {
                     // Usuario encontrado.
                     encontrado = true;
@@ -125,10 +126,12 @@ namespace Ahorcado
         // Registra un nuevo jugador
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            // Obtengo nombre 
-            string nombre = tbUsuario.Text;
+            // Obtengo nombre y le quito los espacios en blanco a derecha e izquierda
+            string nombre = tbUsuario.Text.Trim();
             // Obtengo la contraseña
             string contraseña = tbPassword.Text;
+            // Obtengo un id disponible.
+            int id = dameSiguienteId();
 
             // Si el formulario de registro es valido.
             if (siValidarFormularioRegistro(nombre, contraseña))
@@ -137,7 +140,7 @@ namespace Ahorcado
                 if (!siNombreUsuarioEstaDisponible(nombre))
                 {
                     // Si se ha podido añadir un nuevo jugador al fichero xml
-                    if (ProcesarFicherosXML.AgregarJugador("0", nombre, contraseña))
+                    if (ProcesarFicherosXML.AgregarJugador(id, nombre, contraseña))
                     {
                         // Obtengo la lista actualizada de jugadores
                         jugadores = ProcesarFicherosXML.dameListaJugadores();
@@ -162,9 +165,23 @@ namespace Ahorcado
                 }
             }
 
+
         }
 
-        // Valida el campos formulario login
+        // Obtiene el siguiente id jugador que este disponible
+        private int dameSiguienteId()
+        {
+            // Obtengo el ultimo jugador de la lista
+            Jugador ultimoJugador = jugadores[jugadores.Count - 1];
+            // Obtengo su identificador
+            int id = ultimoJugador.Id;
+            // Incremento en uno
+            id++;
+
+            return id;
+        }
+
+        // Valida los campos del formulario de login
         private bool siValidarFormularioLogin(string nombre, string contraseña)
         {
 
@@ -198,13 +215,14 @@ namespace Ahorcado
 
         }
 
+        // Valida los campos del formulario de registro
         private bool siValidarFormularioRegistro(string nombre, string contraseña)
         {
 
             bool valido = true;
 
             // Si el nombre de usuario no esta vacio
-            if (nombre.Length == 0)
+            if (nombre.Length == 0 || string.IsNullOrWhiteSpace(nombre) )
             {
                 valido = false;
                 error.SetError(tbUsuario, "El nombre del usuario no puede estar vacio.");
@@ -231,13 +249,7 @@ namespace Ahorcado
 
         }
 
-        // Se cierra el programa
-        private void pbExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
+        // Muestro panel para registrar un nuevo usuario
         private void lbMostrarPanelRegistro_Click(object sender, EventArgs e)
         {
             panelLogin.Visible = false;
@@ -250,6 +262,15 @@ namespace Ahorcado
             panelRegistro.Visible = false;
             panelLogin.Visible = true;
         }
+
+        // Se cierra el programa
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+
     } // Final clase Login
 
 

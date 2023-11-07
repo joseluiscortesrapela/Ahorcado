@@ -254,7 +254,7 @@ namespace Ahorcado.Utilidades
 
         }
 
-        public static bool AgregarJugador(string id, string nombre, string contraseña)
+        public static bool AgregarJugador(int id, string nombre, string contraseña)
         {
             bool creado = false;
 
