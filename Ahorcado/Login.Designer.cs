@@ -48,6 +48,17 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelRegistro = new System.Windows.Forms.Panel();
+            this.lbMensajeRegistro = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
+            this.lbMostrarPanelRegistro = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,11 +66,13 @@
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelRegistro.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.panelLogin.Controls.Add(this.lbMostrarPanelRegistro);
             this.panelLogin.Controls.Add(this.pbExit);
             this.panelLogin.Controls.Add(this.pictureBox1);
             this.panelLogin.Controls.Add(this.labelMensajeLogin);
@@ -106,11 +119,11 @@
             // 
             this.labelMensajeLogin.AutoSize = true;
             this.labelMensajeLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelMensajeLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMensajeLogin.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMensajeLogin.ForeColor = System.Drawing.Color.Red;
             this.labelMensajeLogin.Location = new System.Drawing.Point(22, 332);
             this.labelMensajeLogin.Name = "labelMensajeLogin";
-            this.labelMensajeLogin.Size = new System.Drawing.Size(0, 17);
+            this.labelMensajeLogin.Size = new System.Drawing.Size(0, 15);
             this.labelMensajeLogin.TabIndex = 22;
             this.labelMensajeLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -143,7 +156,7 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.DarkGray;
-            this.buttonLogin.Location = new System.Drawing.Point(19, 420);
+            this.buttonLogin.Location = new System.Drawing.Point(19, 404);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(165, 43);
             this.buttonLogin.TabIndex = 15;
@@ -279,6 +292,151 @@
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
+            // panelRegistro
+            // 
+            this.panelRegistro.Controls.Add(this.lbMensajeRegistro);
+            this.panelRegistro.Controls.Add(this.label6);
+            this.panelRegistro.Controls.Add(this.label7);
+            this.panelRegistro.Controls.Add(this.label9);
+            this.panelRegistro.Controls.Add(this.btnRegistrar);
+            this.panelRegistro.Controls.Add(this.label10);
+            this.panelRegistro.Controls.Add(this.label11);
+            this.panelRegistro.Controls.Add(this.tbPassword);
+            this.panelRegistro.Controls.Add(this.tbUsuario);
+            this.panelRegistro.Location = new System.Drawing.Point(324, 25);
+            this.panelRegistro.Name = "panelRegistro";
+            this.panelRegistro.Size = new System.Drawing.Size(251, 465);
+            this.panelRegistro.TabIndex = 23;
+            this.panelRegistro.Visible = false;
+            // 
+            // lbMensajeRegistro
+            // 
+            this.lbMensajeRegistro.AutoSize = true;
+            this.lbMensajeRegistro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbMensajeRegistro.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMensajeRegistro.ForeColor = System.Drawing.Color.Red;
+            this.lbMensajeRegistro.Location = new System.Drawing.Point(25, 322);
+            this.lbMensajeRegistro.Name = "lbMensajeRegistro";
+            this.lbMensajeRegistro.Size = new System.Drawing.Size(0, 15);
+            this.lbMensajeRegistro.TabIndex = 31;
+            this.lbMensajeRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(19, 316);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 30;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label7.Location = new System.Drawing.Point(44, 301);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 29;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label9.Location = new System.Drawing.Point(53, 106);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 22);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Usuario";
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrar.Location = new System.Drawing.Point(16, 388);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(165, 43);
+            this.btnRegistrar.TabIndex = 27;
+            this.btnRegistrar.Text = "Aceptar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label10.Location = new System.Drawing.Point(8, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(190, 50);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Registro";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label11.Location = new System.Drawing.Point(39, 217);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 22);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Contraseña";
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.BackColor = System.Drawing.SystemColors.WindowText;
+            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.ForeColor = System.Drawing.Color.Wheat;
+            this.tbPassword.Location = new System.Drawing.Point(16, 256);
+            this.tbPassword.MaxLength = 12;
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(165, 32);
+            this.tbPassword.TabIndex = 23;
+            this.tbPassword.TabStop = false;
+            this.tbPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPassword.UseSystemPasswordChar = true;
+            // 
+            // tbUsuario
+            // 
+            this.tbUsuario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.ForeColor = System.Drawing.Color.Wheat;
+            this.tbUsuario.Location = new System.Drawing.Point(16, 149);
+            this.tbUsuario.MaxLength = 12;
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.Size = new System.Drawing.Size(165, 32);
+            this.tbUsuario.TabIndex = 24;
+            this.tbUsuario.TabStop = false;
+            this.tbUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lbMostrarPanelRegistro
+            // 
+            this.lbMostrarPanelRegistro.AutoSize = true;
+            this.lbMostrarPanelRegistro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbMostrarPanelRegistro.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMostrarPanelRegistro.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lbMostrarPanelRegistro.Location = new System.Drawing.Point(43, 454);
+            this.lbMostrarPanelRegistro.Name = "lbMostrarPanelRegistro";
+            this.lbMostrarPanelRegistro.Size = new System.Drawing.Size(114, 15);
+            this.lbMostrarPanelRegistro.TabIndex = 33;
+            this.lbMostrarPanelRegistro.Text = "Quiero registrarme";
+            this.lbMostrarPanelRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbMostrarPanelRegistro.Click += new System.EventHandler(this.lbMostrarPanelRegistro_Click);
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -287,6 +445,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(964, 490);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panelRegistro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
@@ -305,6 +464,8 @@
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelRegistro.ResumeLayout(false);
+            this.panelRegistro.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +490,16 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelRegistro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tbUsuario;
+        private System.Windows.Forms.Label lbMensajeRegistro;
+        private System.Windows.Forms.Label lbMostrarPanelRegistro;
     }
 }

@@ -16,8 +16,7 @@ namespace Ahorcado
     {
 
         private List<Jugador> jugadores;  // Array de jugadores
-        private string nombre;            // Nombre del usuario
-        private string contraseña;        // Contraseña del usuario
+
 
         public Login()
         {
@@ -31,19 +30,20 @@ namespace Ahorcado
             jugadores = ProcesarFicherosXML.dameListaJugadores();
         }
 
+
         // Login usuario
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             // Obtengo nombre 
-            nombre = tbNombre.Text;
+            string nombre = tbNombre.Text;
             // Obtengo la contraseña
-            contraseña = tbContraseña.Text;
+            string contraseña = tbContraseña.Text;
 
             // Si el formulario es valido    
-            if (siValidarFormulario())
+            if (siValidarFormularioLogin(nombre, contraseña))
             {
                 // Si usuario existe.
-                if (siExistejugador())
+                if (siElUsuarioEstaRegistrado(nombre, contraseña))
                 {
                     // Si quien se logia es un jugador
                     if (SesionUsuario.Rol.Equals("Jugador"))
@@ -84,7 +84,7 @@ namespace Ahorcado
         }
 
         // Comprueba si existe el usuario
-        private bool siExistejugador()
+        private bool siElUsuarioEstaRegistrado(string nombre, string contraseña)
         {
             bool encontrado = false;
 
@@ -104,9 +104,70 @@ namespace Ahorcado
             return encontrado;
         }
 
+        // Comprueba si el nombre elegido en el registro esta libre.
+        private bool siNombreUsuarioEstaDisponible(string nombre)
+        {
+            bool encontrado = false;
+
+            // Recorro la lista de jugadores
+            foreach (Jugador jugador in jugadores)
+            {
+                // Si encuentro un jugador con el nombre y contraseña que busco.
+                if (jugador.Nombre == nombre)
+                {
+                    // Usuario encontrado.
+                    encontrado = true;
+                }
+            }
+
+            return encontrado;
+        }
+
+
+        // Registra un nuevo jugador
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            // Obtengo nombre 
+            string nombre = tbUsuario.Text;
+            // Obtengo la contraseña
+            string contraseña = tbPassword.Text;
+
+            // Si el formulario de registro es valido.
+            if (siValidarFormularioRegistro(nombre, contraseña))
+            {
+                // Comprueba si existe un jugador con el mismo nombre.
+                if (!siNombreUsuarioEstaDisponible(nombre))
+                {
+                    // Si se ha podido añadir un nuevo jugador al fichero xml
+                    if (ProcesarFicherosXML.AgregarJugador("0", nombre, contraseña))
+                    {
+                        // Obtengo la lista actualizada de jugadores
+                        jugadores = ProcesarFicherosXML.dameListaJugadores();
+                        // Oculto el panel de registro 
+                        panelRegistro.Visible = false;
+                        // Muestro panel de login
+                        panelLogin.Visible = true;
+                        // Muestro el jugador
+                        tbNombre.Text = nombre;
+                        // Muestro la contraseña del jugador
+                        tbContraseña.Text = contraseña;
+                    }
+                    else
+                    {
+                        lbMensajeRegistro.Text = "No se ha podido registrar";
+                    }
+
+                }
+                else
+                {
+                    error.SetError(tbUsuario, "Ya existe un usuario con el mismo nombre");
+                }
+            }
+
+        }
 
         // Valida el campos formulario login
-        private bool siValidarFormulario()
+        private bool siValidarFormularioLogin(string nombre, string contraseña)
         {
 
             bool valido = true;
@@ -116,7 +177,6 @@ namespace Ahorcado
             {
                 valido = false;
                 error.SetError(tbNombre, "El nombre del usuario no puede estar vacio.");
-
             }
             else
             {
@@ -140,6 +200,38 @@ namespace Ahorcado
 
         }
 
+        private bool siValidarFormularioRegistro(string nombre, string contraseña)
+        {
+
+            bool valido = true;
+
+            // Si el nombre de usuario no esta vacio
+            if (nombre.Length == 0)
+            {
+                valido = false;
+                error.SetError(tbUsuario, "El nombre del usuario no puede estar vacio.");
+            }
+            else
+            {
+                error.SetError(tbUsuario, "");
+            }
+
+            // Si el campo contraseña no esta vacio
+            if (contraseña.Length == 0)
+            {
+                valido = false;
+                error.SetError(tbPassword, "La contraseña no puede estar vacia.");
+            }
+            else
+            {
+                error.SetError(tbPassword, "");
+            }
+
+
+            return valido;
+
+
+        }
 
         // Se cierra el programa
         private void pbExit_Click(object sender, EventArgs e)
@@ -148,7 +240,11 @@ namespace Ahorcado
 
         }
 
-
+        private void lbMostrarPanelRegistro_Click(object sender, EventArgs e)
+        {
+            panelLogin.Visible = false;
+            panelRegistro.Visible = true;
+        }
     } // Final clase Login
 
 

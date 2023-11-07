@@ -19,10 +19,9 @@ namespace Ahorcado.Utilidades
         public static List<Jugador> dameListaJugadores()
         {
 
-
             // Donde tengo el fichero xml
-             string archivoXML = @"..\..\Xml\jugadores.xml";
-           // string archivoXML = @"Xml\jugadores.xml";  
+            string archivoXML = @"..\..\Xml\jugadores.xml";
+            // string archivoXML = @"Xml\jugadores.xml";  
 
             if (File.Exists(archivoXML))
             {
@@ -266,7 +265,38 @@ namespace Ahorcado.Utilidades
 
         }
 
+        public static bool AgregarJugador(string id, string nombre, string contraseña)
+        {
+            bool creado = false;
 
+            string archivoXML = @"..\..\Xml\jugadores.xml";
+
+            // Carga el archivo XML existente en un objeto XDocument
+            XDocument xmlDocument = XDocument.Load(archivoXML);
+
+            // Crea un nuevo elemento Jugador
+            XElement nuevoJugador = new XElement("Jugador",
+                                    new XElement("id", id),
+                                    new XElement("nombre", nombre),
+                                    new XElement("contraseña", contraseña),
+                                    new XElement("puntuacion", "0"),
+                                    new XElement("rol", "Jugador")
+            );
+
+            // Agrega el nuevo jugador al elemento Jugadores
+            xmlDocument.Element("Jugadores").Add(nuevoJugador);
+
+            // Guarda el documento XML de nuevo en el archivo
+            xmlDocument.Save(archivoXML);
+
+            creado = true;
+
+            Console.WriteLine("Acabas de registra un nuevo jugador en el fichero jugadores.xml");
+
+            return creado;
+
+
+        }
 
     }
 }
