@@ -129,7 +129,7 @@ namespace Ahorcado
             // Obtengo nombre y le quito los espacios en blanco a derecha e izquierda
             string nombre = tbUsuario.Text.Trim();
             // Obtengo la contraseña
-            string contraseña = tbPassword.Text;
+            string contraseña = tbPassword.Text; 
             // Obtengo un id disponible.
             int id = dameSiguienteId();
 
