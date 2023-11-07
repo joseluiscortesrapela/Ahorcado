@@ -30,7 +30,6 @@ namespace Ahorcado
             jugadores = ProcesarFicherosXML.dameListaJugadores();
         }
 
-
         // Login usuario
         private void buttonLogin_Click(object sender, EventArgs e)
         {
@@ -122,7 +121,6 @@ namespace Ahorcado
 
             return encontrado;
         }
-
 
         // Registra un nuevo jugador
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -244,6 +242,13 @@ namespace Ahorcado
         {
             panelLogin.Visible = false;
             panelRegistro.Visible = true;
+        }
+
+        // Vuelvo a la vengan de login
+        private void lbVolverLogin_Click(object sender, EventArgs e)
+        {
+            panelRegistro.Visible = false;
+            panelLogin.Visible = true;
         }
     } // Final clase Login
 

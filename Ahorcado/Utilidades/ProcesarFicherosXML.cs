@@ -21,14 +21,6 @@ namespace Ahorcado.Utilidades
 
             // Donde tengo el fichero xml
             string archivoXML = @"..\..\Xml\jugadores.xml";
-            // string archivoXML = @"Xml\jugadores.xml";  
-
-            if (File.Exists(archivoXML))
-            {
-                Console.WriteLine("Existe fichero jugadores.xml ");
-            }
-
-
 
             // Creo un array que guardara objetos del tipo Jugador
             List<Jugador> jugadores = new List<Jugador>();
@@ -250,11 +242,8 @@ namespace Ahorcado.Utilidades
             {
                 // Actualizar la puntuación del jugador
                 jugador.Element("puntuacion").Value = nuevaPuntuacion.ToString();
-
-                Console.WriteLine("Nombre: " + jugador.Element("nombre").Value);
                 // Guardar el archivo XML con los cambios
                 xdoc.Save(archivoXML);
-                Console.WriteLine("Encontrado");
             }
             else
             {

@@ -42,8 +42,8 @@ namespace Ahorcado
 
         public Halloween()
         {
-            InitializeComponent();   
-            
+            InitializeComponent();
+
             // Los sonidos que utilizare en el juego
             // Sonido de fondo
             player = new WaveOut(); ;
@@ -353,7 +353,7 @@ namespace Ahorcado
                     puntuacion += 2;
                     // Incremento el numero de aciertos.
                     numeroAciertos += 1;
-              
+
                 }
             }
 
@@ -397,7 +397,7 @@ namespace Ahorcado
 
         }
 
-    
+
 
         // Obtengo la letra que acaba de pulsar el jugador.
         private void buttonLetter_Click(object sender, EventArgs e)
@@ -412,7 +412,7 @@ namespace Ahorcado
             comprobarLetra(letra);
         }
 
-   
+
         // Muestra las puntuaciones
         private void mostrarPuntuacionesJugador()
         {
@@ -477,6 +477,9 @@ namespace Ahorcado
             SesionUsuario.Puntuacion = puntuacion;
             // Guardo la puntuacion del jugador
             ProcesarFicherosXML.ActualizarPuntuacionJugador(SesionUsuario.Id, puntuacion);
+
+            Console.WriteLine("Actualizo puntuacion jugador " + SesionUsuario.Usuario + " id: " + SesionUsuario.Id +
+                             " puntuacion: " + SesionUsuario.Puntuacion);
         }
 
         // Jugar otra partida
