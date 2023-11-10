@@ -359,6 +359,8 @@ namespace Ahorcado
             // Si la letra no se ha encontrado
             if (acierto == false)
             {
+                //Si ha fallado, le resto uno
+                puntuacion -= 1;
                 // Por cada letra fallida un punto menos.
                 numeroFallos += 1;
                 // Dibujo una parte del ahorcado
@@ -374,7 +376,7 @@ namespace Ahorcado
                 else
                 {
                     // Si ha fallado, le resto uno, sino no hago nada, no quiero un score con resultados negativos.
-                    puntuacion -= (puntuacion > 0) ? 1 : puntuacion;               
+                   // puntuacion -= (puntuacion > 0) ? 1 : puntuacion;               
                 }
 
             }

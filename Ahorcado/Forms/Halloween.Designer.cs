@@ -242,7 +242,7 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(576, 188);
+            this.panelGameOver.Location = new System.Drawing.Point(576, 171);
             this.panelGameOver.Name = "panelGameOver";
             this.panelGameOver.Size = new System.Drawing.Size(427, 141);
             this.panelGameOver.TabIndex = 47;
@@ -330,7 +330,7 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(16, 831);
+            this.panelLetras.Location = new System.Drawing.Point(12, 845);
             this.panelLetras.Name = "panelLetras";
             this.panelLetras.Size = new System.Drawing.Size(1900, 385);
             this.panelLetras.TabIndex = 48;
@@ -1074,7 +1074,7 @@
             this.lbPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
             this.lbPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
             this.lbPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
-            this.lbPalabraGuiones.Location = new System.Drawing.Point(632, 379);
+            this.lbPalabraGuiones.Location = new System.Drawing.Point(604, 379);
             this.lbPalabraGuiones.Name = "lbPalabraGuiones";
             this.lbPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbPalabraGuiones.Size = new System.Drawing.Size(371, 79);
