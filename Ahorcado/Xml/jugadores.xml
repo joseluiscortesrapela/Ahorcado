@@ -18,7 +18,7 @@
     <id>3</id>
     <nombre>jose</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>-1</puntuacion>
+    <puntuacion>24</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
@@ -52,7 +52,7 @@
   <Jugador>
     <id>8</id>
     <nombre>rodrigo</nombre>
-    <contraseña>1234</contraseña>
+    <contraseña>12345</contraseña>
     <puntuacion>5</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
@@ -75,6 +75,20 @@
     <nombre>rucanor</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>28</puntuacion>
+    <rol>Jugador</rol>
+  </Jugador>
+  <Jugador>
+    <id>12</id>
+    <nombre>raquel</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>3</puntuacion>
+    <rol>Jugador</rol>
+  </Jugador>
+  <Jugador>
+    <id>13</id>
+    <nombre>carmelo</nombre>
+    <contraseña>1234</contraseña>
+    <puntuacion>37</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
 </Jugadores>

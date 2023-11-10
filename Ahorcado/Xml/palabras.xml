@@ -30,4 +30,16 @@
     <pista>Este libro empieza asi, en un lugar de La Mancha, de cuyo nombre no quiero acordarme...</pista>
     <categoria>Libros</categoria>
   </Word>
+  <Word>
+    <id>4</id>
+    <palabra>Thriller</palabra>
+    <pista>Es el disco mas vendido de la historia</pista>
+    <categoria>Musica</categoria>
+  </Word>
+  <Word>
+    <id>5</id>
+    <palabra>Bruce Springsteen</palabra>
+    <pista>Conocido como el "Boss" famosos por sus exitos  'Born to Run' y 'Dancing in the Dark'."</pista>
+    <categoria>Musica</categoria>
+  </Word>
 </WordList>
