@@ -46,14 +46,7 @@
     <id>7</id>
     <nombre>rocio</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>10</puntuacion>
-    <rol>Jugador</rol>
-  </Jugador>
-  <Jugador>
-    <id>8</id>
-    <nombre>rodrigo</nombre>
-    <contraseña>12345</contraseña>
-    <puntuacion>5</puntuacion>
+    <puntuacion>-3</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
@@ -75,13 +68,6 @@
     <nombre>rucanor</nombre>
     <contraseña>1234</contraseña>
     <puntuacion>28</puntuacion>
-    <rol>Jugador</rol>
-  </Jugador>
-  <Jugador>
-    <id>12</id>
-    <nombre>raquel</nombre>
-    <contraseña>1234</contraseña>
-    <puntuacion>3</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>

@@ -242,7 +242,7 @@
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(576, 171);
+            this.panelGameOver.Location = new System.Drawing.Point(459, 171);
             this.panelGameOver.Name = "panelGameOver";
             this.panelGameOver.Size = new System.Drawing.Size(427, 141);
             this.panelGameOver.TabIndex = 47;
@@ -330,7 +330,7 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(12, 845);
+            this.panelLetras.Location = new System.Drawing.Point(-105, 719);
             this.panelLetras.Name = "panelLetras";
             this.panelLetras.Size = new System.Drawing.Size(1900, 385);
             this.panelLetras.TabIndex = 48;
@@ -964,7 +964,7 @@
             this.dgvPalabras.AllowUserToResizeColumns = false;
             this.dgvPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(12, 778);
+            this.dgvPalabras.Location = new System.Drawing.Point(13, 675);
             this.dgvPalabras.Name = "dgvPalabras";
             this.dgvPalabras.ReadOnly = true;
             this.dgvPalabras.Size = new System.Drawing.Size(10, 32);
@@ -1015,7 +1015,7 @@
             this.panelScore.Controls.Add(this.labelPuntuacion);
             this.panelScore.Controls.Add(this.label5);
             this.panelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.panelScore.Location = new System.Drawing.Point(455, 5);
+            this.panelScore.Location = new System.Drawing.Point(338, 5);
             this.panelScore.Name = "panelScore";
             this.panelScore.Size = new System.Drawing.Size(647, 51);
             this.panelScore.TabIndex = 42;
@@ -1074,12 +1074,11 @@
             this.lbPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
             this.lbPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
             this.lbPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
-            this.lbPalabraGuiones.Location = new System.Drawing.Point(604, 379);
+            this.lbPalabraGuiones.Location = new System.Drawing.Point(487, 313);
             this.lbPalabraGuiones.Name = "lbPalabraGuiones";
             this.lbPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPalabraGuiones.Size = new System.Drawing.Size(371, 79);
+            this.lbPalabraGuiones.Size = new System.Drawing.Size(0, 79);
             this.lbPalabraGuiones.TabIndex = 41;
-            this.lbPalabraGuiones.Text = "--- --------";
             this.lbPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonRespuestaRapida
@@ -1123,12 +1122,11 @@
             this.lbPista.BackColor = System.Drawing.Color.Transparent;
             this.lbPista.Font = new System.Drawing.Font("MV Boli", 22F);
             this.lbPista.ForeColor = System.Drawing.Color.Wheat;
-            this.lbPista.Location = new System.Drawing.Point(55, 683);
+            this.lbPista.Location = new System.Drawing.Point(-62, 551);
             this.lbPista.Name = "lbPista";
             this.lbPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbPista.Size = new System.Drawing.Size(1489, 43);
             this.lbPista.TabIndex = 47;
-            this.lbPista.Text = "la pista";
             this.lbPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbAhorcado
@@ -1151,7 +1149,7 @@
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(366, 740);
+            this.panelResolver.Location = new System.Drawing.Point(249, 608);
             this.panelResolver.Name = "panelResolver";
             this.panelResolver.Size = new System.Drawing.Size(583, 43);
             this.panelResolver.TabIndex = 43;
@@ -1163,7 +1161,7 @@
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(1585, 5);
+            this.pbExit.Location = new System.Drawing.Point(1351, 5);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(32, 35);
             this.pbExit.TabIndex = 45;
@@ -1189,7 +1187,7 @@
             // pbPresentacion
             // 
             this.pbPresentacion.Image = ((System.Drawing.Image)(resources.GetObject("pbPresentacion.Image")));
-            this.pbPresentacion.Location = new System.Drawing.Point(28, 778);
+            this.pbPresentacion.Location = new System.Drawing.Point(29, 675);
             this.pbPresentacion.Name = "pbPresentacion";
             this.pbPresentacion.Size = new System.Drawing.Size(16, 32);
             this.pbPresentacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1336,7 +1334,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1620, 920);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.pbPajaros);
             this.Controls.Add(this.pbFuego2);
             this.Controls.Add(this.pbFuego);
