@@ -115,8 +115,6 @@ namespace Ahorcado
             cbCategorias.Hide();
             // Muestro el buho
             pbBuho.Show();
-            // Muestro el gato
-            pbGato.Show();
             // Muestro otros pajaros
             pbPajaros.Show();
             // Muestros los muercielagos
@@ -376,9 +374,7 @@ namespace Ahorcado
                 else
                 {
                     // Si ha fallado, le resto uno, sino no hago nada, no quiero un score con resultados negativos.
-                    puntuacion -= (puntuacion > 0) ? 1 : puntuacion;
-                    // Nivel de vida baja
-                    progressBarVida.Value -= 1;
+                    puntuacion -= (puntuacion > 0) ? 1 : puntuacion;               
                 }
 
             }
@@ -434,8 +430,6 @@ namespace Ahorcado
             this.numeroFallos = 0;
             // Pongo el score.
             this.puntuacion = 0;
-            // Barra de vida al 100 %
-            progressBarVida.Value = 6;
             // Label n acierto a cero
             labelNumeroAciertos.Text = "0";
             // Numero fallos label

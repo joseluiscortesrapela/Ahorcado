@@ -11,14 +11,14 @@
     <id>2</id>
     <nombre>serena</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>35</puntuacion>
+    <puntuacion>24</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>
     <id>3</id>
     <nombre>jose</nombre>
     <contraseña>1234</contraseña>
-    <puntuacion>26</puntuacion>
+    <puntuacion>-4</puntuacion>
     <rol>Jugador</rol>
   </Jugador>
   <Jugador>

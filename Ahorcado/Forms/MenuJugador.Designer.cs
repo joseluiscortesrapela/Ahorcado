@@ -79,9 +79,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(458, 633);
+            this.pictureBox2.Location = new System.Drawing.Point(433, 620);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 56);
+            this.pictureBox2.Size = new System.Drawing.Size(49, 55);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
@@ -91,7 +91,7 @@
             this.labelJugar.BackColor = System.Drawing.Color.Transparent;
             this.labelJugar.Font = new System.Drawing.Font("MV Boli", 25F, System.Drawing.FontStyle.Bold);
             this.labelJugar.ForeColor = System.Drawing.Color.Chocolate;
-            this.labelJugar.Location = new System.Drawing.Point(510, 633);
+            this.labelJugar.Location = new System.Drawing.Point(485, 620);
             this.labelJugar.Name = "labelJugar";
             this.labelJugar.Size = new System.Drawing.Size(254, 45);
             this.labelJugar.TabIndex = 14;

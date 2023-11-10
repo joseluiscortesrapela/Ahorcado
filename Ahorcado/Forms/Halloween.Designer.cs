@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Halloween));
-            this.p = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonC = new System.Windows.Forms.Button();
             this.buttonV = new System.Windows.Forms.Button();
@@ -90,13 +89,11 @@
             this.pbMostrarPista = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pbResolver = new System.Windows.Forms.PictureBox();
-            this.progressBarVida = new System.Windows.Forms.ProgressBar();
             this.pbBuho = new System.Windows.Forms.PictureBox();
             this.pbMuercielagos = new System.Windows.Forms.PictureBox();
             this.pbFuego = new System.Windows.Forms.PictureBox();
             this.pbFuego2 = new System.Windows.Forms.PictureBox();
             this.pbPajaros = new System.Windows.Forms.PictureBox();
-            this.pbGato = new System.Windows.Forms.PictureBox();
             this.timerPista = new System.Windows.Forms.Timer(this.components);
             this.timerResolver = new System.Windows.Forms.Timer(this.components);
             this.panelGameOver.SuspendLayout();
@@ -115,20 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).BeginInit();
             this.SuspendLayout();
-            // 
-            // p
-            // 
-            this.p.AutoSize = true;
-            this.p.BackColor = System.Drawing.Color.Transparent;
-            this.p.Font = new System.Drawing.Font("MV Boli", 12F);
-            this.p.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.p.Location = new System.Drawing.Point(215, 68);
-            this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(145, 21);
-            this.p.TabIndex = 22;
-            this.p.Text = "Nivel vida jugador";
             // 
             // label3
             // 
@@ -157,10 +141,10 @@
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonC.Image = ((System.Drawing.Image)(resources.GetObject("buttonC.Image")));
-            this.buttonC.Location = new System.Drawing.Point(159, 6);
+            this.buttonC.Location = new System.Drawing.Point(248, 7);
             this.buttonC.Name = "buttonC";
             this.buttonC.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonC.Size = new System.Drawing.Size(53, 76);
+            this.buttonC.Size = new System.Drawing.Size(38, 76);
             this.buttonC.TabIndex = 31;
             this.buttonC.Text = "C";
             this.buttonC.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -184,10 +168,10 @@
             this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonV.Image = ((System.Drawing.Image)(resources.GetObject("buttonV.Image")));
-            this.buttonV.Location = new System.Drawing.Point(1292, 1);
+            this.buttonV.Location = new System.Drawing.Point(1169, -5);
             this.buttonV.Name = "buttonV";
             this.buttonV.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonV.Size = new System.Drawing.Size(66, 82);
+            this.buttonV.Size = new System.Drawing.Size(48, 82);
             this.buttonV.TabIndex = 28;
             this.buttonV.Text = "V";
             this.buttonV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -211,7 +195,7 @@
             this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonX.Image = ((System.Drawing.Image)(resources.GetObject("buttonX.Image")));
-            this.buttonX.Location = new System.Drawing.Point(1444, 0);
+            this.buttonX.Location = new System.Drawing.Point(1262, -6);
             this.buttonX.Name = "buttonX";
             this.buttonX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonX.Size = new System.Drawing.Size(58, 81);
@@ -238,10 +222,10 @@
             this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonT.Image = ((System.Drawing.Image)(resources.GetObject("buttonT.Image")));
-            this.buttonT.Location = new System.Drawing.Point(1182, -6);
+            this.buttonT.Location = new System.Drawing.Point(1083, 3);
             this.buttonT.Name = "buttonT";
             this.buttonT.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonT.Size = new System.Drawing.Size(76, 96);
+            this.buttonT.Size = new System.Drawing.Size(34, 69);
             this.buttonT.TabIndex = 26;
             this.buttonT.Text = "T";
             this.buttonT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -252,15 +236,15 @@
             // 
             // panelGameOver
             // 
-            this.panelGameOver.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelGameOver.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelGameOver.BackColor = System.Drawing.Color.Transparent;
             this.panelGameOver.Controls.Add(this.label13);
             this.panelGameOver.Controls.Add(this.buttonNoJugarOtra);
             this.panelGameOver.Controls.Add(this.buttonJugarOtraPartida);
             this.panelGameOver.Controls.Add(this.labelFinalPartida);
-            this.panelGameOver.Location = new System.Drawing.Point(530, 206);
+            this.panelGameOver.Location = new System.Drawing.Point(576, 188);
             this.panelGameOver.Name = "panelGameOver";
-            this.panelGameOver.Size = new System.Drawing.Size(514, 153);
+            this.panelGameOver.Size = new System.Drawing.Size(427, 141);
             this.panelGameOver.TabIndex = 47;
             this.panelGameOver.Visible = false;
             // 
@@ -269,7 +253,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("MV Boli", 20F);
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(71, 73);
+            this.label13.Location = new System.Drawing.Point(27, 62);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(376, 34);
             this.label13.TabIndex = 35;
@@ -281,7 +265,7 @@
             this.buttonNoJugarOtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNoJugarOtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonNoJugarOtra.ForeColor = System.Drawing.Color.Brown;
-            this.buttonNoJugarOtra.Location = new System.Drawing.Point(91, 116);
+            this.buttonNoJugarOtra.Location = new System.Drawing.Point(33, 102);
             this.buttonNoJugarOtra.Name = "buttonNoJugarOtra";
             this.buttonNoJugarOtra.Size = new System.Drawing.Size(146, 36);
             this.buttonNoJugarOtra.TabIndex = 34;
@@ -295,7 +279,7 @@
             this.buttonJugarOtraPartida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonJugarOtraPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonJugarOtraPartida.ForeColor = System.Drawing.Color.BlueViolet;
-            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(292, 116);
+            this.buttonJugarOtraPartida.Location = new System.Drawing.Point(253, 102);
             this.buttonJugarOtraPartida.Name = "buttonJugarOtraPartida";
             this.buttonJugarOtraPartida.Size = new System.Drawing.Size(146, 36);
             this.buttonJugarOtraPartida.TabIndex = 33;
@@ -308,11 +292,11 @@
             this.labelFinalPartida.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
             this.labelFinalPartida.ForeColor = System.Drawing.Color.Goldenrod;
-            this.labelFinalPartida.Location = new System.Drawing.Point(18, 10);
+            this.labelFinalPartida.Location = new System.Drawing.Point(8, 10);
             this.labelFinalPartida.Name = "labelFinalPartida";
-            this.labelFinalPartida.Size = new System.Drawing.Size(462, 48);
+            this.labelFinalPartida.Size = new System.Drawing.Size(409, 48);
             this.labelFinalPartida.TabIndex = 1;
-            this.labelFinalPartida.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labelFinalPartida.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panelLetras
             // 
@@ -346,7 +330,7 @@
             this.panelLetras.Controls.Add(this.buttonK);
             this.panelLetras.Controls.Add(this.buttonB);
             this.panelLetras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelLetras.Location = new System.Drawing.Point(-24, 864);
+            this.panelLetras.Location = new System.Drawing.Point(16, 831);
             this.panelLetras.Name = "panelLetras";
             this.panelLetras.Size = new System.Drawing.Size(1900, 385);
             this.panelLetras.TabIndex = 48;
@@ -367,10 +351,10 @@
             this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonH.Image = ((System.Drawing.Image)(resources.GetObject("buttonH.Image")));
-            this.buttonH.Location = new System.Drawing.Point(446, -2);
+            this.buttonH.Location = new System.Drawing.Point(483, 5);
             this.buttonH.Name = "buttonH";
             this.buttonH.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonH.Size = new System.Drawing.Size(58, 86);
+            this.buttonH.Size = new System.Drawing.Size(38, 77);
             this.buttonH.TabIndex = 25;
             this.buttonH.Text = "H";
             this.buttonH.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -394,10 +378,10 @@
             this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonG.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonG.Image = ((System.Drawing.Image)(resources.GetObject("buttonG.Image")));
-            this.buttonG.Location = new System.Drawing.Point(382, 3);
+            this.buttonG.Location = new System.Drawing.Point(428, 3);
             this.buttonG.Name = "buttonG";
             this.buttonG.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonG.Size = new System.Drawing.Size(64, 80);
+            this.buttonG.Size = new System.Drawing.Size(50, 80);
             this.buttonG.TabIndex = 24;
             this.buttonG.Text = "G";
             this.buttonG.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -421,7 +405,7 @@
             this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonE.Image = ((System.Drawing.Image)(resources.GetObject("buttonE.Image")));
-            this.buttonE.Location = new System.Drawing.Point(269, 1);
+            this.buttonE.Location = new System.Drawing.Point(331, 2);
             this.buttonE.Name = "buttonE";
             this.buttonE.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonE.Size = new System.Drawing.Size(56, 81);
@@ -448,10 +432,10 @@
             this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonJ.Image = ((System.Drawing.Image)(resources.GetObject("buttonJ.Image")));
-            this.buttonJ.Location = new System.Drawing.Point(538, 0);
+            this.buttonJ.Location = new System.Drawing.Point(560, 4);
             this.buttonJ.Name = "buttonJ";
             this.buttonJ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonJ.Size = new System.Drawing.Size(51, 84);
+            this.buttonJ.Size = new System.Drawing.Size(40, 78);
             this.buttonJ.TabIndex = 22;
             this.buttonJ.Text = "J";
             this.buttonJ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -475,10 +459,10 @@
             this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonF.Image = ((System.Drawing.Image)(resources.GetObject("buttonF.Image")));
-            this.buttonF.Location = new System.Drawing.Point(325, 3);
+            this.buttonF.Location = new System.Drawing.Point(383, 0);
             this.buttonF.Name = "buttonF";
             this.buttonF.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonF.Size = new System.Drawing.Size(63, 79);
+            this.buttonF.Size = new System.Drawing.Size(38, 79);
             this.buttonF.TabIndex = 21;
             this.buttonF.Text = "F";
             this.buttonF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -502,10 +486,10 @@
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonD.Image = ((System.Drawing.Image)(resources.GetObject("buttonD.Image")));
-            this.buttonD.Location = new System.Drawing.Point(210, 6);
+            this.buttonD.Location = new System.Drawing.Point(292, 2);
             this.buttonD.Name = "buttonD";
             this.buttonD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonD.Size = new System.Drawing.Size(53, 77);
+            this.buttonD.Size = new System.Drawing.Size(40, 77);
             this.buttonD.TabIndex = 20;
             this.buttonD.Text = "D";
             this.buttonD.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -529,10 +513,10 @@
             this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonL.Image = ((System.Drawing.Image)(resources.GetObject("buttonL.Image")));
-            this.buttonL.Location = new System.Drawing.Point(648, -3);
+            this.buttonL.Location = new System.Drawing.Point(655, -9);
             this.buttonL.Name = "buttonL";
             this.buttonL.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonL.Size = new System.Drawing.Size(63, 88);
+            this.buttonL.Size = new System.Drawing.Size(33, 88);
             this.buttonL.TabIndex = 19;
             this.buttonL.Text = "L";
             this.buttonL.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -556,10 +540,10 @@
             this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonI.Image = ((System.Drawing.Image)(resources.GetObject("buttonI.Image")));
-            this.buttonI.Location = new System.Drawing.Point(502, -3);
+            this.buttonI.Location = new System.Drawing.Point(537, -2);
             this.buttonI.Name = "buttonI";
             this.buttonI.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonI.Size = new System.Drawing.Size(41, 85);
+            this.buttonI.Size = new System.Drawing.Size(21, 76);
             this.buttonI.TabIndex = 18;
             this.buttonI.Text = "I";
             this.buttonI.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -583,10 +567,10 @@
             this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonM.Image = ((System.Drawing.Image)(resources.GetObject("buttonM.Image")));
-            this.buttonM.Location = new System.Drawing.Point(707, -5);
+            this.buttonM.Location = new System.Drawing.Point(697, -6);
             this.buttonM.Name = "buttonM";
             this.buttonM.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonM.Size = new System.Drawing.Size(68, 94);
+            this.buttonM.Size = new System.Drawing.Size(40, 83);
             this.buttonM.TabIndex = 16;
             this.buttonM.Text = "M";
             this.buttonM.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -610,10 +594,10 @@
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonA.Image = ((System.Drawing.Image)(resources.GetObject("buttonA.Image")));
-            this.buttonA.Location = new System.Drawing.Point(41, 2);
+            this.buttonA.Location = new System.Drawing.Point(152, 8);
             this.buttonA.Name = "buttonA";
             this.buttonA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonA.Size = new System.Drawing.Size(51, 80);
+            this.buttonA.Size = new System.Drawing.Size(44, 71);
             this.buttonA.TabIndex = 15;
             this.buttonA.Text = "A";
             this.buttonA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -637,10 +621,10 @@
             this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonN.Image = ((System.Drawing.Image)(resources.GetObject("buttonN.Image")));
-            this.buttonN.Location = new System.Drawing.Point(775, 2);
+            this.buttonN.Location = new System.Drawing.Point(743, 0);
             this.buttonN.Name = "buttonN";
             this.buttonN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonN.Size = new System.Drawing.Size(59, 84);
+            this.buttonN.Size = new System.Drawing.Size(42, 74);
             this.buttonN.TabIndex = 14;
             this.buttonN.Text = "N";
             this.buttonN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -664,10 +648,10 @@
             this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonÑ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonÑ.Image = ((System.Drawing.Image)(resources.GetObject("buttonÑ.Image")));
-            this.buttonÑ.Location = new System.Drawing.Point(838, -16);
+            this.buttonÑ.Location = new System.Drawing.Point(776, -23);
             this.buttonÑ.Name = "buttonÑ";
             this.buttonÑ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonÑ.Size = new System.Drawing.Size(80, 115);
+            this.buttonÑ.Size = new System.Drawing.Size(63, 105);
             this.buttonÑ.TabIndex = 13;
             this.buttonÑ.Text = "Ñ";
             this.buttonÑ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -691,10 +675,10 @@
             this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonO.Image = ((System.Drawing.Image)(resources.GetObject("buttonO.Image")));
-            this.buttonO.Location = new System.Drawing.Point(907, 3);
+            this.buttonO.Location = new System.Drawing.Point(833, -4);
             this.buttonO.Name = "buttonO";
             this.buttonO.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonO.Size = new System.Drawing.Size(66, 81);
+            this.buttonO.Size = new System.Drawing.Size(48, 81);
             this.buttonO.TabIndex = 12;
             this.buttonO.Text = "O";
             this.buttonO.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -718,10 +702,10 @@
             this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonP.Image = ((System.Drawing.Image)(resources.GetObject("buttonP.Image")));
-            this.buttonP.Location = new System.Drawing.Point(963, 3);
+            this.buttonP.Location = new System.Drawing.Point(887, -4);
             this.buttonP.Name = "buttonP";
             this.buttonP.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonP.Size = new System.Drawing.Size(58, 80);
+            this.buttonP.Size = new System.Drawing.Size(46, 80);
             this.buttonP.TabIndex = 11;
             this.buttonP.Text = "P";
             this.buttonP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -745,10 +729,10 @@
             this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonU.Image = ((System.Drawing.Image)(resources.GetObject("buttonU.Image")));
-            this.buttonU.Location = new System.Drawing.Point(1236, -9);
+            this.buttonU.Location = new System.Drawing.Point(1123, -5);
             this.buttonU.Name = "buttonU";
             this.buttonU.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonU.Size = new System.Drawing.Size(68, 91);
+            this.buttonU.Size = new System.Drawing.Size(40, 82);
             this.buttonU.TabIndex = 10;
             this.buttonU.Text = "U";
             this.buttonU.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -772,10 +756,10 @@
             this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonS.Image = ((System.Drawing.Image)(resources.GetObject("buttonS.Image")));
-            this.buttonS.Location = new System.Drawing.Point(1118, -4);
+            this.buttonS.Location = new System.Drawing.Point(1025, 0);
             this.buttonS.Name = "buttonS";
             this.buttonS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonS.Size = new System.Drawing.Size(68, 95);
+            this.buttonS.Size = new System.Drawing.Size(52, 80);
             this.buttonS.TabIndex = 9;
             this.buttonS.Text = "S";
             this.buttonS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -799,10 +783,10 @@
             this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonQ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonQ.Image = ((System.Drawing.Image)(resources.GetObject("buttonQ.Image")));
-            this.buttonQ.Location = new System.Drawing.Point(1016, 1);
+            this.buttonQ.Location = new System.Drawing.Point(939, -2);
             this.buttonQ.Name = "buttonQ";
             this.buttonQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonQ.Size = new System.Drawing.Size(67, 79);
+            this.buttonQ.Size = new System.Drawing.Size(38, 79);
             this.buttonQ.TabIndex = 7;
             this.buttonQ.Text = "Q";
             this.buttonQ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -826,10 +810,10 @@
             this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonR.Image = ((System.Drawing.Image)(resources.GetObject("buttonR.Image")));
-            this.buttonR.Location = new System.Drawing.Point(1068, 2);
+            this.buttonR.Location = new System.Drawing.Point(983, -3);
             this.buttonR.Name = "buttonR";
             this.buttonR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonR.Size = new System.Drawing.Size(71, 89);
+            this.buttonR.Size = new System.Drawing.Size(49, 78);
             this.buttonR.TabIndex = 6;
             this.buttonR.Text = "R";
             this.buttonR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -853,10 +837,10 @@
             this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonW.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonW.Image = ((System.Drawing.Image)(resources.GetObject("buttonW.Image")));
-            this.buttonW.Location = new System.Drawing.Point(1351, -21);
+            this.buttonW.Location = new System.Drawing.Point(1207, -19);
             this.buttonW.Name = "buttonW";
             this.buttonW.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonW.Size = new System.Drawing.Size(93, 99);
+            this.buttonW.Size = new System.Drawing.Size(62, 96);
             this.buttonW.TabIndex = 4;
             this.buttonW.Text = "W";
             this.buttonW.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -880,10 +864,10 @@
             this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonY.Image = ((System.Drawing.Image)(resources.GetObject("buttonY.Image")));
-            this.buttonY.Location = new System.Drawing.Point(1498, 2);
+            this.buttonY.Location = new System.Drawing.Point(1312, 4);
             this.buttonY.Name = "buttonY";
             this.buttonY.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonY.Size = new System.Drawing.Size(61, 77);
+            this.buttonY.Size = new System.Drawing.Size(50, 77);
             this.buttonY.TabIndex = 3;
             this.buttonY.Text = "Y";
             this.buttonY.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -907,10 +891,10 @@
             this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonZ.Image = ((System.Drawing.Image)(resources.GetObject("buttonZ.Image")));
-            this.buttonZ.Location = new System.Drawing.Point(1560, -2);
+            this.buttonZ.Location = new System.Drawing.Point(1352, 2);
             this.buttonZ.Name = "buttonZ";
             this.buttonZ.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonZ.Size = new System.Drawing.Size(77, 78);
+            this.buttonZ.Size = new System.Drawing.Size(63, 78);
             this.buttonZ.TabIndex = 2;
             this.buttonZ.Text = "Z";
             this.buttonZ.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -934,10 +918,10 @@
             this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonK.Image = ((System.Drawing.Image)(resources.GetObject("buttonK.Image")));
-            this.buttonK.Location = new System.Drawing.Point(591, -4);
+            this.buttonK.Location = new System.Drawing.Point(606, -1);
             this.buttonK.Name = "buttonK";
             this.buttonK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonK.Size = new System.Drawing.Size(65, 88);
+            this.buttonK.Size = new System.Drawing.Size(41, 78);
             this.buttonK.TabIndex = 1;
             this.buttonK.Text = "K";
             this.buttonK.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -961,10 +945,10 @@
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.buttonB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonB.Image = ((System.Drawing.Image)(resources.GetObject("buttonB.Image")));
-            this.buttonB.Location = new System.Drawing.Point(103, 3);
+            this.buttonB.Location = new System.Drawing.Point(202, 8);
             this.buttonB.Name = "buttonB";
             this.buttonB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonB.Size = new System.Drawing.Size(52, 80);
+            this.buttonB.Size = new System.Drawing.Size(40, 75);
             this.buttonB.TabIndex = 0;
             this.buttonB.Text = "B";
             this.buttonB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -980,7 +964,7 @@
             this.dgvPalabras.AllowUserToResizeColumns = false;
             this.dgvPalabras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPalabras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalabras.Location = new System.Drawing.Point(16, 539);
+            this.dgvPalabras.Location = new System.Drawing.Point(12, 778);
             this.dgvPalabras.Name = "dgvPalabras";
             this.dgvPalabras.ReadOnly = true;
             this.dgvPalabras.Size = new System.Drawing.Size(10, 32);
@@ -1074,26 +1058,28 @@
             // 
             this.cbCategorias.BackColor = System.Drawing.Color.Black;
             this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.ForeColor = System.Drawing.Color.SteelBlue;
             this.cbCategorias.FormattingEnabled = true;
             this.cbCategorias.Location = new System.Drawing.Point(2, 28);
             this.cbCategorias.Name = "cbCategorias";
-            this.cbCategorias.Size = new System.Drawing.Size(222, 39);
+            this.cbCategorias.Size = new System.Drawing.Size(198, 37);
             this.cbCategorias.TabIndex = 40;
             this.cbCategorias.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategorias_SelectedIndexChanged);
             // 
             // lbPalabraGuiones
             // 
             this.lbPalabraGuiones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbPalabraGuiones.AutoSize = true;
             this.lbPalabraGuiones.BackColor = System.Drawing.Color.Transparent;
             this.lbPalabraGuiones.Font = new System.Drawing.Font("MV Boli", 45F);
             this.lbPalabraGuiones.ForeColor = System.Drawing.Color.Coral;
-            this.lbPalabraGuiones.Location = new System.Drawing.Point(416, 382);
+            this.lbPalabraGuiones.Location = new System.Drawing.Point(632, 379);
             this.lbPalabraGuiones.Name = "lbPalabraGuiones";
             this.lbPalabraGuiones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPalabraGuiones.Size = new System.Drawing.Size(735, 77);
+            this.lbPalabraGuiones.Size = new System.Drawing.Size(371, 79);
             this.lbPalabraGuiones.TabIndex = 41;
+            this.lbPalabraGuiones.Text = "--- --------";
             this.lbPalabraGuiones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonRespuestaRapida
@@ -1102,7 +1088,7 @@
             this.buttonRespuestaRapida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRespuestaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonRespuestaRapida.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonRespuestaRapida.Location = new System.Drawing.Point(472, 35);
+            this.buttonRespuestaRapida.Location = new System.Drawing.Point(463, 3);
             this.buttonRespuestaRapida.Name = "buttonRespuestaRapida";
             this.buttonRespuestaRapida.Size = new System.Drawing.Size(117, 37);
             this.buttonRespuestaRapida.TabIndex = 14;
@@ -1115,7 +1101,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 16F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(24, 39);
+            this.label1.Location = new System.Drawing.Point(15, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 29);
             this.label1.TabIndex = 13;
@@ -1126,7 +1112,7 @@
             this.tbRespuesta.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tbRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.tbRespuesta.ForeColor = System.Drawing.Color.Black;
-            this.tbRespuesta.Location = new System.Drawing.Point(252, 39);
+            this.tbRespuesta.Location = new System.Drawing.Point(243, 7);
             this.tbRespuesta.Name = "tbRespuesta";
             this.tbRespuesta.Size = new System.Drawing.Size(198, 32);
             this.tbRespuesta.TabIndex = 12;
@@ -1137,18 +1123,19 @@
             this.lbPista.BackColor = System.Drawing.Color.Transparent;
             this.lbPista.Font = new System.Drawing.Font("MV Boli", 22F);
             this.lbPista.ForeColor = System.Drawing.Color.Wheat;
-            this.lbPista.Location = new System.Drawing.Point(-4, 618);
+            this.lbPista.Location = new System.Drawing.Point(55, 683);
             this.lbPista.Name = "lbPista";
             this.lbPista.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPista.Size = new System.Drawing.Size(1442, 43);
+            this.lbPista.Size = new System.Drawing.Size(1489, 43);
             this.lbPista.TabIndex = 47;
+            this.lbPista.Text = "la pista";
             this.lbPista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbAhorcado
             // 
             this.pbAhorcado.BackColor = System.Drawing.Color.Transparent;
             this.pbAhorcado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAhorcado.Location = new System.Drawing.Point(117, 121);
+            this.pbAhorcado.Location = new System.Drawing.Point(100, 111);
             this.pbAhorcado.Name = "pbAhorcado";
             this.pbAhorcado.Size = new System.Drawing.Size(293, 450);
             this.pbAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1158,13 +1145,15 @@
             // 
             // panelResolver
             // 
+            this.panelResolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panelResolver.AutoSize = true;
             this.panelResolver.BackColor = System.Drawing.Color.Transparent;
             this.panelResolver.Controls.Add(this.buttonRespuestaRapida);
             this.panelResolver.Controls.Add(this.label1);
             this.panelResolver.Controls.Add(this.tbRespuesta);
-            this.panelResolver.Location = new System.Drawing.Point(430, 462);
+            this.panelResolver.Location = new System.Drawing.Point(366, 740);
             this.panelResolver.Name = "panelResolver";
-            this.panelResolver.Size = new System.Drawing.Size(678, 85);
+            this.panelResolver.Size = new System.Drawing.Size(583, 43);
             this.panelResolver.TabIndex = 43;
             this.panelResolver.Visible = false;
             // 
@@ -1200,7 +1189,7 @@
             // pbPresentacion
             // 
             this.pbPresentacion.Image = ((System.Drawing.Image)(resources.GetObject("pbPresentacion.Image")));
-            this.pbPresentacion.Location = new System.Drawing.Point(50, 539);
+            this.pbPresentacion.Location = new System.Drawing.Point(28, 778);
             this.pbPresentacion.Name = "pbPresentacion";
             this.pbPresentacion.Size = new System.Drawing.Size(16, 32);
             this.pbPresentacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1214,7 +1203,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label2.Location = new System.Drawing.Point(113, 68);
+            this.label2.Location = new System.Drawing.Point(96, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 21);
             this.label2.TabIndex = 23;
@@ -1223,15 +1212,13 @@
             // panelBarraHerramientas
             // 
             this.panelBarraHerramientas.BackColor = System.Drawing.Color.Transparent;
-            this.panelBarraHerramientas.Controls.Add(this.p);
             this.panelBarraHerramientas.Controls.Add(this.pbMostrarPista);
             this.panelBarraHerramientas.Controls.Add(this.label4);
             this.panelBarraHerramientas.Controls.Add(this.label2);
             this.panelBarraHerramientas.Controls.Add(this.pbResolver);
-            this.panelBarraHerramientas.Controls.Add(this.progressBarVida);
-            this.panelBarraHerramientas.Location = new System.Drawing.Point(1223, 31);
+            this.panelBarraHerramientas.Location = new System.Drawing.Point(1187, 60);
             this.panelBarraHerramientas.Name = "panelBarraHerramientas";
-            this.panelBarraHerramientas.Size = new System.Drawing.Size(536, 91);
+            this.panelBarraHerramientas.Size = new System.Drawing.Size(191, 71);
             this.panelBarraHerramientas.TabIndex = 39;
             this.panelBarraHerramientas.Visible = false;
             // 
@@ -1241,9 +1228,9 @@
             this.pbMostrarPista.BackColor = System.Drawing.Color.Transparent;
             this.pbMostrarPista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbMostrarPista.Image = ((System.Drawing.Image)(resources.GetObject("pbMostrarPista.Image")));
-            this.pbMostrarPista.Location = new System.Drawing.Point(19, 13);
+            this.pbMostrarPista.Location = new System.Drawing.Point(17, 3);
             this.pbMostrarPista.Name = "pbMostrarPista";
-            this.pbMostrarPista.Size = new System.Drawing.Size(57, 50);
+            this.pbMostrarPista.Size = new System.Drawing.Size(55, 50);
             this.pbMostrarPista.TabIndex = 38;
             this.pbMostrarPista.TabStop = false;
             this.pbMostrarPista.Click += new System.EventHandler(this.pbMostrarPista_Click);
@@ -1254,7 +1241,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(20, 68);
+            this.label4.Location = new System.Drawing.Point(18, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 37;
@@ -1266,30 +1253,19 @@
             this.pbResolver.BackColor = System.Drawing.Color.Transparent;
             this.pbResolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbResolver.BackgroundImage")));
             this.pbResolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbResolver.Location = new System.Drawing.Point(120, 13);
+            this.pbResolver.Location = new System.Drawing.Point(108, 3);
             this.pbResolver.Name = "pbResolver";
-            this.pbResolver.Size = new System.Drawing.Size(57, 50);
+            this.pbResolver.Size = new System.Drawing.Size(48, 50);
             this.pbResolver.TabIndex = 36;
             this.pbResolver.TabStop = false;
             this.pbResolver.Click += new System.EventHandler(this.btnShowPanelResolver_Click);
-            // 
-            // progressBarVida
-            // 
-            this.progressBarVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBarVida.BackColor = System.Drawing.Color.Crimson;
-            this.progressBarVida.Location = new System.Drawing.Point(222, 13);
-            this.progressBarVida.Maximum = 6;
-            this.progressBarVida.Name = "progressBarVida";
-            this.progressBarVida.Size = new System.Drawing.Size(141, 45);
-            this.progressBarVida.TabIndex = 21;
-            this.progressBarVida.Value = 6;
             // 
             // pbBuho
             // 
             this.pbBuho.BackColor = System.Drawing.Color.Transparent;
             this.pbBuho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbBuho.Image = ((System.Drawing.Image)(resources.GetObject("pbBuho.Image")));
-            this.pbBuho.Location = new System.Drawing.Point(230, 12);
+            this.pbBuho.Location = new System.Drawing.Point(205, 14);
             this.pbBuho.Name = "pbBuho";
             this.pbBuho.Size = new System.Drawing.Size(66, 93);
             this.pbBuho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1301,7 +1277,7 @@
             // 
             this.pbMuercielagos.BackColor = System.Drawing.Color.Transparent;
             this.pbMuercielagos.Image = ((System.Drawing.Image)(resources.GetObject("pbMuercielagos.Image")));
-            this.pbMuercielagos.Location = new System.Drawing.Point(458, 60);
+            this.pbMuercielagos.Location = new System.Drawing.Point(460, 49);
             this.pbMuercielagos.Name = "pbMuercielagos";
             this.pbMuercielagos.Size = new System.Drawing.Size(203, 116);
             this.pbMuercielagos.TabIndex = 55;
@@ -1343,20 +1319,6 @@
             this.pbPajaros.TabStop = false;
             this.pbPajaros.Visible = false;
             // 
-            // pbGato
-            // 
-            this.pbGato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pbGato.BackColor = System.Drawing.Color.Transparent;
-            this.pbGato.Image = ((System.Drawing.Image)(resources.GetObject("pbGato.Image")));
-            this.pbGato.Location = new System.Drawing.Point(1343, 591);
-            this.pbGato.Name = "pbGato";
-            this.pbGato.Size = new System.Drawing.Size(141, 195);
-            this.pbGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbGato.TabIndex = 61;
-            this.pbGato.TabStop = false;
-            this.pbGato.Visible = false;
-            this.pbGato.WaitOnLoad = true;
-            // 
             // timerPista
             // 
             this.timerPista.Interval = 7000;
@@ -1375,7 +1337,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1620, 920);
-            this.Controls.Add(this.pbGato);
             this.Controls.Add(this.pbPajaros);
             this.Controls.Add(this.pbFuego2);
             this.Controls.Add(this.pbFuego);
@@ -1421,7 +1382,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuego2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPajaros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1482,19 +1442,16 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox pbPresentacion;
-        private System.Windows.Forms.Label p;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBarraHerramientas;
         private System.Windows.Forms.PictureBox pbMostrarPista;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbResolver;
-        private System.Windows.Forms.ProgressBar progressBarVida;
         private System.Windows.Forms.PictureBox pbBuho;
         private System.Windows.Forms.PictureBox pbMuercielagos;
         private System.Windows.Forms.PictureBox pbFuego;
         private System.Windows.Forms.PictureBox pbFuego2;
         private System.Windows.Forms.PictureBox pbPajaros;
-        private System.Windows.Forms.PictureBox pbGato;
         private System.Windows.Forms.Timer timerPista;
         private System.Windows.Forms.Timer timerResolver;
     }
